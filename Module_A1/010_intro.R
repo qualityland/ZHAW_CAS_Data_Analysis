@@ -1,7 +1,8 @@
 ### Wednesday, 19.02.2020
 
 
-# look up: forcast vs. prediction
+# Look Up: 
+# forcast vs. prediction
 # matrix multiplication
 # Box-Cox transformations (data)
 # klassisches Schaetzen vs. robustets Schaetzen
@@ -10,17 +11,22 @@
 # MAD median absolut deviation
 # Median: Tilde ueber x
 
-# R references
+
+# R references:
 # https://cran.r-project.org/other-docs.html
 # R reference card
 
-# Packages nach Themenbereichen:
+
+# Packages ordered by topic:
 # "Task Views" auf https://cloud.r-project.org/
 
-# R Syntax lernen:
-# install.packages("swirl")
-# library(swirl)
+
+# R syntax:
+install.packages("swirl")
+library(swirl)
+swirl()
+# start course "R programming"
+
+
+# How to cite used packages:
 citation("MASS")
-# swirl: go on with 'R Programming', Lesson 9 (Functions)
-
-
