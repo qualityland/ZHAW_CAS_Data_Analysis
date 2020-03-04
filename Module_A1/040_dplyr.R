@@ -183,35 +183,45 @@ iris %>%
   summarize_all(mean)
 
 # summarize_at()
-# iris %>% 
-#   group_by(Species) %>% 
-#   summarize_at(Species, mean)
+iris %>%
+  group_by(Species) %>%
+  summarize_at(vars(starts_with("Sepal")), list(min=min, mean=mean, max=max))
 
 
 # summarize_if()
 iris %>%
   summarize_if(is.numeric, mean)
 
+# calculate multiple statistics
+# for every group
 iris %>%
   group_by(Species) %>%
-  summarize_if(is.numeric, list(mean, median)) %>%
+  summarize_if(is.numeric, list(avg=mean, med=median)) %>%
   select(starts_with("Sepal"))
 
+# example
+iris %>%
+  mutate(SW2 = Sepal.Width ^ 2) %>%         # add new Column
+  group_by(Species) %>%                     # group by Species
+  summarise(min.SW2 = min(SW2)) %>%         # calculate minimum for each group
+  arrange(desc(min.SW2))                    # order descendent by min
 
-# Exercises "datenmanipulation_beispiel"
+
+
+###################### Exercises "datenmanipulation_beispiel" ######################
 data(Cars93, package = "MASS")
 
-# 1.
 # 1a)
+dim(Cars93)
 str(Cars93)
 ?MASS::Cars93
 
 # 1b)
-df <- as_data_frame(Cars93)
-df
+cars <- as_tibble(Cars93)
+cars
 
 # 1c)
-df %>%
+cars %>%
   filter(Horsepower < 100) %>% 
   nrow
 

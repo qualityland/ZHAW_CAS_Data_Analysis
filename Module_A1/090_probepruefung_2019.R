@@ -1,16 +1,15 @@
 
 
 # read in Bike Sharing Dataset
-df <- read.csv("./Module_A1/data/Bike-Sharing-Dataset/day.csv")
-
-dim(df)
+load("./Module_A1/data/bikes.RData")
+dim(bikes)
 # 731 observations
 #  16 variables
 
-nrow(df)
+nrow(bikes)
 # 731
 
-ncol(df)
+ncol(bikes)
 # 16
 
-str(df)
+str(bikes)
