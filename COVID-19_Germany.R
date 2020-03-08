@@ -9,7 +9,7 @@
 
   
 d001 <- data.frame(
-  dtday="2020-03-07",
+  dttm="2020-03-07 0800",
   "Baden-Wuerttemberg" = 116,
   "Bayern" = 117,
   "Berlin" = 24,
@@ -29,7 +29,7 @@ d001 <- data.frame(
   )
 
 d002 <- data.frame(
-  dtday="2020-03-08",
+  dttm="2020-03-07 1500",
   "Baden-Wuerttemberg" = 170,
   "Bayern" = 134,
   "Berlin" = 28,
