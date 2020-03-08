@@ -25,7 +25,7 @@ d001 <- data.frame(
   "Sachsen" = 2,
   "Sachsen-Anhalt" = 0,
   "Schleswig-Holstein" = 8,
-  "Thueringen"= 1
+  "Thueringen" = 1
   )
 
 d002 <- data.frame(
@@ -45,5 +45,26 @@ d002 <- data.frame(
   "Sachsen" = 4,
   "Sachsen-Anhalt" = 0,
   "Schleswig-Holstein" = 8,
-  "Thueringen"= 2
+  "Thueringen" = 2
+)
+
+d003 <- data.frame(
+  dttm="2020-03-08 0800",
+  "Baden-Wuerttemberg" = 182,
+  "Bayern" = 148,
+  "Berlin" = 28,
+  "Brandenburg" = 2,
+  "Bremen" = 4,
+  "Hamburg" = 13,
+  "Hessen" = 17,
+  "Mecklenburg-Vorpommern" = 7,
+  "Niedersachsen" = 21,
+  "Nordrhein-Westfalen" = 392,
+  "Rheinland-Pfalz" = 15,
+  "Saarland" = 4,
+  "Sachsen" = 4,
+  "Sachsen-Anhalt" = 0,
+  "Schleswig-Holstein" = 8,
+  "Thueringen" = 2,
+  "Germany" = 847
 )
