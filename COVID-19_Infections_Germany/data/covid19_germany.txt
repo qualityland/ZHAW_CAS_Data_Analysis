@@ -69,3 +69,22 @@ Schleswig Holstein	9
 Thüringen	2	
 Gesamt	902	
 (Stand: 8.3.2020, 15:00 Uhr)
+
+Baden-Württemberg	199	
+Bayern	256	
+Berlin	40	
+Brandenburg	6	
+Bremen	4	
+Hamburg	17	
+Hessen	20	
+Mecklenburg-Vorpommern	8	
+Niedersachsen	33	
+Nordrhein-Westfalen	484	
+Rheinland-Pfalz	19	
+Saarland	5	
+Sachsen	10	
+Schleswig Holstein	9	
+Thüringen	2	
+Gesamt	1112	
+(Stand: 9.3.2020, 8:00 Uhr)
+

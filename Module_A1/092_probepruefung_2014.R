@@ -40,7 +40,8 @@ boxplot(breaks ~ tension, data = warpbreaks)
 table(warpbreaks[, c("wool", "tension")])
 # Wolle A wurde 9 mal bei hoher Spannung untersucht.
 mosaicplot(table(warpbreaks[, c("wool", "tension")]))
-
+# oder
+plot(table(warpbreaks[, c("wool", "tension")]))
 # 2a.
 # Wenn die Werte einer Stichprobe zwischen 10 und 15 liegen, dann muss auch das
 # 20%-Quantil einen Wert zwischen 10 und 15 haben.
