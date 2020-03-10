@@ -88,3 +88,21 @@ Thüringen	2
 Gesamt	1112	
 (Stand: 9.3.2020, 8:00 Uhr)
 
+Baden-Württemberg	204	0	
+Bayern	256	0	
+Berlin	48	0	
+Brandenburg	6	0	
+Bremen	4	0	
+Hamburg	17	0	
+Hessen	26	0	
+Mecklenburg-Vorpommern	10	0	
+Niedersachsen	38	0	
+Nordrhein-Westfalen	484	2	
+Rheinland-Pfalz	17	0	
+Saarland	6	0	
+Sachsen	12	0	
+Schleswig-Holstein	9	0	
+Thüringen	2	0	
+Gesamt	1139	2	
+(Stand: 9.3.2020, 15:00 Uhr)
+
