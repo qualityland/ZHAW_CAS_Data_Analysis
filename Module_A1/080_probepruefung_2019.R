@@ -71,7 +71,6 @@ load("./Module_A1/data/bikes.RData")
 # Erzeugen Sie Boxplots von der Variable 'cnt' nach 'hr' aufgetrennt, so dass
 # die Verteilung der Tageszeit (in Stunden) gut verglichen werden kann.
 # (Skizze nicht notwendig) Interpretieren Sie Ihr Ergebnis. (ein Satz)
-# Zweigipflige Verteilung der Ausleihen ueber den Tag mit Peaks um 8h und 17h.
 
 
 # 2.4
