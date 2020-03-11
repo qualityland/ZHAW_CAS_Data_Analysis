@@ -75,7 +75,7 @@ plot(x)
 
 # i) nein (ist bimodal)
 
-# ii) ja
+# ii) ja (ist aber FALSCH!)
 
 # iii) ja, Ausreisser ist klar ersichtlich
 

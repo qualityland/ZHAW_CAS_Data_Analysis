@@ -124,3 +124,23 @@ Schleswig-Holstein	9	0
 Thüringen	4	0	
 Gesamt	1.296	2	
 (Stand: 10.3.2020, 15:00 Uhr)
+
+Baden-Württemberg	277	0	
+Bayern	366	0	
+Berlin	90	0	
+Brandenburg	24	0	
+Bremen	21	0	
+Hamburg	48	0	
+Hessen	48	0	
+Mecklenburg-Vorpommern	17	0	
+Niedersachsen	75	0	
+Nordrhein-Westfalen	484	3	
+Rheinland-Pfalz	25	0	
+Saarland	14	0	
+Sachsen	26	0	
+Sachsen-Anhalt	15		
+Schleswig-Holstein	27	0	
+Thüringen	10	0	
+Gesamt	1.567	3	
+(Stand: 11.3.2020, 15:00 Uhr)
+
