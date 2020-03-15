@@ -181,3 +181,41 @@ Sachsen-Anhalt	42	29
 Schleswig-Holstein	48	45	
 Thüringen	29	16	
 Gesamt	3.062 (5)	2.576 (4)
+
+Stand: 14.3.2020, 15:00 Uhr
+Baden-Württemberg	569 (2)	506 (2)	
+Bayern	681 (1)	605 (1)	
+Berlin	216	216	
+Brandenburg	61	57	
+Bremen	50	50	
+Hamburg	158	119	
+Hessen	203	141	
+Mecklenburg-Vorpommern	45	23	
+Niedersachsen	253	187	
+Nordrhein-Westfalen	1.154 (5)	1.154 (5)
+Rheinland-Pfalz	121	121	
+Saarland	40	31	
+Sachsen	93	86	
+Sachsen-Anhalt	45	40	
+Schleswig-Holstein	60	54	
+Thüringen	46	31	
+Gesamt	3.795 (8)	3.421 (8)
+
+Stand: 15.3.2020, 15:00 Uhr
+Baden-Württemberg	827 (3)	524 (2)	
+Bayern	886 (4)	804 (1)	
+Berlin	265	265	
+Brandenburg	84	56	
+Bremen	53	53	
+Hamburg	162	162	
+Hessen	286	207	
+Mecklenburg-Vorpommern	50	33	
+Niedersachsen	287	238	
+Nordrhein-Westfalen	1.407 (5)	1.407 (5)
+Rheinland-Pfalz	168	168	
+Saarland	32	32	
+Sachsen	130	91	
+Sachsen-Anhalt	47	40	
+Schleswig-Holstein	103	79	
+Thüringen	51	36	
+Gesamt	4.838 (12)	4.195 (8)	
