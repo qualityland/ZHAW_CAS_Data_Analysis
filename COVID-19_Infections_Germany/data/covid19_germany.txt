@@ -218,4 +218,23 @@ Sachsen	130	91
 Sachsen-Anhalt	47	40	
 Schleswig-Holstein	103	79	
 Thüringen	51	36	
-Gesamt	4.838 (12)	4.195 (8)	
+Gesamt	4.838 (12)	4.195 (8)
+
+Stand: 16.3.2020, 15:00 Uhr
+Baden-Württemberg	1.105 (3)	1.062 (3)	
+Bayern	1.067 (5)	965 (4)	
+Berlin	300	300	
+Brandenburg	94	65	
+Bremen	56	56	
+Hamburg	260	255	
+Hessen	342	241	
+Mecklenburg-Vorpommern	51	36	
+Niedersachsen	391	272	
+Nordrhein-Westfalen	1.541 (5)	1.541 (5)
+Rheinland-Pfalz	325	325	
+Saarland	85	32	
+Sachsen	140	103	
+Sachsen-Anhalt	77	40	
+Schleswig-Holstein	123	104	
+Thüringen	55	36	
+Gesamt	6.012 (13)	5.433 (12)	
