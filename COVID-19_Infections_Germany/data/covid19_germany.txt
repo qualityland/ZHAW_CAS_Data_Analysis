@@ -276,3 +276,22 @@ Sachsen-Anhalt	105	+47	4,8	0
 Schleswig-Holstein	159	+32	5,5	0	
 Thüringen	74	+23	3,5	0	
 Gesamt	8.198	+1.042	9,9	12
+
+Stand: 19.3.2020, 00:00 Uhr
+Baden-Württemberg	2.155	+546	19,47	6	
+Bayern	1.692	+449	12,94	8	
+Berlin	573	+182	15,29	0	
+Brandenburg	134	+42	5,33	0	
+Bremen	80	+11	11,71	0	
+Hamburg	432	+74	23,46	0	
+Hessen	682	+250	10,88	0	
+Mecklenburg-Vorpommern	98	+42	6,09	0	
+Niedersachsen	669	+191	8,38	0	
+Nordrhein-Westfalen	3.033	+661	16,91	6	Landkreis Heinsberg
+Rheinland-Pfalz	637	+163	15,59	0	
+Saarland	99	+11	9,99	0	
+Sachsen	275	+77	6,74	0	
+Sachsen-Anhalt	140	+35	6,34	0	
+Schleswig-Holstein	202	+43	6,97	0	
+Thüringen	98	+24	4,57	0	
+Gesamt	10.999	+2.801	13,23	20
