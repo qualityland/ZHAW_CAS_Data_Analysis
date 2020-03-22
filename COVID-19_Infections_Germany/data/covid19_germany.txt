@@ -305,11 +305,30 @@ Hamburg	587	+1	32	0
 Hessen	1.080	+267	17	2	
 Mecklenburg-Vorpommern	165	+34	10	0	
 Niedersachsen	1.023	+220	13	0	
-Nordrhein-Westfalen	3.542	+45	20	6	Landkreis Heinsberg
+Nordrhein-Westfalen	3.542	+45	20	6
 Rheinland-Pfalz	938	+137	23	1	
 Saarland	187	+41	19	0	
 Sachsen	567	+173	14	0	
 Sachsen-Anhalt	188	+8	9	0	
 Schleswig-Holstein	308	+42	11	1	
 Thüringen	187	+38	9	0	
-Gesamt	16.662	+2.705	20	46	
+Gesamt	16.662	+2.705	20	46
+
+Stand: 22.3.2020, 00:00 Uhr
+Baden-Württemberg	3.807	+139	34	21	
+Bayern	3.650	+690	28	21	
+Berlin	1.024	+158	27	1	
+Brandenburg	274	+20	11		
+Bremen	165	+23	24		
+Hamburg	872	+285	47		
+Hessen	1.175	+95	19	2	
+Mecklenburg-Vorpommern	172	+7	11		
+Niedersachsen	1.306	+283	16	1	
+Nordrhein-Westfalen	3.545	+3	20	6
+Rheinland-Pfalz	1.053	+115	26	2	
+Saarland	187	0	19		
+Sachsen	606	+39	15		
+Sachsen-Anhalt	211	+23	10		
+Schleswig-Holstein	347	+39	12	1	
+Thüringen	216	+29	10		
+Gesamt	18.610	+1.948	22	55
