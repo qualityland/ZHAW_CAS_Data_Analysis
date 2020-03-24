@@ -8,9 +8,10 @@
 
 
 ############## Analyse von Zähldaten mit der Poisson-Verteilung ###############
-library(readr)
-hefezellen <- read_csv("./Module_A2/data/Hefezellen.dat", col_names = FALSE)
-hefe <- hefezellen$X1
+#library(readr)
+#hefezellen <- read_csv("./Module_A2/data/Hefezellen.dat", col_names = FALSE)
+hefezellen <- read.table("./Module_A2/data/Hefezellen.dat")
+hefe <- hefezellen$V1
 
 # data set also available in package HistData
 library(HistData)
@@ -20,7 +21,7 @@ YeastD.mat
 summary(hefe)
 table(hefe)
 
-# bar chart
+  # bar chart
 barplot(table(hefe))
 
 # 
@@ -46,6 +47,36 @@ fk
 
 mean(hefe)
 sum()
+
+
+HZ <- data.frame(k=as.integer(names(table(hefezellen))),
+                 freq=as.integer(table(hefezellen)))
+HZ
+# bar chart der Haeufigkeit von Hefezellen pro Quadrat
+plot(
+  HZ$k,
+  HZ$freq,
+  type = "h",
+  lwd = 6,
+  lend = 2,
+  col = "blue",
+  xlab = "k",
+  ylab = "Haeufigkeit"
+)
+
+# Totale Anzahl Hefezellen
+n <- sum(HZ$freq)
+n
+
+# λ schaetzen
+mu <- sum(HZ$freq*HZ$k)/n 
+mu
+
+# Modellanpassung
+# n * pk(Hut) bestimmen
+yModell <- n * dpois(HZ$k, lambda=mu)
+# n * pk(Hut) einzeichnen
+lines(HZ$k, yModell, type="b", lwd=2, col="red")
 
 
 
