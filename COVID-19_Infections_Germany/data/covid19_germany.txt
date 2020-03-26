@@ -408,3 +408,23 @@ Sachsen-Anhalt	375	+54	17	1
 Schleswig-Holstein	577	+99	20	3	
 Thüringen	394	+67	18	1	
 Gesamt	31.554	+4.118	38	149
+
+Stand: 26.3.2020, 00:00 Uhr
+Baden-Württemberg	7.283	+1.214	66	56	
+Bayern	7.993	+1.435	61	47	
+Berlin	1.656	+228	44	4	
+Brandenburg	477	+48	19	1	
+Bremen	211	+11	31	1	
+Hamburg	1.265	+3*	69		
+Hessen	2.157	+403	34	6	
+Mecklenburg-Vorpommern	244	+26	15		
+Niedersachsen	2.347	+207	29	8	
+Nordrhein-Westfalen	7.924	+727	44	53	Landkreis Heinsberg
+Rheinland-Pfalz	1.816	+225	44	6	
+Saarland	433	+30	44	2	
+Sachsen	1.141	+182	28	7	
+Sachsen-Anhalt	418	+43	19	1	
+Schleswig-Holstein	675	+98	23	3	
+Thüringen	468	+74	22	3	
+Gesamt	36.508	+4.954	44	198
+
