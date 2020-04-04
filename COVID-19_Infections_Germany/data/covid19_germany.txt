@@ -503,3 +503,82 @@ Sachsen-Anhalt	592	+0*	27	2
 Schleswig-Holstein	1.049	+44	36	7	
 Thüringen	719	+22	34	5	
 Gesamt	57.298	+4.751	69	455
+
+Stand: 31.3.2020, 00:00 Uhr
+Baden-Württemberg	12.334	+1.391	111	165	
+Bayern	14.810	+821	113	162	
+Berlin	2.575	+111	69	13	
+Brandenburg	798	+37	32	2	
+Bremen	294	+8	43	4	
+Hamburg	2.191	+138	119	9	
+Hessen	3.283	+192	52	17	
+Mecklenburg-Vorpommern	366	+10	23	1	
+Niedersachsen	4.063	+331	51	34	
+Nordrhein-Westfalen	13.225	+1.047	74	117
+Rheinland-Pfalz	2.726	+142	67	19	
+Saarland	782	+76	79	7	
+Sachsen	1.882	+87	46	12	
+Sachsen-Anhalt	680	+88	31	6	
+Schleswig-Holstein	1.120	+71	39	9	
+Thüringen	784	+65	37	6	
+Gesamt	61.913	+4.615	74	583
+
+Stand: 1.4.2020, 00:00 Uhr
+Baden-Württemberg	13.410	+1.076	121	197
+Bayern	16.497	+1.687	126	225
+Berlin	2.754	+179	73	16
+Brandenburg	881	+83	35	4
+Bremen	311	+17	46	5
+Hamburg	2.311	+120	126	14
+Hessen	3.445	+162	55	21
+Mecklenburg-
+Vorpommern	406	+40	25	3
+Niedersachsen	4.382	+319	55	42
+Nordrhein-Westfalen	14.351	+1.126	80	134
+Rheinland-Pfalz	2.899	+173	71	23
+Saarland	829	+47	84	8
+Sachsen	2.034	+152	50	17
+Sachsen-Anhalt	750	+70	34	7
+Schleswig-Holstein	1.246	+126	43	10
+Thüringen	860	+76	40	6
+Gesamt	67.366	+5.453	81	732
+
+Stand: 2.4.2020, 00:00 Uhr
+Baden-Württemberg	14.662	+1.252	132	241
+Bayern	18.496	+1.999	141	268
+Berlin	2.970	+216	79	19
+Brandenburg	995	+114	40	7
+Bremen	327	+16	48	6
+Hamburg	2.406	+95	131	14
+Hessen	3.707	+262	59	27
+Mecklenburg-
+Vorpommern	438	+32	27	3
+Niedersachsen	4.695	+313	59	45
+Nordrhein-Westfalen	15.427	+1.076	86	161
+Rheinland-Pfalz	3.132	+233	77	26
+Saarland	1.020	+191	103	11
+Sachsen	2.183	+149	54	18
+Sachsen-Anhalt	804	+54	36	8
+Schleswig-Holstein	1.335	+89	46	11
+Thüringen	925	+65	43	7
+Gesamt	73.522	+6.156	88	872
+
+Stand: 3.4.2020, 00:00 Uhr
+Baden-Württemberg	16.059	+1.397	145	285
+Bayern	20.237	+1.741	155	307
+Berlin	3.202	+232	85	20
+Brandenburg	1.075	+80	43	9
+Bremen	341	+14	50	6
+Hamburg	2.596	+190	141	16
+Hessen	3.993	+286	64	33
+Mecklenburg-
+Vorpommern	468	+30	29	4
+Niedersachsen	5.081	+386	64	65
+Nordrhein-Westfalen	16.606	+1.179	93	178
+Rheinland-Pfalz	3.362	+230	82	26
+Saarland	1.079	+59	109	12
+Sachsen	2.336	+153	57	21
+Sachsen-Anhalt	836	+32	38	11
+Schleswig-Holstein	1.443	+108	50	15
+Thüringen	982	+57	46	9
+Gesamt	79.696	+6.174	96	1017
