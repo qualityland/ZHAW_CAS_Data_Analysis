@@ -13,22 +13,43 @@
 hefezellen <- read.table("./Module_A2/data/Hefezellen.dat")
 hefe <- hefezellen$V1
 
-# data set also available in package HistData
-library(HistData)
-YeastD.mat
+# Datensatz ist auch im Package HistData enthalten:
+#library(HistData)
+#YeastD.mat
 
-# explore data set
+# Anzahl Hefezellen pro Quadrat
+# Wertebereich: 1 - 12
+# mean:         4.68
 summary(hefe)
+
+# Wertetabelle
+# Wert und abs. Häufigkeit
 table(hefe)
 
-  # bar chart
+# Anzahl ausgezählter Quadrate
+length(hefe)
+
+# Summe gezählter Hefezellen
+sum(hefe)
+
+# Absolute Häufigket HZ pro Quadrat
 barplot(table(hefe))
 
-# 
-tab <- table(hefe)
-names(tab)
-plot(as.integer(names(tab)), as.integer(tab), type = "h")   # h: high density lines
-lines(as.integer(names(tab)), as.integer(tab), type = "b", col = "red") # add line
+# Rel. Häufigket HZ pro Quadrat
+barplot(table(hefe) / length(hefe))
+
+# Kontingenz- / Häufigkeitstabelle
+crosstab <- table(hefe)
+
+# Hefezellen (HZ) / Quadrat
+k <- as.integer(names(crosstab))
+
+# Häufigkeit des HZ-Werts
+hk <- as.integer(crosstab)
+
+# type = "h": high density lines
+plot(k, hk, type = "h", xlab = "k (Hefezellen / Quadrat", ylab = "hk (Häufigkeit von k)")
+lines(k, hk, type = "b", col = "red") # add line
 
 # tab <- table(hefe)
 tab

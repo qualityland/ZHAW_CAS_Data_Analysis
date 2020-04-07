@@ -2,10 +2,10 @@
 ## CAS Datenanalyse:
 ## Modul 'Statistische Grundlagen der Datenanalyse' A2
 ##
-## LÃ¶sung HT 5
+## Lösung HT 5
 ## ***************************************************
 ##
-## mit ErgÃ¤nzungen bei Aufgabe 1
+## mit Ergänzungen bei Aufgabe 1
 
 ## Aufgabe 1
 ## *********
@@ -13,31 +13,31 @@
 ## Daten vom CAS Datenanalyse 14.3
 EM <- c(6.4,  6.3, 6.2, 6.4, 6.4,  6.3, 6.5, 6.4, 6.2, 6.25,
         6.35, 6.3, 6.2, 7.1, 6.15, 6.2, 6.3, 6.0, 6.0, 7.0)
-## Abstand zwischen zwei Knoten hÃ¤tte  2 cm entsprechen sollen, aber ....
+## Abstand zwischen zwei Knoten hätte  2 cm entsprechen sollen, aber ....
 ##
 ## Daten vom CAS Datenanalyse 19.9 siehe Ende dieser Aufgabe.
 
 
 ## (b) alles in Knoten
 boxplot(EM, las=1, col="blue", horizontal=TRUE,
-        xlab="LÃ¤nge in 'Knoten'",  ylab="")
+        xlab="Länge in 'Knoten'",  ylab="")
 ## Es hat zwei Ausreisser rechts.
 ## Nach kurzer Diskussion war klar, dass zwei Personen den Startknoten
-## mitgezÃ¤hlt haben, die anderen nicht.
-## Die Beschreibung war diesbezÃ¼glich nicht klar.
+## mitgezählt haben, die anderen nicht.
+## Die Beschreibung war diesbezüglich nicht klar.
 
 stripchart(EM, method="stack", pch=4)
 
 hist(EM, col="blue", las=1)
 
 scatter.smooth(EM, type="b", col="blue")
-## Die Messungen zeigen Ã¼ber die Zeit einen Trend abwÃ¤rts.
-## Das Messsystem war nicht stabil. Durch das hÃ¤ufige strecken
+## Die Messungen zeigen über die Zeit einen Trend abwärts.
+## Das Messsystem war nicht stabil. Durch das häufige strecken
 ## der Schnur haben sich die Knoten verzogen. So war am Schluss
 ## die Distanz vom ersten bis zum 8 Knoten 15 cm anstatt der
 ## vorgesehenen 14 cm
 ## Im CAS DA 15.4 wurde nach den ersten Messungen festgestellt, dass
-## es nicht klar ist, was gemessen werden soll. Das HolzstÃ¤bchen ist
+## es nicht klar ist, was gemessen werden soll. Das Holzstäbchen ist
 ## krumm! Soll die Innen- oder die Aussenseite gemessen werden? Man
 ## hat sich auf die Aussenseite geeinigt und es wurde mit den
 ## Messungen weitergefahren!
@@ -60,10 +60,10 @@ sd(EM[-c(14,20)]*2)  ## 0.2703786
 
 ## mit Massstab = 12.8 cm
 ## (auch hier nicht klar, wie man genau Messen muss!
-##  Werte zwischen 12.7 und 13.0 sind "mÃ¶glich")
+##  Werte zwischen 12.7 und 13.0 sind "möglich")
 
-## Durch Wiederholen der Messungen kÃ¶nnen wird die Genauigkeit der Messung
-## erhÃ¶hen.
+## Durch Wiederholen der Messungen können wird die Genauigkeit der Messung
+## erhöhen.
 
 ## Messen ist ja heutzutage so einfach, trotzdem immer wieder mal eine
 ## grosse Herausforderung
@@ -75,19 +75,19 @@ EM9 <- c(5,5,6.3,5.9,6.3,6.2,7.5,6.1,6.5,6.15,6.2,6.1,6.1,6.2,6,6.4,6.1,7.1,
 length(EM9)
 
 boxplot(EM9, las=1, col="blue", horizontal=TRUE,
-        xlab="LÃ¤nge in 'Knoten'",  ylab="")
+        xlab="Länge in 'Knoten'",  ylab="")
 hist(EM9, col="blue", las=1, nclass=12)
 ## Verteilung unimodal, rechtsschief (mit Ausreisser?)
 stripchart(EM9, method="stack", pch=4)
-## GemÃ¤ss eigenen Aussagen haben nicht wenige den Startknoten mitgezÃ¤hlt.
+## Gemäss eigenen Aussagen haben nicht wenige den Startknoten mitgezählt.
 scatter.smooth(EM9, type="b", col="blue")
-## einmal erster Knoten mitgezÃ¤hlt (Beob.9); ab Beobachtung 5 Trend nach unten,
+## einmal erster Knoten mitgezählt (Beob.9); ab Beobachtung 5 Trend nach unten,
 ## zuvor ansteigender Trend
 ##
 mean(EM9)     ## = 6.244643 Knoten
-## Bei drei Messungen wurde der erste Knoten mitgezÃ¤hlt, bei den ersten beiden
+## Bei drei Messungen wurde der erste Knoten mitgezählt, bei den ersten beiden
 ## Messungen wurde der "Nullpunkt" am Anfanf der Schnur gelegt.
-## Folglich waren die Anweisungen, wie gemessen werden soll ungenÃ¼gend.
+## Folglich waren die Anweisungen, wie gemessen werden soll ungenügend.
 
 
 ## ----------------------------------------------------------------------------
@@ -136,7 +136,7 @@ pnorm(14.8, mean=12.9, sd=2) - pnorm(11, mean=12.9, sd=2) # = 0.6578877
 
 
 ## (b)
-## Gesucht ist P(0.3 - 0.005 <= X <= 0.3 + 0.005) fÃ¼r X~ N(0.302, sigma=0.003),
+## Gesucht ist P(0.3 - 0.005 <= X <= 0.3 + 0.005) für X~ N(0.302, sigma=0.003),
 ## also:
 pnorm(0.305, mean=0.302, sd=0.003) - pnorm(0.295, mean=0.302, sd=0.003)
 ## = 0.8315294 (d.h. ca 83%)
@@ -144,7 +144,7 @@ pnorm(0.305, mean=0.302, sd=0.003) - pnorm(0.295, mean=0.302, sd=0.003)
 ## (c)
 ## Hier ist ein mu gesucht, so dass
 ## P(X <= 400) = 0.02, wenn  X ~ N(mu, sigma=4)
-## Betrachten die standardisierte ZV Z:= (X-mu)/sigma, dann gilt fÃ¼r Z:
+## Betrachten die standardisierte ZV Z:= (X-mu)/sigma, dann gilt für Z:
 ## P(Z <= (400-mu)/4) = 0.02
 ## also ist (400-mu)/4 das 0.02-Quantil der Standardnormalverteilung
 (h <- qnorm(0.02,0,1)) ## = -2.053749
@@ -156,8 +156,8 @@ pnorm(400, mean=h1, sd=4)  ## = 0.02
 
 ## (c-ii) sigma=2.5
 (h2 <- 400 - 2.5*h) ## = 405.1344
-## Eine Verringerung der Standardabweichung um 1.5g fÃ¼hrt also zu einer
-## Verringerung der nÃ¶tigen durchschnittlichen FÃ¼llmenge um etwas mehr als 3g!
+## Eine Verringerung der Standardabweichung um 1.5g führt also zu einer
+## Verringerung der nötigen durchschnittlichen Füllmenge um etwas mehr als 3g!
 
 
 ## ----------------------------------------------------------------------------
@@ -170,7 +170,7 @@ pnorm(400, mean=h1, sd=4)  ## = 0.02
 
 ## Mittelwert aus 500 t_1-verteilten (d.h. Cauchy verteilten) Zufallszahlen
 ## (ein Beispiel, wo der Zentrale Grenzwertsatz nicht gilt)
-n <- 500             ## LÃ¤nge des Vektors aus dem der Mittelwert berechnet wird
+n <- 500             ## Länge des Vektors aus dem der Mittelwert berechnet wird
 z <- rep(NA, 10000)  ## Vektor, worin die berechneten Mittelwerte abgelegt
                      ## werden bei 10'000 Simulationswiederholungen
 
@@ -181,7 +181,7 @@ for(k in 1:length(z)){
 }
 hist(z, nclass=100)
 ## Ganz wenige extreme Mittelwerte, die aber im Histogramm nicht sichtbar sind,
-## ausser dass der Wertebereich auf der x-Achse viel, viel grÃ¶sser ist als fÃ¼r
+## ausser dass der Wertebereich auf der x-Achse viel, viel grösser ist als für
 ## die Balken notwenig scheint.
 
 
@@ -222,14 +222,14 @@ qqnormSim(log(lohn), rob=TRUE); mtext(text="log(lohn)",side=3, line=0.5)
 qqnormSim(waerme, rob=TRUE); mtext(text="waerme",side=3, line=0.5)
 qqnormSim(log(waerme), rob=TRUE); mtext(text="log(waerme)",side=3, line=0.5)
 
-## Bei brust kÃ¶nnen sowohl die Orginal- wie auch die logarithmierten Daten
-## durch eine Normalverteilung beschrieben werden, da in beiden FÃ¤llen die
+## Bei brust können sowohl die Orginal- wie auch die logarithmierten Daten
+## durch eine Normalverteilung beschrieben werden, da in beiden Fällen die
 ## Daten im normal QQ-Plot innerhalb der stochastischen Fluktuation (grauer
 ## Bereich) liegen.
 ## lohn ist klar eine rechtsschiefe Verteilung. Der logarithmierte lohn kann
 ## jedoch durch eine Normalverteilung beschrieben werden, da die entsprechenden
 ## Daten im normal QQ-Plot innerhalb der stochastischen Fluktuation liegen.
-## Die gleiche Feststellung gilt fÃ¼r die waerme-Daten.
+## Die gleiche Feststellung gilt für die waerme-Daten.
 
 ## Weshalb gibt es keine klare Antwort bei den brust-Daten? -
 ## Da max/min < 1.5 ist, ist der Wertebereich zu klein, um zwischen normal- und

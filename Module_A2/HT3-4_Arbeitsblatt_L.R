@@ -2,7 +2,7 @@
 ## CAS Datenanalyse:
 ## Modul 'Statistische Grundlagen der Datenanalyse'
 ##
-## LÃ¶sung HT 3 und 4
+## Lösung HT 3 und 4
 ## *****************
 
 
@@ -27,13 +27,13 @@ dbinom(3,size=15, prob=0.5) # = 0.0138855
 
 
 ## (d)
-## Wie die oben ausgefÃ¼hrte Rechnung zeigt, sind diese beiden
+## Wie die oben ausgeführte Rechnung zeigt, sind diese beiden
 ## Wahrscheinlichkeiten ungleich, obwohl jedes Mal ein "Erfolg
 ## von 20%" erreicht wurde.
 ## Die Aussage, "Erfolg von 20%" bezieht sich hier auf unterschiedliche
 ## Situationen, die so nicht vergleichbar sind: Bei m=15 gibt es viel
-## weniger MÃ¶glichkeiten, drei Erfolge zu haben, als bei m=5 im Vergleich
-## zu allen MÃ¶glichkeiten.
+## weniger Möglichkeiten, drei Erfolge zu haben, als bei m=5 im Vergleich
+## zu allen Möglichkeiten.
 
 
 ## ----------------------------------------------------------------------------
@@ -45,7 +45,7 @@ par(mfrow=c(1,1))
 plot(0:85, dbinom(0:85,size=85,prob=0.86), type="h", lwd=6, col="blue", lend=1,
      xlab="k", ylab="Wahrscheinlichkeit", main="B(m=85, pi=0.86)",  las=1)
 
-## Wahrscheinlichkeiten fÃ¼r k=83, 84 und 85 berechnen:
+## Wahrscheinlichkeiten für k=83, 84 und 85 berechnen:
 dbinom(83:85,size=85,prob=0.86)
 
 ## Wahrscheinlichkeiten X <= 82 berechnen:
@@ -54,29 +54,29 @@ pbinom(82, size=85, prob=0.86) ## = 0.9997038
 ## mitgenommen,
 ## oder
 1- pbinom(82, size=85, prob=0.86) ## = 0.0002961861
-## d.h. nur in 0.03% der FÃ¤lle erscheinen mehr Passagiere als PlÃ¤tze
+## d.h. nur in 0.03% der Fälle erscheinen mehr Passagiere als Plätze
 ## vorhanden sind.
 
-## FÃ¼r die Praxis:
-## Dass die Passagiere unabhÃ¤ngig voneinander erscheinen, ist eher eine
-## unrealistische Annahme (Familien, Anschlussflug nicht gewÃ¤hrt). Deshalb
-## kÃ¶nnte unser Resultat auch vÃ¶llig weltfremd sein. Man muss sie deshalb
-## empirisch Ã¼berprÃ¼fen
+## Für die Praxis:
+## Dass die Passagiere unabhängig voneinander erscheinen, ist eher eine
+## unrealistische Annahme (Familien, Anschlussflug nicht gewährt). Deshalb
+## könnte unser Resultat auch völlig weltfremd sein. Man muss sie deshalb
+## empirisch überprüfen
 
 
 ## ----------------------------------------------------------------------------
 
 ## Aufgabe 3
 ## *********
-## Sei X die Anzahl erfolgreich abgeschlossener Service-VertrÃ¤ge und
-## m die Anzahl verkaufter WÃ¤rmepumpen
+## Sei X die Anzahl erfolgreich abgeschlossener Service-Verträge und
+## m die Anzahl verkaufter Wärmepumpen
 
 ## (a)
-## Jeder Abschluss eines Service-Vertrags ist unabhÃ¤ngig und wird mit
+## Jeder Abschluss eines Service-Vertrags ist unabhängig und wird mit
 ## Wahrscheinlichkeit pi abgeschlossen. Somit ist X ~ B(m, pi)
 
 ## (b)
-## Die Erfolgswahrscheinlichkeit wird durch pi=X/m geschÃ¤tzt; also hier durch
+## Die Erfolgswahrscheinlichkeit wird durch pi=X/m geschätzt; also hier durch
 15/50 ## =0.3
 
 ## (c)
@@ -136,7 +136,7 @@ binom.test(x=35, n=35+37, p=0.5)
 ##              0.4861111
 
 ## Da der P-Wert von 0.9063 im Annahmebereich [0.05,1] liegt, gibt es keine
-## Evidenz gegen die Nullhypothese "die mittlere Anzahl TodesfÃ¤lle ist unverÃ¤ndert".
+## Evidenz gegen die Nullhypothese "die mittlere Anzahl Todesfälle ist unverändert".
 
 
 ## X2|(X1+X2=72) ~ B(0.5,72)
@@ -144,7 +144,7 @@ binom.test(x=35, n=35+37, p=0.5)
 ## - mit Faustregel B1' (Folie 7):
 72/2 + c(-1,1)*sqrt(72) # = 27.51472 44.48528 --> [28, 44]
 ## Da der Wert 35 im Annahmebereich (=95%-Streubereich) liegt, gibt es keine
-## Evidenz gegen die Nullhypothese "die mittlere Anzahl TodesfÃ¤lle ist unverÃ¤ndert".
+## Evidenz gegen die Nullhypothese "die mittlere Anzahl Todesfälle ist unverändert".
 
 
 
@@ -160,7 +160,7 @@ binom.test(x=35, n=35+37, p=0.5)
 ## coinD <- c(3,5,8,5,4,6,4,4,4,4,4,4,5,6,6,5,4,3,6,5,3,5,4,5,8,5,4)
 ## CAS Datenanalyse 17.6:
 ## coinD <- c(8,6,5,6,5,7,4,3,4,4,4,3,5,4,5,7,6,8,6,4,7,6,4,8)
-## CAS Datenanalyse 19.9 (mit WÃ¼rfel: # <= 3):
+## CAS Datenanalyse 19.9 (mit Würfel: # <= 3):
 coinD <- rep(0:10, c(0,1,1,4,7,5,5,4,0,0,0))
 
 
@@ -168,16 +168,16 @@ length(coinD)  ## = 27
 
 table(coinD)
 
-## Damit alle mÃ¶glichen Werte ausgezÃ¤hlt werden:
+## Damit alle möglichen Werte ausgezählt werden:
 (h <- table(factor(coinD, levels=paste(0:10))))
  ## 0  1  2  3  4  5  6  7  8  9 10
  ## 0  1  1  4  7  5  5  4  0  0  0
 
 (coin <- as.data.frame(h))
-names(coin)[1] <- "k"   ## Name der ersten Spalte Ã¤ndern auf "k"
-coin$k <- as.integer(as.character(coin$k)) ## Variablentyp auf Integer Ã¤ndern
+names(coin)[1] <- "k"   ## Name der ersten Spalte ändern auf "k"
+coin$k <- as.integer(as.character(coin$k)) ## Variablentyp auf Integer ändern
 
-## (b) Daten und Modell gegenÃ¼berstellen
+## (b) Daten und Modell gegenüberstellen
 coin$Modell <- dbinom(0:10, size=10, prob=0.5) * sum(coin$Freq)
 coin
 ## Resultat vom CAS Datenanalyse 19.9
@@ -194,18 +194,18 @@ coin
 ## 10  9    0 0.26367188
 ## 11 10    0 0.02636719
 
-## Die erwarteten KlassenhÃ¤ufigkeiten sind bei
+## Die erwarteten Klassenhäufigkeiten sind bei
 ## k=0,1,9 und 10  zu klein (Faustregel AT1).
 
-## (c) Anpassungstest durchfÃ¼hren mit chisq.bin()
+## (c) Anpassungstest durchführen mit chisq.bin()
 ## - File "CAS-DA_ModulA2-HT3-4_chisq-bin.R" von Moodle,
 ##   Unterordner R-Skript herunterladen und in den Unterordner ablegen,
-##   wo Sie die Ãœbungen machen.
+##   wo Sie die Übungen machen.
 ## - File einlesen mit
 source("CAS-DA_ModulA2-HT3-4_chisq-bin.R")  ## --> chisq.bin
 ## - Diese Funktion ist meine Modifikation zu 'chisq-bin' von Raul Eyzaguirre
 
-## - Anpassungstest durchfÃ¼hren; schwach besetzte Zellen werden automatisch
+## - Anpassungstest durchführen; schwach besetzte Zellen werden automatisch
 ##   zusammengelegt:
 chisq.bin(x=0:10, f=coin$Freq, n=10, p=0.5, estimated=FALSE)
 ## $Test
@@ -236,9 +236,9 @@ chisq.bin(x=0:10, f=coin$Freq, n=10, p=0.5, estimated=FALSE)
 ## 2: In chisq.bin(x = 0:10, f = coin$Freq, n = 10, p = 0.5, estimated = FALSE) :
 ##   1 Expected frequency less than 1.
 
-## Da der P-Wert von 0.819 grÃ¶sser als 5% ist, haben wir keine Evidenz gegen
+## Da der P-Wert von 0.819 grösser als 5% ist, haben wir keine Evidenz gegen
 ## die Nullhypothese, dass diese Daten durch die Bin(pi=0.5, m=10)-Vertreilung
-## adÃ¤quat beschrieben werden kÃ¶nnen.
+## adäquat beschrieben werden können.
 
 
 
@@ -263,14 +263,14 @@ table(KS)
 
 
 
-## Damit alle mÃ¶glichen Werte ausgezÃ¤hlt werden:
+## Damit alle möglichen Werte ausgezählt werden:
 (h <- table(factor(KS, levels=paste(0:10))))
 (KS.ct <- as.data.frame(h))
-names(KS.ct)[1] <- "k"   ## Name der ersten Spalte Ã¤ndern auf "k"
+names(KS.ct)[1] <- "k"   ## Name der ersten Spalte ändern auf "k"
 
-## SchÃ¤tzung:
+## Schätzung:
 mean(KS)  ## = 4.24
-## geschÃ¤tzte Erfolgsw'keit (bei m=10):
+## geschätzte Erfolgsw'keit (bei m=10):
 (KS.pi <- mean(KS)/10) ## = 0.424
 
 KS.ct$Modell <- round(dbinom(0:10, size=10, prob=KS.pi)*length(KS),1)
@@ -289,7 +289,7 @@ KS.ct
 ## 11 10    0    0.0
 
 
-## Die erwarteten KlassenhÃ¤ufigkeiten sind bei
+## Die erwarteten Klassenhäufigkeiten sind bei
 ## k=0,1, .... 9 und 10  zu klein (Faustregel AT1).
 
 ## Mit R-Funktion 'chisq-bin' von Raul Eyzaguirre
@@ -326,21 +326,21 @@ chisq.bin(x=0:10, f=KS.ct$Freq, n=10, p=mean(KS)/10, estimated=TRUE)
 
 
 
-## Randklassen wurden zusammengefasst, da sie zu kleine erwartete HÃ¤ufigkeiten
+## Randklassen wurden zusammengefasst, da sie zu kleine erwartete Häufigkeiten
 ## hatten.
 
 ## Da der P-Wert von 0.0398 kleiner als 5% ist, haben wir Evidenz gegen
 ## die Nullhypothese, dass diese Daten durch die Bin(pi=0.5, m=10)-Vertreilung
-## adÃ¤quat beschrieben werden kÃ¶nnen.
+## adäquat beschrieben werden können.
 
 
 ## Freiwillig: Mit Faustregel Chi2 (Skript 2.6.e und 3.5.g):
 ## 6 Freiheitsgrade
 (6-1) + 2*sqrt(2*(6-1))  ## = 11.32456
-## Da 13.21078 > 11.3, haben wir gemÃ¤ss Faustregel auf dem 2.5% Niveau Evidenz
+## Da 13.21078 > 11.3, haben wir gemäss Faustregel auf dem 2.5% Niveau Evidenz
 ## gegen die Nullhypothese.
 ##
-## Wir kÃ¶nnen also NICHT davon ausgehen, dass das Binomial-Modell fÃ¼r unsere
+## Wir können also NICHT davon ausgehen, dass das Binomial-Modell für unsere
 ## Kieselstein-Daten plausibel ist.
 
 
@@ -354,23 +354,23 @@ chisq.bin(x=0:10, f=KS.ct$Freq, n=10, p=mean(KS)/10, estimated=TRUE)
 
 ## (b)
 ## P(S|K) = 0.99
-## P(KÂ°)  = 1 - P(K) = 0.9999; wobei KÂ° das Ereignis ist, dass
+## P(K°)  = 1 - P(K) = 0.9999; wobei K° das Ereignis ist, dass
 ##                             man die Krankheit nicht hat
 ## Die Wahrscheinlichkeit, dass der Test korrekt anzeigt bei einer
 ## nicht kranken Person ist 0.05.  Folglich ist die Wahrscheinlichkeit
 ## eines positiven Test bei einer nicht kranken Person 0.05, also
-## P(S|KÂ°)= 1 - 0.95 = 0.05
+## P(S|K°)= 1 - 0.95 = 0.05
 
 ## (c)
 ## Bayes: P(K|S) = {P(S|K)*(P(K)}/P(S)
-##               = {P(S|K)*(P(K)}/{P(S|K)P(K) + P(S|KÂ°)*P(KÂ°) }
+##               = {P(S|K)*(P(K)}/{P(S|K)P(K) + P(S|K°)*P(K°) }
 ##               = 0.99*0.0001/( 0.99*0.0001 + 0.05*0.9999)
 ##               = 0.001976
 ##
 ## Die Wahrscheinlichkeit, dass eine Person die Krankheit hat, wenn
-## der Test positive ausgefallen ist, betrÃ¤gt nur 0.002 (0.2%).
-## Das ist sehr Ã¼berraschend! Obwohl also ein Test sehr wirksam ist,
-## im Sinne dass P(S|k) gross und P(S|KÂ°) klein ist, heisst das noch
+## der Test positive ausgefallen ist, beträgt nur 0.002 (0.2%).
+## Das ist sehr überraschend! Obwohl also ein Test sehr wirksam ist,
+## im Sinne dass P(S|k) gross und P(S|K°) klein ist, heisst das noch
 ## lange nicht, dass eine Person die Krankheit hat, wenn der Test
 ## positive ausgefallen ist.
 
@@ -391,7 +391,7 @@ kt
 ## grafisch Darstellen:
 mosaicplot(kt)
 
-## Test auf HomogenitÃ¤t:
+## Test auf Homogenität:
 chisq.test(kt)
 ## 	Pearson's Chi-squared test
 ##
@@ -409,9 +409,9 @@ chisq.test(kt)
 
 ## Freiwillig:
 ## Mit Faustregel (geht nur auf dem 2.5% Niveau):
-## Da die Teststatistik mit 70.64 grÃ¶sser als 8 + 2*sqrt(2*8) = 16 ist,
+## Da die Teststatistik mit 70.64 grösser als 8 + 2*sqrt(2*8) = 16 ist,
 ## wird die Nullhypothese, dass die Geruchswahrnehmung und die Region
-## unabhÃ¤ngig ist (oder dass die Verteilung der Geruchswahrnehmung in
+## unabhängig ist (oder dass die Verteilung der Geruchswahrnehmung in
 ## den drei Regionen die gleiche ist), auf dem 2.5% Niveau verworfen.
 ## Damit bestehen Unterschiede.
 
@@ -422,22 +422,22 @@ chisq.test(kt)
 ## *********
 
 ## (a)
-## Die relativen HÃ¤ufigkeiten der Zugelassenen sind bei den Frauen sowohl im
-## Departement A als auch im Departement F hÃ¶her:
-## Dep. A: 511/825=62% der MÃ¤nner werden zugelassen gegenÃ¼ber 89/108=82% der
+## Die relativen Häufigkeiten der Zugelassenen sind bei den Frauen sowohl im
+## Departement A als auch im Departement F höher:
+## Dep. A: 511/825=62% der Männer werden zugelassen gegenüber 89/108=82% der
 ##         Frauen
-## Dep. B: 22/373=5.9% der MÃ¤nner werden zugelassen gegenÃ¼ber 24/341=7% der
+## Dep. B: 22/373=5.9% der Männer werden zugelassen gegenüber 24/341=7% der
 ##         Frauen
 
-## ZÃ¤hlt man aber die Departemente A und F zusammen, so ergeben sich bei den
-## MÃ¤nnern plÃ¶tzlich 45% Zugelassene gegenÃ¼ber nur 25% der Frauen. Dies liegt
+## Zählt man aber die Departemente A und F zusammen, so ergeben sich bei den
+## Männern plötzlich 45% Zugelassene gegenüber nur 25% der Frauen. Dies liegt
 ## daran, dass sich beim Departement A, wo relativ viele Bewerber zugelassen
-## werden, nur wenige Frauen bewerben. FÃ¼r die schwer zu bestehende
-## ZulassungsprÃ¼fung fÃ¼r Departement F melden sich dagegen ungefÃ¤hr gleich
-## viele Frauen wie MÃ¤nner, mehr als dreimal mehr als in Departement A. Also
-## macht bei den Frauen Departement F einen viel grÃ¶sseren Anteil aus und
-## damit hat auch die hohe Durchfallquote einen viel grÃ¶sseren Einfluss auf
-## die Gesamtquote. Man nennt dieses PhÃ¤nomen das Simpson'sche Paradox.
+## werden, nur wenige Frauen bewerben. Für die schwer zu bestehende
+## Zulassungsprüfung für Departement F melden sich dagegen ungefähr gleich
+## viele Frauen wie Männer, mehr als dreimal mehr als in Departement A. Also
+## macht bei den Frauen Departement F einen viel grösseren Anteil aus und
+## damit hat auch die hohe Durchfallquote einen viel grösseren Einfluss auf
+## die Gesamtquote. Man nennt dieses Phänomen das Simpson'sche Paradox.
 
 ## (b)
 ##   \ Gesamtbewerbende Dep A & F  | davon zugelassen
@@ -454,7 +454,7 @@ chisq.test(kt)
 ## (c)
 ## P(Z|F) = P(F und Z)/P(F) = 0.069/0.273 = 0.253
 ## P(Z|M) = P(M und Z)/P(M) = 0.324/0.727 = 0.446
-## Diese Zahlen entsprechen den in (a) beobachteten HÃ¤ufigkeiten.
+## Diese Zahlen entsprechen den in (a) beobachteten Häufigkeiten.
 
 ## (d)
 ## Departement A                       Departement F
@@ -478,13 +478,13 @@ kt[,,1] <- kt1
 kt[,,2] <- kt2
 kt
 
-mosaicplot(kt[,,1], color=TRUE, main="MÃ¤nner")
+mosaicplot(kt[,,1], color=TRUE, main="Männer")
 mosaicplot(kt[,,2], color=TRUE, "Frauen")
 mosaicplot(kt, color=TRUE, main="alle")
-## Ganz "Ã¼berraschend" stellt man fest, dass, obwohl sich die Zulassungsraten
-## in den einzelnen Departementen stark unterscheiden, die Zulassungsraten fÃ¼r
-## MÃ¤nner und Frauen in den einzelnen Departementen jedoch ungefÃ¤hr gleich ist.
-## Auch sieht man, dass sich in den einzelnen Departementen das VerhÃ¤ltnis Mann
+## Ganz "überraschend" stellt man fest, dass, obwohl sich die Zulassungsraten
+## in den einzelnen Departementen stark unterscheiden, die Zulassungsraten für
+## Männer und Frauen in den einzelnen Departementen jedoch ungefähr gleich ist.
+## Auch sieht man, dass sich in den einzelnen Departementen das Verhältnis Mann
 ## zu Frau bei den Bewerbenden stark schwankt.
 
 
@@ -492,15 +492,15 @@ mosaicplot(kt, color=TRUE, main="alle")
 
 ## Aufgabe 10 (Freiwillig)
 ## **********
-## Die Zufallsvariable X reprÃ¤sentiere die Anzahl Ã¼berlebende Fische nach
+## Die Zufallsvariable X repräsentiere die Anzahl überlebende Fische nach
 ## 24 Stunden. Dann ist X ~ B(m=4, pi=0.75)
 
 ## (a)
-## P(alle Ã¼berleben) = P(X=4) = 0.75^4 = 0.3164062 oder
+## P(alle überleben) = P(X=4) = 0.75^4 = 0.3164062 oder
 dbinom(4, size=4, prob=0.75)  ## = 0.3164063
 
 ## (b)
-## P(hÃ¶chsten 2 Ã¼berleben) = P(X <= 2)=
+## P(höchsten 2 überleben) = P(X <= 2)=
 sum(dbinom(0:2, size=4, prob=0.75)) ## = 0.2617188  oder
 pbinom(2, size=4, prob=0.75) ## = 0.2617188
 
@@ -511,15 +511,15 @@ pbinom(2, size=4, prob=0.75) ## = 0.2617188
 4*0.75*(1-0.75)  # = 0.75
 
 ## (c)
-## Sei Xm die Anzahl Ã¼berlebender Fische, falls es im Wassertank m Fische gibt.
-## WÃ¤hle das kleinste m, sodass P(Xm = m) <= 0.05.
+## Sei Xm die Anzahl überlebender Fische, falls es im Wassertank m Fische gibt.
+## Wähle das kleinste m, sodass P(Xm = m) <= 0.05.
 ## Ausprobieren:
 dbinom(5, size=5, prob=0.75)  ## = 0.2373047
 dbinom(6, size=6, prob=0.75)  ## = 0.1779785
 dbinom(7, size=7, prob=0.75)  ## = 0.1334839
 dbinom(8, size=8, prob=0.75)  ## = 0.1001129
 dbinom(9, size=9, prob=0.75)  ## = 0.07508469
-## ... etwas mÃ¼hsam
+## ... etwas mühsam
 ## besser
 cbind(9:15, dbinom(9:15, size=9:15, prob=0.75))
 ## [1,]    9 0.07508469
@@ -530,11 +530,11 @@ cbind(9:15, dbinom(9:15, size=9:15, prob=0.75))
 ## [6,]   14 0.01781795
 ## [7,]   15 0.01336346
 
-## LÃ¶sung: brauchen mindestens 11 Fische
+## Lösung: brauchen mindestens 11 Fische
 
-## Eleganterer LÃ¶sungsweg:
+## Eleganterer Lösungsweg:
 ## Da P(Xm = m)=0.75^m ist,
-## mÃ¼ssen wir nur die Gleichung 0.75^m <= 0.05 nach m auflÃ¶sen.
+## müssen wir nur die Gleichung 0.75^m <= 0.05 nach m auflösen.
 ## Auf beiden Seiten logarithmieren: m*log(0.75) = log(0.05)
 ## also m= log(0.05)/log(0.75)
 log(0.05)/log(0.75) # = 10.41334
@@ -546,7 +546,7 @@ log(0.05)/log(0.75) # = 10.41334
 ## Aufgabe 11 (Freiwillig)
 ## **********
 ## (a)
-## Jede einzelne Probe ist unabhÃ¤ngig von den anderen Proben und mit
+## Jede einzelne Probe ist unabhängig von den anderen Proben und mit
 ## 98% Wahrscheinlichkeit sauber. Also gilt
 ## P(alle Proben sauber)
 ##          = P(1. Probe sauber)*P(2. Probe sauber)* ... *P(10. Probe sauber)
@@ -559,7 +559,7 @@ log(0.05)/log(0.75) # = 10.41334
 ## denn
 ## - falls die Proben sauber sind, ist man nach einer Untersuchung fertig: X=1
 ## - sonst muss man jede Probe nochmals einzeln untersuchen (man darf nicht
-##   stoppen, wenn man eine verunreinigte Probe gefunden hat, denn es kÃ¶nnte
+##   stoppen, wenn man eine verunreinigte Probe gefunden hat, denn es könnte
 ##   ja noch eine zweite unsaubere Probe geben!), also X=11
 
 ## P(X=1) = P(alle Proben sind sauber) = 0.8171 (siehe (a))
