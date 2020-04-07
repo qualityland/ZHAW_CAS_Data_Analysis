@@ -2,7 +2,7 @@
 ## CAS Datenanalyse:
 ## Modul 'Statistische Grundlagen der Datenanalyse'
 ##
-## Lösung HT1
+## LÃ¶sung HT1
 ## ************************************************
 
 ## Aufgabe 1 (i)
@@ -11,7 +11,7 @@ alpha <- read.table("CAS-DA_ModulA2-HT1_Daten/alpha.dat", header=TRUE)
 str(alpha)
 
 plot(alpha$k, alpha$freq, type="h", lwd=6, col="blue", lend=2, xlab="k",
-     ylab="Häufigkeit", las=1)
+     ylab="HÃ¤ufigkeit", las=1)
 
 
 ## (b)
@@ -22,7 +22,7 @@ mu   ##  = 3.877871
 mu <- mean(rep(alpha$k, alpha$freq))
 
 ## (c)
-## Wahrscheinlichkeiten mit geschätztem lambda berechnen:
+## Wahrscheinlichkeiten mit geschÃ¤tztem lambda berechnen:
 yModell <- dpois(alpha$k, lambda=mu) * n
 ## In Grafik einzeichnen:
 lines(alpha$k, yModell, type="b", lwd=2, col="red")
@@ -33,7 +33,7 @@ lines(alpha$k, yModell, type="b", lwd=2, col="red")
 ## (a)
 vk <- read.table("CAS-DA_ModulA2-HT1_Daten/verkehr.dat", header=TRUE)
 plot(vk$k, vk$freq, type="h", lwd=6, col="blue", lend=2, xlab="k",
-            ylab="Häufigkeit", las=1)
+            ylab="HÃ¤ufigkeit", las=1)
 
 ## (b)
 n <- sum(vk$freq)
@@ -54,7 +54,7 @@ lines(vk$k, yModell, type="b", lwd=2, col="red")
 
 ## (a)
 plot(c(1,6), c(0,0.2), type="n", xlab="k", ylab="Wahrscheinlichkeit",
-     las=1, main="Würfel")
+     las=1, main="WÃ¼rfel")
 lines(1:6, rep(1/6,6), type="h", lwd=6, col="blue", lend=2)
 axis(side=2, at=1/6, labels="1/6", cex=0.8, las=1)
 abline(h=0, col="gray", lwd=2)
@@ -124,14 +124,14 @@ mean(A2)   ## = 24.64
 ## (c)
 par(mfrow=c(1,2)) ## Zwei Grafiken nebeneinander
 A1T <- table(A1)
-plot(A1T, lwd=6, col="blue", lend=2, xlab="k", ylab="Häufigkeit", las=1)
+plot(A1T, lwd=6, col="blue", lend=2, xlab="k", ylab="HÃ¤ufigkeit", las=1)
 xq1 <- mean(A1)
 k1 <- min(A1):max(A1) ## an diesen Werten von k sollen die
                       ## Wahrscheinlichkeiten berechnet werden
 yModell1 <- dpois(k1, lambda=xq1) * sum(A1T)
 lines(k1, yModell1, type="b", lwd=2, col="red")##
 A2T <- table(A2)
-plot(A2T, lwd=6, col="blue", lend=2, xlab="k", ylab="Häufigkeit", las=1)
+plot(A2T, lwd=6, col="blue", lend=2, xlab="k", ylab="HÃ¤ufigkeit", las=1)
 xq2 <- mean(A2)
 k2 <- min(A2):max(A2) ## an diesen Werten von k sollen die
                       ## Wahrscheinlichkeiten berechnet werden
@@ -139,13 +139,13 @@ yModell2 <- dpois(k2, lambda=xq2) * sum(A2T)
 lines(k2, yModell2, type="b", lwd=2, col="red")
 
 ## In der ersten Grafik zeigt sich, dass die einzelnen Balken nur die Werte
-## 0, 1, 2 und 3 annehmen. Gemäss dem angepassten Poisson-Modell erwarten
-## wir in den einzelnen Balken auch nicht höhere Werte. Wir haben also viel
+## 0, 1, 2 und 3 annehmen. GemÃ¤ss dem angepassten Poisson-Modell erwarten
+## wir in den einzelnen Balken auch nicht hÃ¶here Werte. Wir haben also viel
 ## zu wenig Beobachtungen, um zu beurteilen, ob das Poisson-Modell die Daten
 ## gut beschreibt.
-## Bei der zweiten Grafik ist die Übereinstimmung schon besser beurteilbar.
+## Bei der zweiten Grafik ist die Ãœbereinstimmung schon besser beurteilbar.
 ## Aber eigentlich hat es da immer noch zu wenig Beobachtungen. Die
-## Erwarteten Häufigkeiten in den Balken (=die roten Modellpunkte) sind
+## Erwarteten HÃ¤ufigkeiten in den Balken (=die roten Modellpunkte) sind
 ## immer noch tief.
 
 
@@ -154,9 +154,9 @@ lines(k2, yModell2, type="b", lwd=2, col="red")
 ## *********
 
 ## (a)
-## Die Zufallsvariable ist die Anzahl tödlicher Segelunfälle pro Jahr
-## Da es sich hier um Zähldaten handelt, die sich auf eine Zeiteinheit
-## beziehen, und da man annehmen kann, dass die Ereignisse unabhängig
+## Die Zufallsvariable ist die Anzahl tÃ¶dlicher SegelunfÃ¤lle pro Jahr
+## Da es sich hier um ZÃ¤hldaten handelt, die sich auf eine Zeiteinheit
+## beziehen, und da man annehmen kann, dass die Ereignisse unabhÃ¤ngig
 ## voneinander und mit konstanter Rate eintreten, bietet sich zur
 ## Modellierung von X eine Poisson-Verteilung an:
 ## X ~ Pois(lambda) mit lambda = 4.21
@@ -188,7 +188,7 @@ cbind(k, "F(k)"=ppois(k, 4.21), "1-F(k-1)"=1-ppois(k-1, 4.21))
 ## plausibler Bereich: untere Grenze: 1;   obere Grenze: 9
 ## d.h. der plausible Bereich ist 1 bis 9
 
-## Gemäss beiden Bestimmungen ist ein Wert von 7 Unfällen auf dem
+## GemÃ¤ss beiden Bestimmungen ist ein Wert von 7 UnfÃ¤llen auf dem
 ## 5% Niveau durchaus plausible.
 
 

@@ -2,11 +2,11 @@
 ## CAS Datenanalyse:
 ## Modul 'Statistische Grundlagen der Datenanalyse'
 ##
-## Lösung HT 6
+## LÃ¶sung HT 6
 ## ************************************************
 ##
 
-## Aufgabe 1 (Kostenüberschreitung)
+## Aufgabe 1 (KostenÃ¼berschreitung)
 ## *********
 
 OE <- c(-16, -404, -397, 113, -791, -165, -118, 9, -651, 383, -480, -77, 221,
@@ -16,14 +16,14 @@ OE <- c(-16, -404, -397, 113, -791, -165, -118, 9, -651, 383, -480, -77, 221,
 ## (a)
 source("../CAS-DA_ModulA2_RFn-myqqnorm.R")  ## --> myqqnorm()
 par(mfrow=c(1,2), las=1)
-boxplot(OE, las=1, col="blue", xlab="Kostenüberschreitung [in kFr]",  ylab="")
+boxplot(OE, las=1, col="blue", xlab="KostenÃ¼berschreitung [in kFr]",  ylab="")
 myqqnorm(OE, SEED=4711); qqline(OE, lty=3)
-mtext(side=3, line=0.5, text="Kostenüberschreitung [in kFr]", col="black")
+mtext(side=3, line=0.5, text="KostenÃ¼berschreitung [in kFr]", col="black")
 ## Datenpunkte streuen recht gut um eine Gerade und liegen innerhalb der
 ## stochastischen Fluktuation. Es gibt also keine Evidenz gegen die Annahme
 ## der Normalverteilung.
-## Im Weiteren: Da aber die Abweichung auf Kurzschwänzigkeit hindeutet, wäre
-## die Abweichung ungefährlich für Schlussfolgerungen aus der schliessenden
+## Im Weiteren: Da aber die Abweichung auf KurzschwÃ¤nzigkeit hindeutet, wÃ¤re
+## die Abweichung ungefÃ¤hrlich fÃ¼r Schlussfolgerungen aus der schliessenden
 ## Statistik (= Inferenz).
 
 
@@ -35,7 +35,7 @@ par(mfrow=c(1,1))
 hist(OE, probability=TRUE)
 curve(dnorm(x, xq, sd=s), col="magenta", lwd=2, add=TRUE)
 ## In dieser Art von Grafik ist es schwierig festzustellen, ob das Modell
-## die Daten gut oder ungenügend beschreibt. Besser ist der Normalplot in (a).
+## die Daten gut oder ungenÃ¼gend beschreibt. Besser ist der Normalplot in (a).
 
 ## (c)
 t.test(OE, mu=0)
@@ -53,27 +53,27 @@ t.test(OE, alternative="less", mu=0)
 ## -136.5333
 
 ## Da der P-Wert von 0.007269 kleiner als das Niveau von 5% (d.h. 0.05) ist,
-## wird die Nullhypothese 'Die Kostenüberschreitung ist im Mittel 0'
+## wird die Nullhypothese 'Die KostenÃ¼berschreitung ist im Mittel 0'
 ## auf dem 5% Niveau verworfen und die Alternative gilt, dass die
-## Engineering-Abteilung ihre Kosten systematisch zu hoch einschätzt.
+## Engineering-Abteilung ihre Kosten systematisch zu hoch einschÃ¤tzt.
 
 
 ## (c-ii) Argumentation mit dem Vertrauensintervall:
-## Da die Nullhypothese "Differenz = 0" (d.h. die Kostenüberschreitung ist im
+## Da die Nullhypothese "Differenz = 0" (d.h. die KostenÃ¼berschreitung ist im
 ## Mittel 0) nicht im Vertrauensintervall  (-Inf, -47.28286]  liegt, wird die
 ## Nullhypothese auf dem 5% Niveau verworfen und die Alternative gilt, dass die
-## Engineering-Abteilung ihre Kosten systematisch zu hoch einschätzt.
+## Engineering-Abteilung ihre Kosten systematisch zu hoch einschÃ¤tzt.
 
 
 ## (c-iii) Von Hand - freiwillig:
 length(OE)  # = 30
 (xq - 0)/(s/sqrt(length(OE)))      ## = -2.599286
 ## Da der Teststatistikwert von 2.60 ausserhalb von +/-2 liegt,
-## kann die Nullhypothese 'Die Kostenüberschreitung ist im Mittel 0'
+## kann die Nullhypothese 'Die KostenÃ¼berschreitung ist im Mittel 0'
 ## auf dem 5% Niveau verworfen werden.
 ## Da die Alternative einen negativen Wert vorsieht, erwarten wir eine
-## allfällige Abweichung nur links. Das Risiko, dass die Teststatistik in
-## jenen Bereich fällt, ist aber nur 2.5%. Also hätten wir die Nullhypothese
+## allfÃ¤llige Abweichung nur links. Das Risiko, dass die Teststatistik in
+## jenen Bereich fÃ¤llt, ist aber nur 2.5%. Also hÃ¤tten wir die Nullhypothese
 ## auf dem 2.5% Niveau zugunsten der Alternative "Kosten werden zu hoch
 ## angesetzt" abgelehnt.
 
@@ -91,7 +91,7 @@ Kad <- c(0.95, 0.85, 0.92, 0.95, 0.93, 0.86, 1.00, 0.92, 0.85, 0.81,
 ## (a)
 myqqnorm(Kad); qqline(Kad)
 
-## Es hat etwas wenig Beobachtungen für einen normalplot, jedoch sind keine
+## Es hat etwas wenig Beobachtungen fÃ¼r einen normalplot, jedoch sind keine
 ## groben Abweichungen von der Geraden sichtbar. Auch liegen alle Punkte
 ## innerhalb der stochastischen Fluktuation. Wir haben also keine Evidenz
 ## gegen die Annahme, dass die Daten normalverteilt sind.
@@ -112,10 +112,10 @@ t.test(Kad, level=0.95)
 
 ## (c)
 ## Die Frage kann mit dem Konzept des statistischen Hypothesentests beantwortet
-## werden. Wir müssen jedoch dazu noch das Signifikanzniveau festlegen. Nehmen
+## werden. Wir mÃ¼ssen jedoch dazu noch das Signifikanzniveau festlegen. Nehmen
 ## wir an, es sei 5%.
 
-## Zur konkreten Antwort können wir zwei verschiedene Wege gehen:
+## Zur konkreten Antwort kÃ¶nnen wir zwei verschiedene Wege gehen:
 
 ## (c-i) Mit dem Hypothesentest selber:
 t.test(Kad, mu=1)
@@ -127,18 +127,18 @@ t.test(Kad, mu=1)
 ## ...
 
 ## Da der P-Wert von 0.00059 kleiner als 0.05 (d.h. 5%) ist, wird die
-## Nullhypothese, dass 1 ein geeigneter Wert für die erwartete Kadenz sei,
+## Nullhypothese, dass 1 ein geeigneter Wert fÃ¼r die erwartete Kadenz sei,
 ## auf dem 5% Signifikanzniveau abgelehnt.
 
 
 ## (c-ii) Mit dem Vertrauensintervall aus Teilaufgabe (b)
-##        (d.h. Ausnutzen der Dualität)
+##        (d.h. Ausnutzen der DualitÃ¤t)
 ## Da der hypothetisierte Wert von 1 nicht im 95%-Vertrauensintervall liegt,
-## wird die Nullhypothese, dass 1 ein geeigneter Wert für die erwartete Kadenz
+## wird die Nullhypothese, dass 1 ein geeigneter Wert fÃ¼r die erwartete Kadenz
 ## sei, auf dem 5% Signifikanzniveau abgelehnt.
 
-## Zugleich sehen wir auch, welche Werte plausible wären: [0.888, 0.963]
-## Also die Kadenz ist kleiner als 1 und könnte mit 0.9 (als runde Zahl)
+## Zugleich sehen wir auch, welche Werte plausible wÃ¤ren: [0.888, 0.963]
+## Also die Kadenz ist kleiner als 1 und kÃ¶nnte mit 0.9 (als runde Zahl)
 ## "zusammengefasst" werden.
 
 
@@ -147,52 +147,52 @@ t.test(Kad, mu=1)
 ## Aufgabe 3
 ## *********
 ## Beispiel 1
-## Gepaarte Stichprobe. Man testet hier H0: "Nach dem Rauchen höchstens so viele
-## Blutplättchen wie vorher" gegen H1: "Nach dem Rauchen mehr Blutplättchen als
+## Gepaarte Stichprobe. Man testet hier H0: "Nach dem Rauchen hÃ¶chstens so viele
+## BlutplÃ¤ttchen wie vorher" gegen H1: "Nach dem Rauchen mehr BlutplÃ¤ttchen als
 ## vorher" (einseitig). Ein ungepaarter Vergeleich ist prinzipiell denkbar, man
-## müsste eine Stichprobe Raucher nehmen, die vor der Blutentnahme eine gewisse
+## mÃ¼sste eine Stichprobe Raucher nehmen, die vor der Blutentnahme eine gewisse
 ## Zeit nicht geraucht haben (ob sie nach der Entnahme rauchen oder nicht, ist in
 ## diesem Fall egal!) und eine zweite von Rauchern, die direkt von der Entnahme
 ## geraucht haben. Ein gepaarter Test ist sicher sinnvoller, da sich die Anzahl
-## Blutplättchen von Proband zu Proband natürlich stark unterscheiden kann.
+## BlutplÃ¤ttchen von Proband zu Proband natÃ¼rlich stark unterscheiden kann.
 
 ## Beispiel 2
-## Ungepaarte Stichprobe. Hier interessieren nur Unterschiede, deshalb würde man
+## Ungepaarte Stichprobe. Hier interessieren nur Unterschiede, deshalb wÃ¼rde man
 ## hier wohl zweiseitig "gleich" gegen "ungleich" testen. Ein gepaartes Design
-## würde hier die Gabe von zwei Eisenpräparaten für jede Maus bedeuten. Das ist
-## problematisch, da die Aufnahme des zweiten Präparats von dem vorher aufgenommenen
-## ersten Präparat beeinflusst werden kann. Auch wird man nicht bei der Messung der
-## Konzentration unterscheiden können, aus welchem Präparat welcher Teil des Eisens
-## stammt. Man müsste also eventuell mit der Gabe des zweiten Präparats warten, bis
-## das erste Präparat komplett abgebaut ist. Das ungepaarte Design ist hier also
-## sinnvoll, wobei natürlich sichergestellt werden sollte, dass sich die beiden
+## wÃ¼rde hier die Gabe von zwei EisenprÃ¤paraten fÃ¼r jede Maus bedeuten. Das ist
+## problematisch, da die Aufnahme des zweiten PrÃ¤parats von dem vorher aufgenommenen
+## ersten PrÃ¤parat beeinflusst werden kann. Auch wird man nicht bei der Messung der
+## Konzentration unterscheiden kÃ¶nnen, aus welchem PrÃ¤parat welcher Teil des Eisens
+## stammt. Man mÃ¼sste also eventuell mit der Gabe des zweiten PrÃ¤parats warten, bis
+## das erste PrÃ¤parat komplett abgebaut ist. Das ungepaarte Design ist hier also
+## sinnvoll, wobei natÃ¼rlich sichergestellt werden sollte, dass sich die beiden
 ## Gruppen nicht systematisch unterscheiden, z.B. durch Randomisierung. Ein andere
-## Möglichkeit des gepaarten Vergleichs ergibt sich, wenn man jeweils "Matchings"
+## MÃ¶glichkeit des gepaarten Vergleichs ergibt sich, wenn man jeweils "Matchings"
 ## zwischen einer Maus aus der einen und einer aus der anderen Gruppe finden kann
-## (gleiches Geschlecht, Alter, ähnliches Gewicht etc.) Dann kann man jeweils die
-## zwei Präparate für ein ähnliche Paar von Mäusen vergleichen. Bei Studien mit
+## (gleiches Geschlecht, Alter, Ã¤hnliches Gewicht etc.) Dann kann man jeweils die
+## zwei PrÃ¤parate fÃ¼r ein Ã¤hnliche Paar von MÃ¤usen vergleichen. Bei Studien mit
 ## menschlichen Patienten wird dies manchmal so gemacht.
 
 ## Beispiel 3
 ## Gepaarter Test. Da es um Unterschiede zwischen zwei neu entwickelten Typen und
 ## nicht um den Vergleich eines neuen Typs mit einem Standard geht, ist wohl ein
 ## zweiseitiger Test "gleich" gegen "ungleich" angezeigt. Ein ungepaarter Test ist
-## denkbar, aber nicht unbedingt weniger aufwändig und sicher schlechter.
+## denkbar, aber nicht unbedingt weniger aufwÃ¤ndig und sicher schlechter.
 
 ## Beispiel 4
 ## Ungepaarter Test, hier wird einseitig H0: "mittlere Gewichtszunahme bei
-## Fütterungsart 2 höchstens so gross wie bei Fütterungsart 1" gegen H1:
-## "mittlere Gewichtszunahme bei Fütterungsart 2 grösser als bei Fütterungsart 1".
+## FÃ¼tterungsart 2 hÃ¶chstens so gross wie bei FÃ¼tterungsart 1" gegen H1:
+## "mittlere Gewichtszunahme bei FÃ¼tterungsart 2 grÃ¶sser als bei FÃ¼tterungsart 1".
 ## Ansonsten ist die Situation wie in Beispiel 2.
 
 ## Beispiel 5
 ## Gepaarter Test. Hier werden nicht zwei Behandlungen derselben
-## Untersuchungseinheit, sondern an zwei möglichst ähnlichen
+## Untersuchungseinheit, sondern an zwei mÃ¶glichst Ã¤hnlichen
 ## Untersuchungseinheiten untersucht. Getestet wird einseitig H0:
-## "Fremdbefruchtete Pflanzen nicht grösser als selbstbefruchtete" gegen
-## H1: "Fremdbefruchtete Pflanzen grösser als selbstbefruchtete".
-## Ein ungepaartes Design wäre natürlich möglich und wäre einfacher
-## umzusetzen, der Vergleich möglichst ähnlicher Pflanzen ist aber sicher
+## "Fremdbefruchtete Pflanzen nicht grÃ¶sser als selbstbefruchtete" gegen
+## H1: "Fremdbefruchtete Pflanzen grÃ¶sser als selbstbefruchtete".
+## Ein ungepaartes Design wÃ¤re natÃ¼rlich mÃ¶glich und wÃ¤re einfacher
+## umzusetzen, der Vergleich mÃ¶glichst Ã¤hnlicher Pflanzen ist aber sicher
 ## sinnvoller.
 
 ## ----------------------------------------------------------------------------
@@ -229,7 +229,7 @@ boxplot(P$Diff, horizontal=TRUE)
 par(mfrow=c(1,1))
 myqqnorm(P$Diff); qqline(P$Diff, lty=2)
 ## Die Abweichung der Punkte von der Geraden deuten in Richtung
-## Langschwänzigkeit.
+## LangschwÃ¤nzigkeit.
 ## Da jedoch alle Punkte innerhalb der stochastischen Fluktuation liegen,
 ## haben wir keine Evidenz gegen die Annahme der Normalverteilung.
 
@@ -248,9 +248,9 @@ t.test(x=P$Auto1, y=P$Auto2, alternative="two.sided", mu=0, paired=TRUE,
 ## sample estimates:
 ## mean of the differences:   1.214286
 
-## Da der P-Wert von 0.726 grösser als das Niveau von 0.05 ist,
+## Da der P-Wert von 0.726 grÃ¶sser als das Niveau von 0.05 ist,
 ## kann die Nullhypothese nicht verworfen werden.
-## Wir können also keine unterschiedliche Parkierungszeit feststellen
+## Wir kÃ¶nnen also keine unterschiedliche Parkierungszeit feststellen
 
 
 ## ----------------------------------------------------------------------------
