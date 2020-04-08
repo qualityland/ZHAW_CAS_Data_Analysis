@@ -53,11 +53,34 @@ lines(vk$k, yModell, type="b", lwd=2, col="red")
 ## *********
 
 ## (a)
-plot(c(1,6), c(0,0.2), type="n", xlab="k", ylab="Wahrscheinlichkeit",
-     las=1, main="Würfel")
-lines(1:6, rep(1/6,6), type="h", lwd=6, col="blue", lend=2)
-axis(side=2, at=1/6, labels="1/6", cex=0.8, las=1)
-abline(h=0, col="gray", lwd=2)
+plot(
+  c(1, 6),
+  c(0, 0.2),
+  type = "n",
+  xlab = "k",
+  ylab = "Wahrscheinlichkeit",
+  las = 1,
+  main = "Würfel"
+)
+
+lines(
+  1:6,
+  rep(1/6, 6),
+  type = "h",
+  lwd = 6,
+  col = "blue",
+  lend = 2
+)
+
+axis(
+  side = 2,
+  at = 1 / 6,
+  labels = "1/6",
+  cex = 0.8,
+  las = 1
+)
+
+abline(h = 0, col = "gray", lwd = 2)
 
 
 ## (b)
@@ -163,7 +186,7 @@ lines(k2, yModell2, type="b", lwd=2, col="red")
 
 ## (b)
 ## Plausibler Bereich mit Faustregel P1: 4.21 +/- 2*sqrt(4.21)
-4.21 + c(-1,1)*2*sqrt(4.21)   ## [0.1063431, 8.3136569]
+4.21 + c(-1, 1) * 2 * sqrt(4.21)   ## [0.1063431, 8.3136569]
 
 
 
