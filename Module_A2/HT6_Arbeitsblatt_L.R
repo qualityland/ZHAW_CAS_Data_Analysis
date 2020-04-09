@@ -14,10 +14,11 @@ OE <- c(-16, -404, -397, 113, -791, -165, -118, 9, -651, 383, -480, -77, 221,
         -285, -344, -394, 161)
 
 ## (a)
-source("../CAS-DA_ModulA2_RFn-myqqnorm.R")  ## --> myqqnorm()
+#source("../CAS-DA_ModulA2_RFn-myqqnorm.R")  ## --> myqqnorm()
+source("./Module_A2/RFn-qqnormSim.R")  ## --> qqnormSim()
 par(mfrow=c(1,2), las=1)
 boxplot(OE, las=1, col="blue", xlab="Kostenüberschreitung [in kFr]",  ylab="")
-myqqnorm(OE, SEED=4711); qqline(OE, lty=3)
+qqnormSim(OE, SEED=4711); qqline(OE, lty=3)
 mtext(side=3, line=0.5, text="Kostenüberschreitung [in kFr]", col="black")
 ## Datenpunkte streuen recht gut um eine Gerade und liegen innerhalb der
 ## stochastischen Fluktuation. Es gibt also keine Evidenz gegen die Annahme
@@ -89,7 +90,7 @@ Kad <- c(0.95, 0.85, 0.92, 0.95, 0.93, 0.86, 1.00, 0.92, 0.85, 0.81,
          0.78, 0.93, 0.93, 1.05, 0.93, 1.06, 1.06, 0.96, 0.81, 0.96)
 
 ## (a)
-myqqnorm(Kad); qqline(Kad)
+qqnormSim(Kad); qqline(Kad)
 
 ## Es hat etwas wenig Beobachtungen für einen normalplot, jedoch sind keine
 ## groben Abweichungen von der Geraden sichtbar. Auch liegen alle Punkte
@@ -227,7 +228,7 @@ boxplot(P$Diff, horizontal=TRUE)
 ##
 ## (b)
 par(mfrow=c(1,1))
-myqqnorm(P$Diff); qqline(P$Diff, lty=2)
+qqnormSim(P$Diff); qqline(P$Diff, lty=2)
 ## Die Abweichung der Punkte von der Geraden deuten in Richtung
 ## Langschwänzigkeit.
 ## Da jedoch alle Punkte innerhalb der stochastischen Fluktuation liegen,
