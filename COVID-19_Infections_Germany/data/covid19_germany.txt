@@ -783,3 +783,103 @@ Sachsen-Anhalt	1.193	+27	54	24
 Schleswig-Holstein	2.134	+16	74	44
 Thüringen	1.485	+21	69	27
 Gesamt	123.016	+2.537	148	2.799
+
+Stand: 14.4.2020, 00:00 Uhr
+Baden-Württemberg  25.040  +470    226 711
+Bayern  33.569  +554    257 872
+Berlin  4.668   +67 125 56
+Brandenburg 1.916   +36 76  40
+Bremen  492 +6  72  20
+Hamburg 3.808   +38 207 59
+Hessen  6.183   +69 99  147
+Mecklenburg-
+Vorpommern 619 +1  38  11
+Niedersachsen   7.885   +162    99  211
+Nordrhein-Westfalen    25.300  +417    141 545
+Rheinland-Pfalz    4.880   +70 119 70
+Saarland    2.112   +33 213 52
+Sachsen 3.751   +96 92  70
+Sachsen-Anhalt  1.207   +14 55  25
+Schleswig-Holstein 2.164   +30 75  49
+Thüringen   1.504   +19 70  31
+Gesamt  125.098 +2.082  150 2.969
+
+Stand: 15.4.2020, 00:00 Uhr
+Baden-Württemberg	25.438	+398	230	767
+Bayern	34.294	+725	262	954
+Berlin	4.722	+54	126	62
+Brandenburg	1.950	+34	78	42
+Bremen	500	+8	73	21
+Hamburg	3.869	+61	210	67
+Hessen	6.347	+164	101	173
+Mecklenburg-
+Vorpommern	624	+5	39	11
+Niedersachsen	8.019	+134	100	224
+Nordrhein-Westfalen	25.835	+535	144	607
+Rheinland-Pfalz	5.004	+124	123	77
+Saarland	2.145	+33	217	58
+Sachsen	3.819	+68	94	73
+Sachsen-Anhalt	1.223	+16	55	26
+Schleswig-Holstein	2.245	+81	78	54
+Thüringen	1.550	+46	72	38
+Gesamt	127.584	+2.486	153	3.254
+
+Stand: 19.4.2020, 00:00 Uhr
+Baden-Württemberg	27.883	+625	252	968
+Bayern	37.407	+526	286	1.256
+Berlin	5.159	+93	138	92
+Brandenburg	2.221	+60	88	66
+Bremen	585	+18	86	25
+Hamburg	4.167	+49	226	91
+Hessen	7.108	+192	113	230
+Mecklenburg-
+Vorpommern	651	+6	40	15
+Niedersachsen	8.797	+148	110	288
+Nordrhein-Westfalen	28.471	+465	159	814
+Rheinland-Pfalz	5.432	+108	133	106
+Saarland	2.303	+14	233	91
+Sachsen	4.190	+50	103	107
+Sachsen-Anhalt	1.350	+35	61	30
+Schleswig-Holstein	2.417	+30	83	62
+Thüringen	1.756	+39	82	53
+Gesamt	139.897	+2.458	168	4.294
+
+Stand: 20.4.2020, 00:00 Uhr
+Baden-Württemberg	28.253	+370	255	982
+Bayern	37.849	+442	289	1.286
+Berlin	5.196	+37	139	94
+Brandenburg	2.238	+17	89	66
+Bremen	604	+19	88	25
+Hamburg	4.185	+18	227	91
+Hessen	7.177	+69	115	240
+Mecklenburg-
+Vorpommern	653	+2	41	15
+Niedersachsen	8.900	+103	111	291
+Nordrhein-Westfalen	28.971	+500	162	857
+Rheinland-Pfalz	5.523	+91	135	107
+Saarland	2.314	+11	234	91
+Sachsen	4.229	+39	104	109
+Sachsen-Anhalt	1.369	+19	62	30
+Schleswig-Holstein	2.426	+9	84	67
+Thüringen	1.785	+29	83	53
+Gesamt	141.672	+1.775	170	4.404
+
+Stand: 21.4.2020, 00:00 Uhr
+Baden-Württemberg	28.712	+459	259	1.031
+Bayern	38.310	+461	293	1.336
+Berlin	5.237	+41	140	97
+Brandenburg	2.275	+37	91	67
+Bremen	609	+5	89	25
+Hamburg	4.204	+19	228	91
+Hessen	7.231	+54	115	251
+Mecklenburg-
+Vorpommern	655	+2	41	15
+Niedersachsen	9.098	+198	114	306
+Nordrhein-Westfalen	29.389	+418	164	896
+Rheinland-Pfalz	5.561	+38	136	116
+Saarland	2.328	+14	235	93
+Sachsen	4.253	+24	104	117
+Sachsen-Anhalt	1.383	+14	63	32
+Schleswig-Holstein	2.414	-12*	83	70
+Thüringen	1.798	+13	84	55
+Gesamt	143.457	+1.785	173	4.598
