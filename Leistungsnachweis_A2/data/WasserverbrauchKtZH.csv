@@ -1,0 +1,2547 @@
+BFS_NR,GEBIET,JAHR,WvpTE
+1,Aeugst a.A.,2006,248
+1,Aeugst a.A.,2007,231
+1,Aeugst a.A.,2008,235
+1,Aeugst a.A.,2009,228
+1,Aeugst a.A.,2010,209
+1,Aeugst a.A.,2011,195
+1,Aeugst a.A.,2012,192
+1,Aeugst a.A.,2013,null
+1,Aeugst a.A.,2014,248
+1,Aeugst a.A.,2015,248
+1,Aeugst a.A.,2016,246
+1,Aeugst a.A.,2017,252
+1,Aeugst a.A.,2018,303
+2,Affoltern a.A.,2006,323
+2,Affoltern a.A.,2007,300
+2,Affoltern a.A.,2008,288
+2,Affoltern a.A.,2009,262
+2,Affoltern a.A.,2010,273
+2,Affoltern a.A.,2011,275
+2,Affoltern a.A.,2012,301
+2,Affoltern a.A.,2013,291
+2,Affoltern a.A.,2014,265
+2,Affoltern a.A.,2015,269
+2,Affoltern a.A.,2016,265
+2,Affoltern a.A.,2017,267
+2,Affoltern a.A.,2018,262
+3,Bonstetten,2006,204
+3,Bonstetten,2007,180
+3,Bonstetten,2008,176
+3,Bonstetten,2009,170
+3,Bonstetten,2010,156
+3,Bonstetten,2011,165
+3,Bonstetten,2012,160
+3,Bonstetten,2013,164
+3,Bonstetten,2014,168
+3,Bonstetten,2015,186
+3,Bonstetten,2016,163
+3,Bonstetten,2017,164
+3,Bonstetten,2018,184
+4,Hausen a.A.,2006,213
+4,Hausen a.A.,2007,205
+4,Hausen a.A.,2008,202
+4,Hausen a.A.,2009,197
+4,Hausen a.A.,2010,229
+4,Hausen a.A.,2011,205
+4,Hausen a.A.,2012,197
+4,Hausen a.A.,2013,199
+4,Hausen a.A.,2014,191
+4,Hausen a.A.,2015,204
+4,Hausen a.A.,2016,198
+4,Hausen a.A.,2017,196
+4,Hausen a.A.,2018,206
+5,Hedingen,2006,359
+5,Hedingen,2007,292
+5,Hedingen,2008,282
+5,Hedingen,2009,262
+5,Hedingen,2010,257
+5,Hedingen,2011,253
+5,Hedingen,2012,264
+5,Hedingen,2013,248
+5,Hedingen,2014,237
+5,Hedingen,2015,259
+5,Hedingen,2016,234
+5,Hedingen,2017,247
+5,Hedingen,2018,256
+6,Kappel a.A.,2006,385
+6,Kappel a.A.,2007,369
+6,Kappel a.A.,2008,398
+6,Kappel a.A.,2009,324
+6,Kappel a.A.,2010,291
+6,Kappel a.A.,2011,318
+6,Kappel a.A.,2012,304
+6,Kappel a.A.,2013,309
+6,Kappel a.A.,2014,289
+6,Kappel a.A.,2015,293
+6,Kappel a.A.,2016,272
+6,Kappel a.A.,2017,271
+6,Kappel a.A.,2018,166
+7,Knonau,2006,347
+7,Knonau,2007,304
+7,Knonau,2008,274
+7,Knonau,2009,295
+7,Knonau,2010,285
+7,Knonau,2011,275
+7,Knonau,2012,288
+7,Knonau,2013,300
+7,Knonau,2014,298
+7,Knonau,2015,305
+7,Knonau,2016,284
+7,Knonau,2017,267
+7,Knonau,2018,246
+8,Maschwanden,2006,274
+8,Maschwanden,2007,282
+8,Maschwanden,2008,303
+8,Maschwanden,2009,307
+8,Maschwanden,2010,320
+8,Maschwanden,2011,277
+8,Maschwanden,2012,251
+8,Maschwanden,2013,252
+8,Maschwanden,2014,262
+8,Maschwanden,2015,280
+8,Maschwanden,2016,292
+8,Maschwanden,2017,302
+8,Maschwanden,2018,381
+9,Mettmenstetten,2006,271
+9,Mettmenstetten,2007,264
+9,Mettmenstetten,2008,254
+9,Mettmenstetten,2009,256
+9,Mettmenstetten,2010,null
+9,Mettmenstetten,2011,229
+9,Mettmenstetten,2012,215
+9,Mettmenstetten,2013,227
+9,Mettmenstetten,2014,226
+9,Mettmenstetten,2015,225
+9,Mettmenstetten,2016,217
+9,Mettmenstetten,2017,235
+9,Mettmenstetten,2018,255
+10,Obfelden,2006,242
+10,Obfelden,2007,237
+10,Obfelden,2008,227
+10,Obfelden,2009,218
+10,Obfelden,2010,227
+10,Obfelden,2011,237
+10,Obfelden,2012,230
+10,Obfelden,2013,225
+10,Obfelden,2014,223
+10,Obfelden,2015,227
+10,Obfelden,2016,217
+10,Obfelden,2017,211
+10,Obfelden,2018,223
+11,Ottenbach,2006,268
+11,Ottenbach,2007,235
+11,Ottenbach,2008,222
+11,Ottenbach,2009,231
+11,Ottenbach,2010,237
+11,Ottenbach,2011,233
+11,Ottenbach,2012,226
+11,Ottenbach,2013,231
+11,Ottenbach,2014,222
+11,Ottenbach,2015,229
+11,Ottenbach,2016,221
+11,Ottenbach,2017,235
+11,Ottenbach,2018,297
+12,Rifferswil,2006,208
+12,Rifferswil,2007,218
+12,Rifferswil,2008,204
+12,Rifferswil,2009,170
+12,Rifferswil,2010,201
+12,Rifferswil,2011,212
+12,Rifferswil,2012,216
+12,Rifferswil,2013,220
+12,Rifferswil,2014,null
+12,Rifferswil,2015,200
+12,Rifferswil,2016,209
+12,Rifferswil,2017,190
+12,Rifferswil,2018,212
+13,Stallikon,2006,307
+13,Stallikon,2007,224
+13,Stallikon,2008,217
+13,Stallikon,2009,205
+13,Stallikon,2010,195
+13,Stallikon,2011,206
+13,Stallikon,2012,200
+13,Stallikon,2013,202
+13,Stallikon,2014,210
+13,Stallikon,2015,212
+13,Stallikon,2016,188
+13,Stallikon,2017,190
+13,Stallikon,2018,197
+14,Wettswil a.A.,2006,227
+14,Wettswil a.A.,2007,213
+14,Wettswil a.A.,2008,217
+14,Wettswil a.A.,2009,213
+14,Wettswil a.A.,2010,207
+14,Wettswil a.A.,2011,212
+14,Wettswil a.A.,2012,222
+14,Wettswil a.A.,2013,216
+14,Wettswil a.A.,2014,194
+14,Wettswil a.A.,2015,194
+14,Wettswil a.A.,2016,184
+14,Wettswil a.A.,2017,193
+14,Wettswil a.A.,2018,201
+21,Adlikon,2006,327
+21,Adlikon,2007,295
+21,Adlikon,2008,255
+21,Adlikon,2009,280
+21,Adlikon,2010,283
+21,Adlikon,2011,310
+21,Adlikon,2012,291
+21,Adlikon,2013,316
+21,Adlikon,2014,302
+21,Adlikon,2015,269
+21,Adlikon,2016,236
+21,Adlikon,2017,284
+21,Adlikon,2018,279
+22,Benken,2006,232
+22,Benken,2007,257
+22,Benken,2008,269
+22,Benken,2009,246
+22,Benken,2010,278
+22,Benken,2011,260
+22,Benken,2012,239
+22,Benken,2013,400
+22,Benken,2014,236
+22,Benken,2015,409
+22,Benken,2016,370
+22,Benken,2017,384
+22,Benken,2018,378
+23,Berg a.I.,2006,371
+23,Berg a.I.,2007,334
+23,Berg a.I.,2008,360
+23,Berg a.I.,2009,361
+23,Berg a.I.,2010,370
+23,Berg a.I.,2011,351
+23,Berg a.I.,2012,345
+23,Berg a.I.,2013,352
+23,Berg a.I.,2014,379
+23,Berg a.I.,2015,440
+23,Berg a.I.,2016,509
+23,Berg a.I.,2017,522
+23,Berg a.I.,2018,539
+24,Buch a.I.,2006,186
+24,Buch a.I.,2007,220
+24,Buch a.I.,2008,225
+24,Buch a.I.,2009,174
+24,Buch a.I.,2010,174
+24,Buch a.I.,2011,166
+24,Buch a.I.,2012,189
+24,Buch a.I.,2013,193
+24,Buch a.I.,2014,193
+24,Buch a.I.,2015,194
+24,Buch a.I.,2016,201
+24,Buch a.I.,2017,198
+24,Buch a.I.,2018,196
+25,Dachsen,2006,222
+25,Dachsen,2007,190
+25,Dachsen,2008,219
+25,Dachsen,2009,263
+25,Dachsen,2010,258
+25,Dachsen,2011,217
+25,Dachsen,2012,190
+25,Dachsen,2013,204
+25,Dachsen,2014,183
+25,Dachsen,2015,199
+25,Dachsen,2016,190
+25,Dachsen,2017,193
+25,Dachsen,2018,209
+26,Dorf,2006,301
+26,Dorf,2007,259
+26,Dorf,2008,291
+26,Dorf,2009,286
+26,Dorf,2010,265
+26,Dorf,2011,329
+26,Dorf,2012,290
+26,Dorf,2013,358
+26,Dorf,2014,279
+26,Dorf,2015,305
+26,Dorf,2016,247
+26,Dorf,2017,276
+26,Dorf,2018,329
+27,Feuerthalen,2006,387
+27,Feuerthalen,2007,385
+27,Feuerthalen,2008,344
+27,Feuerthalen,2009,292
+27,Feuerthalen,2010,301
+27,Feuerthalen,2011,292
+27,Feuerthalen,2012,290
+27,Feuerthalen,2013,325
+27,Feuerthalen,2014,315
+27,Feuerthalen,2015,327
+27,Feuerthalen,2016,324
+27,Feuerthalen,2017,341
+27,Feuerthalen,2018,352
+28,Flaach,2006,309
+28,Flaach,2007,339
+28,Flaach,2008,304
+28,Flaach,2009,284
+28,Flaach,2010,293
+28,Flaach,2011,294
+28,Flaach,2012,294
+28,Flaach,2013,294
+28,Flaach,2014,287
+28,Flaach,2015,365
+28,Flaach,2016,308
+28,Flaach,2017,311
+28,Flaach,2018,319
+29,Flurlingen,2006,293
+29,Flurlingen,2007,267
+29,Flurlingen,2008,282
+29,Flurlingen,2009,214
+29,Flurlingen,2010,207
+29,Flurlingen,2011,217
+29,Flurlingen,2012,209
+29,Flurlingen,2013,285
+29,Flurlingen,2014,275
+29,Flurlingen,2015,267
+29,Flurlingen,2016,249
+29,Flurlingen,2017,281
+29,Flurlingen,2018,225
+30,Andelfingen,2006,394
+30,Andelfingen,2007,304
+30,Andelfingen,2008,303
+30,Andelfingen,2009,305
+30,Andelfingen,2010,308
+30,Andelfingen,2011,277
+30,Andelfingen,2012,244
+30,Andelfingen,2013,238
+30,Andelfingen,2014,243
+30,Andelfingen,2015,265
+30,Andelfingen,2016,231
+30,Andelfingen,2017,256
+30,Andelfingen,2018,250
+31,Henggart,2006,220
+31,Henggart,2007,221
+31,Henggart,2008,203
+31,Henggart,2009,192
+31,Henggart,2010,183
+31,Henggart,2011,195
+31,Henggart,2012,null
+31,Henggart,2013,189
+31,Henggart,2014,207
+31,Henggart,2015,216
+31,Henggart,2016,202
+31,Henggart,2017,203
+31,Henggart,2018,237
+32,Humlikon,2006,418
+32,Humlikon,2007,351
+32,Humlikon,2008,378
+32,Humlikon,2009,351
+32,Humlikon,2010,319
+32,Humlikon,2011,285
+32,Humlikon,2012,306
+32,Humlikon,2013,347
+32,Humlikon,2014,293
+32,Humlikon,2015,317
+32,Humlikon,2016,278
+32,Humlikon,2017,296
+32,Humlikon,2018,285
+33,Kleinandelfingen,2006,375
+33,Kleinandelfingen,2007,275
+33,Kleinandelfingen,2008,258
+33,Kleinandelfingen,2009,234
+33,Kleinandelfingen,2010,244
+33,Kleinandelfingen,2011,238
+33,Kleinandelfingen,2012,228
+33,Kleinandelfingen,2013,257
+33,Kleinandelfingen,2014,258
+33,Kleinandelfingen,2015,315
+33,Kleinandelfingen,2016,272
+33,Kleinandelfingen,2017,284
+33,Kleinandelfingen,2018,298
+34,Laufen-Uhwiesen,2006,326
+34,Laufen-Uhwiesen,2007,402
+34,Laufen-Uhwiesen,2008,451
+34,Laufen-Uhwiesen,2009,304
+34,Laufen-Uhwiesen,2010,317
+34,Laufen-Uhwiesen,2011,281
+34,Laufen-Uhwiesen,2012,279
+34,Laufen-Uhwiesen,2013,281
+34,Laufen-Uhwiesen,2014,324
+34,Laufen-Uhwiesen,2015,338
+34,Laufen-Uhwiesen,2016,367
+34,Laufen-Uhwiesen,2017,361
+34,Laufen-Uhwiesen,2018,332
+35,Marthalen,2006,354
+35,Marthalen,2007,338
+35,Marthalen,2008,304
+35,Marthalen,2009,319
+35,Marthalen,2010,302
+35,Marthalen,2011,312
+35,Marthalen,2012,265
+35,Marthalen,2013,315
+35,Marthalen,2014,323
+35,Marthalen,2015,295
+35,Marthalen,2016,305
+35,Marthalen,2017,313
+35,Marthalen,2018,306
+36,Oberstammheim (bis 2018),2006,267
+36,Oberstammheim (bis 2018),2007,224
+36,Oberstammheim (bis 2018),2008,231
+36,Oberstammheim (bis 2018),2009,243
+36,Oberstammheim (bis 2018),2010,282
+36,Oberstammheim (bis 2018),2011,267
+36,Oberstammheim (bis 2018),2012,257
+36,Oberstammheim (bis 2018),2013,276
+36,Oberstammheim (bis 2018),2014,382
+36,Oberstammheim (bis 2018),2015,208
+36,Oberstammheim (bis 2018),2016,249
+36,Oberstammheim (bis 2018),2017,291
+36,Oberstammheim (bis 2018),2018,null
+37,Ossingen,2006,411
+37,Ossingen,2007,519
+37,Ossingen,2008,384
+37,Ossingen,2009,310
+37,Ossingen,2010,266
+37,Ossingen,2011,269
+37,Ossingen,2012,280
+37,Ossingen,2013,270
+37,Ossingen,2014,260
+37,Ossingen,2015,376
+37,Ossingen,2016,255
+37,Ossingen,2017,266
+37,Ossingen,2018,267
+38,Rheinau,2006,544
+38,Rheinau,2007,464
+38,Rheinau,2008,420
+38,Rheinau,2009,409
+38,Rheinau,2010,397
+38,Rheinau,2011,415
+38,Rheinau,2012,377
+38,Rheinau,2013,399
+38,Rheinau,2014,377
+38,Rheinau,2015,405
+38,Rheinau,2016,451
+38,Rheinau,2017,418
+38,Rheinau,2018,406
+39,Thalheim a.d.Th.,2006,409
+39,Thalheim a.d.Th.,2007,387
+39,Thalheim a.d.Th.,2008,378
+39,Thalheim a.d.Th.,2009,341
+39,Thalheim a.d.Th.,2010,375
+39,Thalheim a.d.Th.,2011,382
+39,Thalheim a.d.Th.,2012,325
+39,Thalheim a.d.Th.,2013,333
+39,Thalheim a.d.Th.,2014,306
+39,Thalheim a.d.Th.,2015,333
+39,Thalheim a.d.Th.,2016,311
+39,Thalheim a.d.Th.,2017,317
+39,Thalheim a.d.Th.,2018,305
+40,Trüllikon,2006,316
+40,Trüllikon,2007,307
+40,Trüllikon,2008,250
+40,Trüllikon,2009,null
+40,Trüllikon,2010,null
+40,Trüllikon,2011,null
+40,Trüllikon,2012,301
+40,Trüllikon,2013,244
+40,Trüllikon,2014,224
+40,Trüllikon,2015,249
+40,Trüllikon,2016,221
+40,Trüllikon,2017,247
+40,Trüllikon,2018,270
+41,Truttikon,2006,275
+41,Truttikon,2007,205
+41,Truttikon,2008,205
+41,Truttikon,2009,211
+41,Truttikon,2010,213
+41,Truttikon,2011,216
+41,Truttikon,2012,212
+41,Truttikon,2013,219
+41,Truttikon,2014,213
+41,Truttikon,2015,209
+41,Truttikon,2016,197
+41,Truttikon,2017,222
+41,Truttikon,2018,203
+42,Unterstammheim (bis 2018),2006,372
+42,Unterstammheim (bis 2018),2007,355
+42,Unterstammheim (bis 2018),2008,373
+42,Unterstammheim (bis 2018),2009,423
+42,Unterstammheim (bis 2018),2010,395
+42,Unterstammheim (bis 2018),2011,389
+42,Unterstammheim (bis 2018),2012,375
+42,Unterstammheim (bis 2018),2013,null
+42,Unterstammheim (bis 2018),2014,476
+42,Unterstammheim (bis 2018),2015,411
+42,Unterstammheim (bis 2018),2016,472
+42,Unterstammheim (bis 2018),2017,504
+42,Unterstammheim (bis 2018),2018,null
+43,Volken,2006,410
+43,Volken,2007,305
+43,Volken,2008,360
+43,Volken,2009,305
+43,Volken,2010,null
+43,Volken,2011,377
+43,Volken,2012,210
+43,Volken,2013,272
+43,Volken,2014,295
+43,Volken,2015,391
+43,Volken,2016,285
+43,Volken,2017,285
+43,Volken,2018,288
+44,Waltalingen (bis 2018),2006,238
+44,Waltalingen (bis 2018),2007,224
+44,Waltalingen (bis 2018),2008,227
+44,Waltalingen (bis 2018),2009,208
+44,Waltalingen (bis 2018),2010,210
+44,Waltalingen (bis 2018),2011,220
+44,Waltalingen (bis 2018),2012,235
+44,Waltalingen (bis 2018),2013,null
+44,Waltalingen (bis 2018),2014,227
+44,Waltalingen (bis 2018),2015,295
+44,Waltalingen (bis 2018),2016,243
+44,Waltalingen (bis 2018),2017,244
+44,Waltalingen (bis 2018),2018,null
+51,Bachenbülach,2006,228
+51,Bachenbülach,2007,211
+51,Bachenbülach,2008,214
+51,Bachenbülach,2009,215
+51,Bachenbülach,2010,210
+51,Bachenbülach,2011,209
+51,Bachenbülach,2012,238
+51,Bachenbülach,2013,239
+51,Bachenbülach,2014,197
+51,Bachenbülach,2015,219
+51,Bachenbülach,2016,201
+51,Bachenbülach,2017,215
+51,Bachenbülach,2018,202
+52,Bassersdorf,2006,238
+52,Bassersdorf,2007,222
+52,Bassersdorf,2008,225
+52,Bassersdorf,2009,216
+52,Bassersdorf,2010,210
+52,Bassersdorf,2011,210
+52,Bassersdorf,2012,212
+52,Bassersdorf,2013,217
+52,Bassersdorf,2014,213
+52,Bassersdorf,2015,221
+52,Bassersdorf,2016,212
+52,Bassersdorf,2017,212
+52,Bassersdorf,2018,219
+53,Bülach,2006,268
+53,Bülach,2007,258
+53,Bülach,2008,226
+53,Bülach,2009,231
+53,Bülach,2010,219
+53,Bülach,2011,220
+53,Bülach,2012,216
+53,Bülach,2013,213
+53,Bülach,2014,211
+53,Bülach,2015,215
+53,Bülach,2016,212
+53,Bülach,2017,220
+53,Bülach,2018,208
+54,Dietlikon,2006,390
+54,Dietlikon,2007,369
+54,Dietlikon,2008,358
+54,Dietlikon,2009,391
+54,Dietlikon,2010,383
+54,Dietlikon,2011,388
+54,Dietlikon,2012,395
+54,Dietlikon,2013,372
+54,Dietlikon,2014,340
+54,Dietlikon,2015,325
+54,Dietlikon,2016,358
+54,Dietlikon,2017,355
+54,Dietlikon,2018,350
+55,Eglisau,2006,548
+55,Eglisau,2007,536
+55,Eglisau,2008,492
+55,Eglisau,2009,441
+55,Eglisau,2010,390
+55,Eglisau,2011,218
+55,Eglisau,2012,215
+55,Eglisau,2013,224
+55,Eglisau,2014,246
+55,Eglisau,2015,255
+55,Eglisau,2016,216
+55,Eglisau,2017,224
+55,Eglisau,2018,240
+56,Embrach,2006,316
+56,Embrach,2007,273
+56,Embrach,2008,265
+56,Embrach,2009,262
+56,Embrach,2010,247
+56,Embrach,2011,238
+56,Embrach,2012,219
+56,Embrach,2013,233
+56,Embrach,2014,222
+56,Embrach,2015,230
+56,Embrach,2016,220
+56,Embrach,2017,227
+56,Embrach,2018,228
+57,Freienstein-Teufen,2006,186
+57,Freienstein-Teufen,2007,172
+57,Freienstein-Teufen,2008,170
+57,Freienstein-Teufen,2009,164
+57,Freienstein-Teufen,2010,192
+57,Freienstein-Teufen,2011,231
+57,Freienstein-Teufen,2012,214
+57,Freienstein-Teufen,2013,236
+57,Freienstein-Teufen,2014,223
+57,Freienstein-Teufen,2015,240
+57,Freienstein-Teufen,2016,213
+57,Freienstein-Teufen,2017,209
+57,Freienstein-Teufen,2018,206
+58,Glattfelden,2006,277
+58,Glattfelden,2007,233
+58,Glattfelden,2008,205
+58,Glattfelden,2009,210
+58,Glattfelden,2010,215
+58,Glattfelden,2011,206
+58,Glattfelden,2012,200
+58,Glattfelden,2013,256
+58,Glattfelden,2014,227
+58,Glattfelden,2015,213
+58,Glattfelden,2016,212
+58,Glattfelden,2017,204
+58,Glattfelden,2018,223
+59,Hochfelden,2006,258
+59,Hochfelden,2007,215
+59,Hochfelden,2008,208
+59,Hochfelden,2009,210
+59,Hochfelden,2010,204
+59,Hochfelden,2011,214
+59,Hochfelden,2012,210
+59,Hochfelden,2013,248
+59,Hochfelden,2014,241
+59,Hochfelden,2015,225
+59,Hochfelden,2016,195
+59,Hochfelden,2017,214
+59,Hochfelden,2018,237
+60,Höri,2006,257
+60,Höri,2007,248
+60,Höri,2008,271
+60,Höri,2009,268
+60,Höri,2010,231
+60,Höri,2011,248
+60,Höri,2012,228
+60,Höri,2013,281
+60,Höri,2014,null
+60,Höri,2015,247
+60,Höri,2016,223
+60,Höri,2017,230
+60,Höri,2018,236
+61,Hüntwangen,2006,155
+61,Hüntwangen,2007,217
+61,Hüntwangen,2008,182
+61,Hüntwangen,2009,206
+61,Hüntwangen,2010,null
+61,Hüntwangen,2011,218
+61,Hüntwangen,2012,232
+61,Hüntwangen,2013,248
+61,Hüntwangen,2014,230
+61,Hüntwangen,2015,238
+61,Hüntwangen,2016,205
+61,Hüntwangen,2017,271
+61,Hüntwangen,2018,295
+62,Kloten,2006,287
+62,Kloten,2007,281
+62,Kloten,2008,288
+62,Kloten,2009,269
+62,Kloten,2010,265
+62,Kloten,2011,253
+62,Kloten,2012,256
+62,Kloten,2013,253
+62,Kloten,2014,null
+62,Kloten,2015,353
+62,Kloten,2016,343
+62,Kloten,2017,413
+62,Kloten,2018,360
+63,Lufingen,2006,204
+63,Lufingen,2007,194
+63,Lufingen,2008,193
+63,Lufingen,2009,189
+63,Lufingen,2010,197
+63,Lufingen,2011,210
+63,Lufingen,2012,198
+63,Lufingen,2013,194
+63,Lufingen,2014,176
+63,Lufingen,2015,189
+63,Lufingen,2016,185
+63,Lufingen,2017,196
+63,Lufingen,2018,189
+64,Nürensdorf,2006,244
+64,Nürensdorf,2007,220
+64,Nürensdorf,2008,235
+64,Nürensdorf,2009,225
+64,Nürensdorf,2010,214
+64,Nürensdorf,2011,224
+64,Nürensdorf,2012,216
+64,Nürensdorf,2013,222
+64,Nürensdorf,2014,203
+64,Nürensdorf,2015,213
+64,Nürensdorf,2016,202
+64,Nürensdorf,2017,214
+64,Nürensdorf,2018,217
+65,Oberembrach,2006,275
+65,Oberembrach,2007,252
+65,Oberembrach,2008,232
+65,Oberembrach,2009,242
+65,Oberembrach,2010,237
+65,Oberembrach,2011,231
+65,Oberembrach,2012,241
+65,Oberembrach,2013,238
+65,Oberembrach,2014,234
+65,Oberembrach,2015,272
+65,Oberembrach,2016,269
+65,Oberembrach,2017,233
+65,Oberembrach,2018,234
+66,Opfikon,2006,352
+66,Opfikon,2007,324
+66,Opfikon,2008,305
+66,Opfikon,2009,299
+66,Opfikon,2010,283
+66,Opfikon,2011,276
+66,Opfikon,2012,287
+66,Opfikon,2013,287
+66,Opfikon,2014,271
+66,Opfikon,2015,267
+66,Opfikon,2016,246
+66,Opfikon,2017,258
+66,Opfikon,2018,260
+67,Rafz,2006,213
+67,Rafz,2007,194
+67,Rafz,2008,184
+67,Rafz,2009,194
+67,Rafz,2010,195
+67,Rafz,2011,193
+67,Rafz,2012,225
+67,Rafz,2013,183
+67,Rafz,2014,197
+67,Rafz,2015,237
+67,Rafz,2016,200
+67,Rafz,2017,214
+67,Rafz,2018,233
+68,Rorbas,2006,197
+68,Rorbas,2007,203
+68,Rorbas,2008,213
+68,Rorbas,2009,212
+68,Rorbas,2010,235
+68,Rorbas,2011,202
+68,Rorbas,2012,199
+68,Rorbas,2013,206
+68,Rorbas,2014,198
+68,Rorbas,2015,207
+68,Rorbas,2016,203
+68,Rorbas,2017,197
+68,Rorbas,2018,183
+69,Wallisellen,2006,302
+69,Wallisellen,2007,295
+69,Wallisellen,2008,308
+69,Wallisellen,2009,268
+69,Wallisellen,2010,277
+69,Wallisellen,2011,277
+69,Wallisellen,2012,285
+69,Wallisellen,2013,275
+69,Wallisellen,2014,249
+69,Wallisellen,2015,264
+69,Wallisellen,2016,252
+69,Wallisellen,2017,252
+69,Wallisellen,2018,261
+70,Wasterkingen,2006,340
+70,Wasterkingen,2007,251
+70,Wasterkingen,2008,175
+70,Wasterkingen,2009,202
+70,Wasterkingen,2010,226
+70,Wasterkingen,2011,208
+70,Wasterkingen,2012,153
+70,Wasterkingen,2013,158
+70,Wasterkingen,2014,154
+70,Wasterkingen,2015,182
+70,Wasterkingen,2016,172
+70,Wasterkingen,2017,167
+70,Wasterkingen,2018,null
+71,Wil,2006,null
+71,Wil,2007,465
+71,Wil,2008,378
+71,Wil,2009,255
+71,Wil,2010,null
+71,Wil,2011,272
+71,Wil,2012,394
+71,Wil,2013,315
+71,Wil,2014,282
+71,Wil,2015,253
+71,Wil,2016,219
+71,Wil,2017,208
+71,Wil,2018,233
+72,Winkel,2006,275
+72,Winkel,2007,268
+72,Winkel,2008,252
+72,Winkel,2009,248
+72,Winkel,2010,247
+72,Winkel,2011,268
+72,Winkel,2012,251
+72,Winkel,2013,261
+72,Winkel,2014,252
+72,Winkel,2015,265
+72,Winkel,2016,235
+72,Winkel,2017,231
+72,Winkel,2018,282
+81,Bachs,2006,369
+81,Bachs,2007,359
+81,Bachs,2008,352
+81,Bachs,2009,367
+81,Bachs,2010,null
+81,Bachs,2011,462
+81,Bachs,2012,375
+81,Bachs,2013,482
+81,Bachs,2014,348
+81,Bachs,2015,422
+81,Bachs,2016,341
+81,Bachs,2017,380
+81,Bachs,2018,403
+82,Boppelsen,2006,304
+82,Boppelsen,2007,184
+82,Boppelsen,2008,272
+82,Boppelsen,2009,280
+82,Boppelsen,2010,180
+82,Boppelsen,2011,277
+82,Boppelsen,2012,175
+82,Boppelsen,2013,232
+82,Boppelsen,2014,210
+82,Boppelsen,2015,247
+82,Boppelsen,2016,222
+82,Boppelsen,2017,256
+82,Boppelsen,2018,293
+83,Buchs,2006,279
+83,Buchs,2007,257
+83,Buchs,2008,264
+83,Buchs,2009,270
+83,Buchs,2010,266
+83,Buchs,2011,265
+83,Buchs,2012,264
+83,Buchs,2013,268
+83,Buchs,2014,262
+83,Buchs,2015,284
+83,Buchs,2016,250
+83,Buchs,2017,267
+83,Buchs,2018,289
+84,Dällikon,2006,400
+84,Dällikon,2007,408
+84,Dällikon,2008,399
+84,Dällikon,2009,355
+84,Dällikon,2010,357
+84,Dällikon,2011,343
+84,Dällikon,2012,362
+84,Dällikon,2013,358
+84,Dällikon,2014,362
+84,Dällikon,2015,368
+84,Dällikon,2016,364
+84,Dällikon,2017,361
+84,Dällikon,2018,363
+85,Dänikon,2006,412
+85,Dänikon,2007,380
+85,Dänikon,2008,404
+85,Dänikon,2009,392
+85,Dänikon,2010,389
+85,Dänikon,2011,405
+85,Dänikon,2012,373
+85,Dänikon,2013,347
+85,Dänikon,2014,null
+85,Dänikon,2015,385
+85,Dänikon,2016,347
+85,Dänikon,2017,374
+85,Dänikon,2018,379
+86,Dielsdorf,2006,367
+86,Dielsdorf,2007,336
+86,Dielsdorf,2008,311
+86,Dielsdorf,2009,296
+86,Dielsdorf,2010,283
+86,Dielsdorf,2011,303
+86,Dielsdorf,2012,272
+86,Dielsdorf,2013,276
+86,Dielsdorf,2014,282
+86,Dielsdorf,2015,320
+86,Dielsdorf,2016,294
+86,Dielsdorf,2017,226
+86,Dielsdorf,2018,337
+87,Hüttikon,2006,1036
+87,Hüttikon,2007,811
+87,Hüttikon,2008,492
+87,Hüttikon,2009,395
+87,Hüttikon,2010,408
+87,Hüttikon,2011,409
+87,Hüttikon,2012,274
+87,Hüttikon,2013,249
+87,Hüttikon,2014,330
+87,Hüttikon,2015,251
+87,Hüttikon,2016,229
+87,Hüttikon,2017,213
+87,Hüttikon,2018,258
+88,Neerach,2006,227
+88,Neerach,2007,202
+88,Neerach,2008,191
+88,Neerach,2009,191
+88,Neerach,2010,193
+88,Neerach,2011,205
+88,Neerach,2012,196
+88,Neerach,2013,203
+88,Neerach,2014,203
+88,Neerach,2015,212
+88,Neerach,2016,191
+88,Neerach,2017,197
+88,Neerach,2018,207
+89,Niederglatt,2006,285
+89,Niederglatt,2007,271
+89,Niederglatt,2008,282
+89,Niederglatt,2009,270
+89,Niederglatt,2010,249
+89,Niederglatt,2011,270
+89,Niederglatt,2012,312
+89,Niederglatt,2013,285
+89,Niederglatt,2014,215
+89,Niederglatt,2015,279
+89,Niederglatt,2016,232
+89,Niederglatt,2017,271
+89,Niederglatt,2018,265
+90,Niederhasli,2006,228
+90,Niederhasli,2007,206
+90,Niederhasli,2008,214
+90,Niederhasli,2009,197
+90,Niederhasli,2010,204
+90,Niederhasli,2011,220
+90,Niederhasli,2012,212
+90,Niederhasli,2013,217
+90,Niederhasli,2014,194
+90,Niederhasli,2015,194
+90,Niederhasli,2016,178
+90,Niederhasli,2017,179
+90,Niederhasli,2018,189
+91,Niederweningen,2006,217
+91,Niederweningen,2007,205
+91,Niederweningen,2008,199
+91,Niederweningen,2009,206
+91,Niederweningen,2010,null
+91,Niederweningen,2011,194
+91,Niederweningen,2012,184
+91,Niederweningen,2013,183
+91,Niederweningen,2014,168
+91,Niederweningen,2015,172
+91,Niederweningen,2016,166
+91,Niederweningen,2017,161
+91,Niederweningen,2018,163
+92,Oberglatt,2006,232
+92,Oberglatt,2007,207
+92,Oberglatt,2008,200
+92,Oberglatt,2009,194
+92,Oberglatt,2010,189
+92,Oberglatt,2011,189
+92,Oberglatt,2012,188
+92,Oberglatt,2013,190
+92,Oberglatt,2014,185
+92,Oberglatt,2015,201
+92,Oberglatt,2016,182
+92,Oberglatt,2017,189
+92,Oberglatt,2018,189
+93,Oberweningen,2006,263
+93,Oberweningen,2007,219
+93,Oberweningen,2008,201
+93,Oberweningen,2009,208
+93,Oberweningen,2010,203
+93,Oberweningen,2011,215
+93,Oberweningen,2012,196
+93,Oberweningen,2013,205
+93,Oberweningen,2014,196
+93,Oberweningen,2015,221
+93,Oberweningen,2016,197
+93,Oberweningen,2017,201
+93,Oberweningen,2018,212
+94,Otelfingen,2006,334
+94,Otelfingen,2007,337
+94,Otelfingen,2008,343
+94,Otelfingen,2009,317
+94,Otelfingen,2010,293
+94,Otelfingen,2011,283
+94,Otelfingen,2012,234
+94,Otelfingen,2013,283
+94,Otelfingen,2014,294
+94,Otelfingen,2015,299
+94,Otelfingen,2016,314
+94,Otelfingen,2017,309
+94,Otelfingen,2018,382
+95,Regensberg,2006,331
+95,Regensberg,2007,301
+95,Regensberg,2008,262
+95,Regensberg,2009,312
+95,Regensberg,2010,321
+95,Regensberg,2011,311
+95,Regensberg,2012,293
+95,Regensberg,2013,353
+95,Regensberg,2014,319
+95,Regensberg,2015,295
+95,Regensberg,2016,286
+95,Regensberg,2017,249
+95,Regensberg,2018,225
+96,Regensdorf,2006,327
+96,Regensdorf,2007,297
+96,Regensdorf,2008,266
+96,Regensdorf,2009,322
+96,Regensdorf,2010,244
+96,Regensdorf,2011,246
+96,Regensdorf,2012,240
+96,Regensdorf,2013,null
+96,Regensdorf,2014,248
+96,Regensdorf,2015,251
+96,Regensdorf,2016,241
+96,Regensdorf,2017,250
+96,Regensdorf,2018,255
+97,Rümlang,2006,322
+97,Rümlang,2007,293
+97,Rümlang,2008,295
+97,Rümlang,2009,303
+97,Rümlang,2010,297
+97,Rümlang,2011,272
+97,Rümlang,2012,261
+97,Rümlang,2013,272
+97,Rümlang,2014,283
+97,Rümlang,2015,282
+97,Rümlang,2016,268
+97,Rümlang,2017,291
+97,Rümlang,2018,284
+98,Schleinikon,2006,286
+98,Schleinikon,2007,269
+98,Schleinikon,2008,291
+98,Schleinikon,2009,323
+98,Schleinikon,2010,268
+98,Schleinikon,2011,282
+98,Schleinikon,2012,240
+98,Schleinikon,2013,252
+98,Schleinikon,2014,248
+98,Schleinikon,2015,226
+98,Schleinikon,2016,300
+98,Schleinikon,2017,288
+98,Schleinikon,2018,309
+99,Schöfflisdorf,2006,276
+99,Schöfflisdorf,2007,259
+99,Schöfflisdorf,2008,265
+99,Schöfflisdorf,2009,250
+99,Schöfflisdorf,2010,212
+99,Schöfflisdorf,2011,216
+99,Schöfflisdorf,2012,176
+99,Schöfflisdorf,2013,197
+99,Schöfflisdorf,2014,244
+99,Schöfflisdorf,2015,240
+99,Schöfflisdorf,2016,224
+99,Schöfflisdorf,2017,200
+99,Schöfflisdorf,2018,208
+100,Stadel,2006,367
+100,Stadel,2007,null
+100,Stadel,2008,374
+100,Stadel,2009,383
+100,Stadel,2010,431
+100,Stadel,2011,486
+100,Stadel,2012,464
+100,Stadel,2013,388
+100,Stadel,2014,305
+100,Stadel,2015,386
+100,Stadel,2016,333
+100,Stadel,2017,298
+100,Stadel,2018,263
+101,Steinmaur,2006,381
+101,Steinmaur,2007,340
+101,Steinmaur,2008,370
+101,Steinmaur,2009,325
+101,Steinmaur,2010,305
+101,Steinmaur,2011,314
+101,Steinmaur,2012,325
+101,Steinmaur,2013,320
+101,Steinmaur,2014,317
+101,Steinmaur,2015,339
+101,Steinmaur,2016,288
+101,Steinmaur,2017,290
+101,Steinmaur,2018,281
+102,Weiach,2006,394
+102,Weiach,2007,283
+102,Weiach,2008,346
+102,Weiach,2009,386
+102,Weiach,2010,328
+102,Weiach,2011,288
+102,Weiach,2012,278
+102,Weiach,2013,279
+102,Weiach,2014,259
+102,Weiach,2015,221
+102,Weiach,2016,205
+102,Weiach,2017,169
+102,Weiach,2018,172
+111,Bäretswil,2006,279
+111,Bäretswil,2007,269
+111,Bäretswil,2008,279
+111,Bäretswil,2009,258
+111,Bäretswil,2010,234
+111,Bäretswil,2011,245
+111,Bäretswil,2012,221
+111,Bäretswil,2013,222
+111,Bäretswil,2014,212
+111,Bäretswil,2015,216
+111,Bäretswil,2016,209
+111,Bäretswil,2017,215
+111,Bäretswil,2018,217
+112,Bubikon,2006,273
+112,Bubikon,2007,255
+112,Bubikon,2008,253
+112,Bubikon,2009,255
+112,Bubikon,2010,211
+112,Bubikon,2011,212
+112,Bubikon,2012,215
+112,Bubikon,2013,205
+112,Bubikon,2014,208
+112,Bubikon,2015,218
+112,Bubikon,2016,216
+112,Bubikon,2017,211
+112,Bubikon,2018,232
+113,Dürnten,2006,309
+113,Dürnten,2007,296
+113,Dürnten,2008,303
+113,Dürnten,2009,269
+113,Dürnten,2010,259
+113,Dürnten,2011,238
+113,Dürnten,2012,254
+113,Dürnten,2013,250
+113,Dürnten,2014,265
+113,Dürnten,2015,262
+113,Dürnten,2016,224
+113,Dürnten,2017,226
+113,Dürnten,2018,253
+114,Fischenthal,2006,221
+114,Fischenthal,2007,281
+114,Fischenthal,2008,315
+114,Fischenthal,2009,329
+114,Fischenthal,2010,null
+114,Fischenthal,2011,421
+114,Fischenthal,2012,null
+114,Fischenthal,2013,337
+114,Fischenthal,2014,251
+114,Fischenthal,2015,294
+114,Fischenthal,2016,271
+114,Fischenthal,2017,268
+114,Fischenthal,2018,244
+115,Gossau,2006,228
+115,Gossau,2007,228
+115,Gossau,2008,212
+115,Gossau,2009,221
+115,Gossau,2010,225
+115,Gossau,2011,202
+115,Gossau,2012,220
+115,Gossau,2013,184
+115,Gossau,2014,187
+115,Gossau,2015,206
+115,Gossau,2016,200
+115,Gossau,2017,195
+115,Gossau,2018,201
+116,Grüningen,2006,298
+116,Grüningen,2007,304
+116,Grüningen,2008,322
+116,Grüningen,2009,292
+116,Grüningen,2010,267
+116,Grüningen,2011,308
+116,Grüningen,2012,292
+116,Grüningen,2013,288
+116,Grüningen,2014,269
+116,Grüningen,2015,272
+116,Grüningen,2016,248
+116,Grüningen,2017,245
+116,Grüningen,2018,264
+117,Hinwil,2006,394
+117,Hinwil,2007,374
+117,Hinwil,2008,369
+117,Hinwil,2009,363
+117,Hinwil,2010,349
+117,Hinwil,2011,355
+117,Hinwil,2012,311
+117,Hinwil,2013,289
+117,Hinwil,2014,273
+117,Hinwil,2015,282
+117,Hinwil,2016,265
+117,Hinwil,2017,262
+117,Hinwil,2018,279
+118,Rüti,2006,249
+118,Rüti,2007,216
+118,Rüti,2008,215
+118,Rüti,2009,217
+118,Rüti,2010,207
+118,Rüti,2011,208
+118,Rüti,2012,213
+118,Rüti,2013,207
+118,Rüti,2014,206
+118,Rüti,2015,215
+118,Rüti,2016,206
+118,Rüti,2017,196
+118,Rüti,2018,206
+119,Seegräben,2006,282
+119,Seegräben,2007,253
+119,Seegräben,2008,230
+119,Seegräben,2009,238
+119,Seegräben,2010,209
+119,Seegräben,2011,218
+119,Seegräben,2012,232
+119,Seegräben,2013,231
+119,Seegräben,2014,216
+119,Seegräben,2015,219
+119,Seegräben,2016,234
+119,Seegräben,2017,225
+119,Seegräben,2018,229
+120,Wald,2006,293
+120,Wald,2007,319
+120,Wald,2008,288
+120,Wald,2009,277
+120,Wald,2010,265
+120,Wald,2011,240
+120,Wald,2012,258
+120,Wald,2013,229
+120,Wald,2014,220
+120,Wald,2015,236
+120,Wald,2016,221
+120,Wald,2017,185
+120,Wald,2018,243
+121,Wetzikon,2006,299
+121,Wetzikon,2007,253
+121,Wetzikon,2008,230
+121,Wetzikon,2009,238
+121,Wetzikon,2010,209
+121,Wetzikon,2011,218
+121,Wetzikon,2012,232
+121,Wetzikon,2013,231
+121,Wetzikon,2014,216
+121,Wetzikon,2015,219
+121,Wetzikon,2016,234
+121,Wetzikon,2017,225
+121,Wetzikon,2018,229
+131,Adliswil,2006,263
+131,Adliswil,2007,239
+131,Adliswil,2008,265
+131,Adliswil,2009,240
+131,Adliswil,2010,244
+131,Adliswil,2011,226
+131,Adliswil,2012,216
+131,Adliswil,2013,200
+131,Adliswil,2014,205
+131,Adliswil,2015,205
+131,Adliswil,2016,191
+131,Adliswil,2017,196
+131,Adliswil,2018,208
+132,Hirzel (bis 2017),2006,327
+132,Hirzel (bis 2017),2007,352
+132,Hirzel (bis 2017),2008,367
+132,Hirzel (bis 2017),2009,298
+132,Hirzel (bis 2017),2010,318
+132,Hirzel (bis 2017),2011,276
+132,Hirzel (bis 2017),2012,274
+132,Hirzel (bis 2017),2013,247
+132,Hirzel (bis 2017),2014,252
+132,Hirzel (bis 2017),2015,268
+132,Hirzel (bis 2017),2016,250
+132,Hirzel (bis 2017),2017,null
+133,Horgen (bis 2017),2006,273
+133,Horgen (bis 2017),2007,255
+133,Horgen (bis 2017),2008,252
+133,Horgen (bis 2017),2009,250
+133,Horgen (bis 2017),2010,237
+133,Horgen (bis 2017),2011,238
+133,Horgen (bis 2017),2012,239
+133,Horgen (bis 2017),2013,225
+133,Horgen (bis 2017),2014,219
+133,Horgen (bis 2017),2015,221
+133,Horgen (bis 2017),2016,213
+133,Horgen (bis 2017),2017,213
+134,Hütten (bis 2018),2006,192
+134,Hütten (bis 2018),2007,182
+134,Hütten (bis 2018),2008,183
+134,Hütten (bis 2018),2009,182
+134,Hütten (bis 2018),2010,180
+134,Hütten (bis 2018),2011,176
+134,Hütten (bis 2018),2012,179
+134,Hütten (bis 2018),2013,201
+134,Hütten (bis 2018),2014,206
+134,Hütten (bis 2018),2015,205
+134,Hütten (bis 2018),2016,214
+134,Hütten (bis 2018),2017,216
+134,Hütten (bis 2018),2018,259
+135,Kilchberg,2006,314
+135,Kilchberg,2007,296
+135,Kilchberg,2008,284
+135,Kilchberg,2009,276
+135,Kilchberg,2010,324
+135,Kilchberg,2011,296
+135,Kilchberg,2012,289
+135,Kilchberg,2013,298
+135,Kilchberg,2014,279
+135,Kilchberg,2015,292
+135,Kilchberg,2016,252
+135,Kilchberg,2017,272
+135,Kilchberg,2018,259
+136,Langnau a.A.,2006,245
+136,Langnau a.A.,2007,232
+136,Langnau a.A.,2008,226
+136,Langnau a.A.,2009,222
+136,Langnau a.A.,2010,210
+136,Langnau a.A.,2011,208
+136,Langnau a.A.,2012,215
+136,Langnau a.A.,2013,211
+136,Langnau a.A.,2014,196
+136,Langnau a.A.,2015,201
+136,Langnau a.A.,2016,189
+136,Langnau a.A.,2017,197
+136,Langnau a.A.,2018,206
+137,Oberrieden,2006,222
+137,Oberrieden,2007,216
+137,Oberrieden,2008,211
+137,Oberrieden,2009,219
+137,Oberrieden,2010,210
+137,Oberrieden,2011,211
+137,Oberrieden,2012,206
+137,Oberrieden,2013,210
+137,Oberrieden,2014,203
+137,Oberrieden,2015,215
+137,Oberrieden,2016,209
+137,Oberrieden,2017,205
+137,Oberrieden,2018,222
+138,Richterswil,2006,232
+138,Richterswil,2007,226
+138,Richterswil,2008,228
+138,Richterswil,2009,231
+138,Richterswil,2010,203
+138,Richterswil,2011,199
+138,Richterswil,2012,195
+138,Richterswil,2013,192
+138,Richterswil,2014,193
+138,Richterswil,2015,195
+138,Richterswil,2016,197
+138,Richterswil,2017,209
+138,Richterswil,2018,203
+139,Rüschlikon,2006,316
+139,Rüschlikon,2007,290
+139,Rüschlikon,2008,278
+139,Rüschlikon,2009,283
+139,Rüschlikon,2010,280
+139,Rüschlikon,2011,262
+139,Rüschlikon,2012,265
+139,Rüschlikon,2013,247
+139,Rüschlikon,2014,265
+139,Rüschlikon,2015,305
+139,Rüschlikon,2016,289
+139,Rüschlikon,2017,246
+139,Rüschlikon,2018,276
+140,Schönenberg (bis 2018),2006,338
+140,Schönenberg (bis 2018),2007,321
+140,Schönenberg (bis 2018),2008,283
+140,Schönenberg (bis 2018),2009,281
+140,Schönenberg (bis 2018),2010,277
+140,Schönenberg (bis 2018),2011,285
+140,Schönenberg (bis 2018),2012,257
+140,Schönenberg (bis 2018),2013,246
+140,Schönenberg (bis 2018),2014,233
+140,Schönenberg (bis 2018),2015,274
+140,Schönenberg (bis 2018),2016,250
+140,Schönenberg (bis 2018),2017,251
+140,Schönenberg (bis 2018),2018,323
+141,Thalwil,2006,256
+141,Thalwil,2007,243
+141,Thalwil,2008,236
+141,Thalwil,2009,250
+141,Thalwil,2010,195
+141,Thalwil,2011,214
+141,Thalwil,2012,217
+141,Thalwil,2013,206
+141,Thalwil,2014,199
+141,Thalwil,2015,204
+141,Thalwil,2016,209
+141,Thalwil,2017,211
+141,Thalwil,2018,208
+142,Wädenswil (bis 2018),2006,293
+142,Wädenswil (bis 2018),2007,275
+142,Wädenswil (bis 2018),2008,252
+142,Wädenswil (bis 2018),2009,261
+142,Wädenswil (bis 2018),2010,248
+142,Wädenswil (bis 2018),2011,249
+142,Wädenswil (bis 2018),2012,250
+142,Wädenswil (bis 2018),2013,230
+142,Wädenswil (bis 2018),2014,240
+142,Wädenswil (bis 2018),2015,256
+142,Wädenswil (bis 2018),2016,227
+142,Wädenswil (bis 2018),2017,226
+142,Wädenswil (bis 2018),2018,230
+151,Erlenbach,2006,304
+151,Erlenbach,2007,280
+151,Erlenbach,2008,288
+151,Erlenbach,2009,295
+151,Erlenbach,2010,325
+151,Erlenbach,2011,326
+151,Erlenbach,2012,295
+151,Erlenbach,2013,293
+151,Erlenbach,2014,280
+151,Erlenbach,2015,297
+151,Erlenbach,2016,278
+151,Erlenbach,2017,272
+151,Erlenbach,2018,300
+152,Herrliberg,2006,368
+152,Herrliberg,2007,336
+152,Herrliberg,2008,347
+152,Herrliberg,2009,343
+152,Herrliberg,2010,316
+152,Herrliberg,2011,299
+152,Herrliberg,2012,335
+152,Herrliberg,2013,303
+152,Herrliberg,2014,274
+152,Herrliberg,2015,288
+152,Herrliberg,2016,279
+152,Herrliberg,2017,289
+152,Herrliberg,2018,314
+153,Hombrechtikon,2006,269
+153,Hombrechtikon,2007,261
+153,Hombrechtikon,2008,249
+153,Hombrechtikon,2009,246
+153,Hombrechtikon,2010,233
+153,Hombrechtikon,2011,214
+153,Hombrechtikon,2012,212
+153,Hombrechtikon,2013,212
+153,Hombrechtikon,2014,209
+153,Hombrechtikon,2015,214
+153,Hombrechtikon,2016,196
+153,Hombrechtikon,2017,213
+153,Hombrechtikon,2018,211
+154,Küsnacht,2006,333
+154,Küsnacht,2007,331
+154,Küsnacht,2008,285
+154,Küsnacht,2009,321
+154,Küsnacht,2010,340
+154,Küsnacht,2011,330
+154,Küsnacht,2012,315
+154,Küsnacht,2013,287
+154,Küsnacht,2014,298
+154,Küsnacht,2015,298
+154,Küsnacht,2016,289
+154,Küsnacht,2017,279
+154,Küsnacht,2018,292
+155,Männedorf,2006,289
+155,Männedorf,2007,270
+155,Männedorf,2008,240
+155,Männedorf,2009,223
+155,Männedorf,2010,224
+155,Männedorf,2011,215
+155,Männedorf,2012,229
+155,Männedorf,2013,212
+155,Männedorf,2014,210
+155,Männedorf,2015,228
+155,Männedorf,2016,211
+155,Männedorf,2017,207
+155,Männedorf,2018,220
+156,Meilen,2006,322
+156,Meilen,2007,290
+156,Meilen,2008,356
+156,Meilen,2009,403
+156,Meilen,2010,283
+156,Meilen,2011,272
+156,Meilen,2012,272
+156,Meilen,2013,265
+156,Meilen,2014,254
+156,Meilen,2015,256
+156,Meilen,2016,238
+156,Meilen,2017,233
+156,Meilen,2018,250
+157,Oetwil a.S.,2006,275
+157,Oetwil a.S.,2007,259
+157,Oetwil a.S.,2008,243
+157,Oetwil a.S.,2009,232
+157,Oetwil a.S.,2010,235
+157,Oetwil a.S.,2011,228
+157,Oetwil a.S.,2012,227
+157,Oetwil a.S.,2013,245
+157,Oetwil a.S.,2014,230
+157,Oetwil a.S.,2015,236
+157,Oetwil a.S.,2016,234
+157,Oetwil a.S.,2017,230
+157,Oetwil a.S.,2018,247
+158,Stäfa,2006,235
+158,Stäfa,2007,216
+158,Stäfa,2008,207
+158,Stäfa,2009,220
+158,Stäfa,2010,200
+158,Stäfa,2011,214
+158,Stäfa,2012,215
+158,Stäfa,2013,216
+158,Stäfa,2014,215
+158,Stäfa,2015,216
+158,Stäfa,2016,199
+158,Stäfa,2017,192
+158,Stäfa,2018,207
+159,Uetikon a.S.,2006,273
+159,Uetikon a.S.,2007,272
+159,Uetikon a.S.,2008,269
+159,Uetikon a.S.,2009,null
+159,Uetikon a.S.,2010,252
+159,Uetikon a.S.,2011,232
+159,Uetikon a.S.,2012,237
+159,Uetikon a.S.,2013,233
+159,Uetikon a.S.,2014,222
+159,Uetikon a.S.,2015,241
+159,Uetikon a.S.,2016,245
+159,Uetikon a.S.,2017,252
+159,Uetikon a.S.,2018,null
+160,Zumikon,2006,288
+160,Zumikon,2007,272
+160,Zumikon,2008,257
+160,Zumikon,2009,265
+160,Zumikon,2010,248
+160,Zumikon,2011,272
+160,Zumikon,2012,258
+160,Zumikon,2013,281
+160,Zumikon,2014,239
+160,Zumikon,2015,257
+160,Zumikon,2016,255
+160,Zumikon,2017,257
+160,Zumikon,2018,270
+161,Zollikon,2006,374
+161,Zollikon,2007,326
+161,Zollikon,2008,303
+161,Zollikon,2009,307
+161,Zollikon,2010,316
+161,Zollikon,2011,306
+161,Zollikon,2012,311
+161,Zollikon,2013,296
+161,Zollikon,2014,293
+161,Zollikon,2015,298
+161,Zollikon,2016,275
+161,Zollikon,2017,269
+161,Zollikon,2018,298
+171,Bauma (bis 2014),2006,108
+171,Bauma (bis 2014),2007,209
+171,Bauma (bis 2014),2008,212
+171,Bauma (bis 2014),2009,274
+171,Bauma (bis 2014),2010,196
+171,Bauma (bis 2014),2011,195
+171,Bauma (bis 2014),2012,201
+171,Bauma (bis 2014),2013,217
+171,Bauma (bis 2014),2014,251
+172,Fehraltorf,2006,379
+172,Fehraltorf,2007,412
+172,Fehraltorf,2008,343
+172,Fehraltorf,2009,285
+172,Fehraltorf,2010,276
+172,Fehraltorf,2011,284
+172,Fehraltorf,2012,272
+172,Fehraltorf,2013,287
+172,Fehraltorf,2014,293
+172,Fehraltorf,2015,298
+172,Fehraltorf,2016,296
+172,Fehraltorf,2017,304
+172,Fehraltorf,2018,292
+173,Hittnau,2006,199
+173,Hittnau,2007,187
+173,Hittnau,2008,185
+173,Hittnau,2009,195
+173,Hittnau,2010,196
+173,Hittnau,2011,190
+173,Hittnau,2012,194
+173,Hittnau,2013,196
+173,Hittnau,2014,186
+173,Hittnau,2015,191
+173,Hittnau,2016,186
+173,Hittnau,2017,183
+173,Hittnau,2018,179
+174,Illnau-Effretikon (bis 2015),2006,246
+174,Illnau-Effretikon (bis 2015),2007,220
+174,Illnau-Effretikon (bis 2015),2008,213
+174,Illnau-Effretikon (bis 2015),2009,217
+174,Illnau-Effretikon (bis 2015),2010,259
+174,Illnau-Effretikon (bis 2015),2011,215
+174,Illnau-Effretikon (bis 2015),2012,217
+174,Illnau-Effretikon (bis 2015),2013,225
+174,Illnau-Effretikon (bis 2015),2014,240
+174,Illnau-Effretikon (bis 2015),2015,242
+175,Kyburg (bis 2015),2006,244
+175,Kyburg (bis 2015),2007,279
+175,Kyburg (bis 2015),2008,317
+175,Kyburg (bis 2015),2009,388
+175,Kyburg (bis 2015),2010,null
+175,Kyburg (bis 2015),2011,295
+175,Kyburg (bis 2015),2012,260
+175,Kyburg (bis 2015),2013,298
+175,Kyburg (bis 2015),2014,340
+175,Kyburg (bis 2015),2015,null
+176,Lindau,2006,326
+176,Lindau,2007,523
+176,Lindau,2008,487
+176,Lindau,2009,440
+176,Lindau,2010,485
+176,Lindau,2011,530
+176,Lindau,2012,506
+176,Lindau,2013,284
+176,Lindau,2014,287
+176,Lindau,2015,271
+176,Lindau,2016,253
+176,Lindau,2017,247
+176,Lindau,2018,274
+177,Pfäffikon,2006,267
+177,Pfäffikon,2007,263
+177,Pfäffikon,2008,247
+177,Pfäffikon,2009,251
+177,Pfäffikon,2010,244
+177,Pfäffikon,2011,241
+177,Pfäffikon,2012,286
+177,Pfäffikon,2013,241
+177,Pfäffikon,2014,228
+177,Pfäffikon,2015,240
+177,Pfäffikon,2016,220
+177,Pfäffikon,2017,236
+177,Pfäffikon,2018,254
+178,Russikon,2006,208
+178,Russikon,2007,191
+178,Russikon,2008,182
+178,Russikon,2009,145
+178,Russikon,2010,179
+178,Russikon,2011,169
+178,Russikon,2012,165
+178,Russikon,2013,196
+178,Russikon,2014,183
+178,Russikon,2015,201
+178,Russikon,2016,195
+178,Russikon,2017,185
+178,Russikon,2018,158
+179,Sternenberg (bis 2014),2006,287
+179,Sternenberg (bis 2014),2007,271
+179,Sternenberg (bis 2014),2008,243
+179,Sternenberg (bis 2014),2009,232
+179,Sternenberg (bis 2014),2010,248
+179,Sternenberg (bis 2014),2011,259
+179,Sternenberg (bis 2014),2012,283
+179,Sternenberg (bis 2014),2013,281
+179,Sternenberg (bis 2014),2014,251
+180,Weisslingen,2006,245
+180,Weisslingen,2007,261
+180,Weisslingen,2008,262
+180,Weisslingen,2009,260
+180,Weisslingen,2010,null
+180,Weisslingen,2011,278
+180,Weisslingen,2012,264
+180,Weisslingen,2013,292
+180,Weisslingen,2014,279
+180,Weisslingen,2015,367
+180,Weisslingen,2016,365
+180,Weisslingen,2017,null
+180,Weisslingen,2018,325
+181,Wila,2006,309
+181,Wila,2007,450
+181,Wila,2008,341
+181,Wila,2009,268
+181,Wila,2010,217
+181,Wila,2011,250
+181,Wila,2012,null
+181,Wila,2013,313
+181,Wila,2014,303
+181,Wila,2015,314
+181,Wila,2016,264
+181,Wila,2017,268
+181,Wila,2018,261
+182,Wildberg,2006,262
+182,Wildberg,2007,323
+182,Wildberg,2008,309
+182,Wildberg,2009,254
+182,Wildberg,2010,295
+182,Wildberg,2011,288
+182,Wildberg,2012,319
+182,Wildberg,2013,375
+182,Wildberg,2014,398
+182,Wildberg,2015,335
+182,Wildberg,2016,377
+182,Wildberg,2017,389
+182,Wildberg,2018,355
+191,Dübendorf,2006,315
+191,Dübendorf,2007,292
+191,Dübendorf,2008,304
+191,Dübendorf,2009,308
+191,Dübendorf,2010,289
+191,Dübendorf,2011,287
+191,Dübendorf,2012,309
+191,Dübendorf,2013,288
+191,Dübendorf,2014,271
+191,Dübendorf,2015,278
+191,Dübendorf,2016,266
+191,Dübendorf,2017,268
+191,Dübendorf,2018,275
+192,Egg,2006,242
+192,Egg,2007,235
+192,Egg,2008,242
+192,Egg,2009,223
+192,Egg,2010,230
+192,Egg,2011,221
+192,Egg,2012,217
+192,Egg,2013,220
+192,Egg,2014,218
+192,Egg,2015,220
+192,Egg,2016,212
+192,Egg,2017,217
+192,Egg,2018,227
+193,Fällanden,2006,266
+193,Fällanden,2007,244
+193,Fällanden,2008,216
+193,Fällanden,2009,221
+193,Fällanden,2010,237
+193,Fällanden,2011,231
+193,Fällanden,2012,225
+193,Fällanden,2013,213
+193,Fällanden,2014,209
+193,Fällanden,2015,204
+193,Fällanden,2016,204
+193,Fällanden,2017,201
+193,Fällanden,2018,209
+194,Greifensee,2006,262
+194,Greifensee,2007,237
+194,Greifensee,2008,232
+194,Greifensee,2009,222
+194,Greifensee,2010,225
+194,Greifensee,2011,244
+194,Greifensee,2012,221
+194,Greifensee,2013,244
+194,Greifensee,2014,246
+194,Greifensee,2015,231
+194,Greifensee,2016,224
+194,Greifensee,2017,221
+194,Greifensee,2018,237
+195,Maur,2006,235
+195,Maur,2007,225
+195,Maur,2008,226
+195,Maur,2009,221
+195,Maur,2010,219
+195,Maur,2011,217
+195,Maur,2012,221
+195,Maur,2013,226
+195,Maur,2014,221
+195,Maur,2015,222
+195,Maur,2016,219
+195,Maur,2017,222
+195,Maur,2018,228
+196,Mönchaltorf,2006,434
+196,Mönchaltorf,2007,418
+196,Mönchaltorf,2008,450
+196,Mönchaltorf,2009,384
+196,Mönchaltorf,2010,412
+196,Mönchaltorf,2011,426
+196,Mönchaltorf,2012,368
+196,Mönchaltorf,2013,320
+196,Mönchaltorf,2014,289
+196,Mönchaltorf,2015,231
+196,Mönchaltorf,2016,213
+196,Mönchaltorf,2017,238
+196,Mönchaltorf,2018,266
+197,Schwerzenbach,2006,292
+197,Schwerzenbach,2007,281
+197,Schwerzenbach,2008,246
+197,Schwerzenbach,2009,248
+197,Schwerzenbach,2010,247
+197,Schwerzenbach,2011,242
+197,Schwerzenbach,2012,242
+197,Schwerzenbach,2013,250
+197,Schwerzenbach,2014,248
+197,Schwerzenbach,2015,252
+197,Schwerzenbach,2016,236
+197,Schwerzenbach,2017,251
+197,Schwerzenbach,2018,276
+198,Uster,2006,292
+198,Uster,2007,279
+198,Uster,2008,346
+198,Uster,2009,282
+198,Uster,2010,251
+198,Uster,2011,248
+198,Uster,2012,254
+198,Uster,2013,276
+198,Uster,2014,230
+198,Uster,2015,230
+198,Uster,2016,240
+198,Uster,2017,237
+198,Uster,2018,247
+199,Volketswil,2006,264
+199,Volketswil,2007,261
+199,Volketswil,2008,253
+199,Volketswil,2009,253
+199,Volketswil,2010,244
+199,Volketswil,2011,245
+199,Volketswil,2012,245
+199,Volketswil,2013,231
+199,Volketswil,2014,228
+199,Volketswil,2015,243
+199,Volketswil,2016,234
+199,Volketswil,2017,235
+199,Volketswil,2018,246
+200,Wangen-Brüttisellen,2006,224
+200,Wangen-Brüttisellen,2007,209
+200,Wangen-Brüttisellen,2008,207
+200,Wangen-Brüttisellen,2009,207
+200,Wangen-Brüttisellen,2010,206
+200,Wangen-Brüttisellen,2011,211
+200,Wangen-Brüttisellen,2012,211
+200,Wangen-Brüttisellen,2013,210
+200,Wangen-Brüttisellen,2014,207
+200,Wangen-Brüttisellen,2015,212
+200,Wangen-Brüttisellen,2016,201
+200,Wangen-Brüttisellen,2017,216
+200,Wangen-Brüttisellen,2018,209
+211,Altikon,2006,364
+211,Altikon,2007,354
+211,Altikon,2008,420
+211,Altikon,2009,492
+211,Altikon,2010,496
+211,Altikon,2011,328
+211,Altikon,2012,326
+211,Altikon,2013,371
+211,Altikon,2014,350
+211,Altikon,2015,443
+211,Altikon,2016,331
+211,Altikon,2017,366
+211,Altikon,2018,323
+212,Bertschikon (bis 2013),2013,273
+213,Brütten,2006,269
+213,Brütten,2007,259
+213,Brütten,2008,238
+213,Brütten,2009,219
+213,Brütten,2010,215
+213,Brütten,2011,221
+213,Brütten,2012,218
+213,Brütten,2013,222
+213,Brütten,2014,197
+213,Brütten,2015,217
+213,Brütten,2016,209
+213,Brütten,2017,237
+213,Brütten,2018,228
+214,Dägerlen,2006,241
+214,Dägerlen,2007,243
+214,Dägerlen,2008,222
+214,Dägerlen,2009,205
+214,Dägerlen,2010,219
+214,Dägerlen,2011,241
+214,Dägerlen,2012,211
+214,Dägerlen,2013,221
+214,Dägerlen,2014,198
+214,Dägerlen,2015,250
+214,Dägerlen,2016,235
+214,Dägerlen,2017,257
+214,Dägerlen,2018,236
+215,Dättlikon,2006,184
+215,Dättlikon,2007,165
+215,Dättlikon,2008,169
+215,Dättlikon,2009,145
+215,Dättlikon,2010,138
+215,Dättlikon,2011,145
+215,Dättlikon,2012,148
+215,Dättlikon,2013,249
+215,Dättlikon,2014,175
+215,Dättlikon,2015,203
+215,Dättlikon,2016,181
+215,Dättlikon,2017,185
+215,Dättlikon,2018,184
+216,Dinhard,2006,276
+216,Dinhard,2007,237
+216,Dinhard,2008,241
+216,Dinhard,2009,248
+216,Dinhard,2010,258
+216,Dinhard,2011,257
+216,Dinhard,2012,252
+216,Dinhard,2013,245
+216,Dinhard,2014,250
+216,Dinhard,2015,268
+216,Dinhard,2016,231
+216,Dinhard,2017,242
+216,Dinhard,2018,227
+217,Elgg (bis 2017),2006,201
+217,Elgg (bis 2017),2007,209
+217,Elgg (bis 2017),2008,195
+217,Elgg (bis 2017),2009,198
+217,Elgg (bis 2017),2010,185
+217,Elgg (bis 2017),2011,185
+217,Elgg (bis 2017),2012,190
+217,Elgg (bis 2017),2013,189
+217,Elgg (bis 2017),2014,187
+217,Elgg (bis 2017),2015,195
+217,Elgg (bis 2017),2016,185
+217,Elgg (bis 2017),2017,192
+218,Ellikon a.d.Th.,2006,396
+218,Ellikon a.d.Th.,2007,351
+218,Ellikon a.d.Th.,2008,401
+218,Ellikon a.d.Th.,2009,363
+218,Ellikon a.d.Th.,2010,348
+218,Ellikon a.d.Th.,2011,374
+218,Ellikon a.d.Th.,2012,389
+218,Ellikon a.d.Th.,2013,671
+218,Ellikon a.d.Th.,2014,529
+218,Ellikon a.d.Th.,2015,461
+218,Ellikon a.d.Th.,2016,350
+218,Ellikon a.d.Th.,2017,354
+218,Ellikon a.d.Th.,2018,407
+219,Elsau,2006,296
+219,Elsau,2007,264
+219,Elsau,2008,269
+219,Elsau,2009,273
+219,Elsau,2010,274
+219,Elsau,2011,279
+219,Elsau,2012,210
+219,Elsau,2013,226
+219,Elsau,2014,218
+219,Elsau,2015,253
+219,Elsau,2016,211
+219,Elsau,2017,213
+219,Elsau,2018,229
+220,Hagenbuch,2006,503
+220,Hagenbuch,2007,449
+220,Hagenbuch,2008,471
+220,Hagenbuch,2009,472
+220,Hagenbuch,2010,null
+220,Hagenbuch,2011,433
+220,Hagenbuch,2012,377
+220,Hagenbuch,2013,491
+220,Hagenbuch,2014,479
+220,Hagenbuch,2015,444
+220,Hagenbuch,2016,439
+220,Hagenbuch,2017,456
+220,Hagenbuch,2018,377
+221,Hettlingen,2006,263
+221,Hettlingen,2007,244
+221,Hettlingen,2008,268
+221,Hettlingen,2009,216
+221,Hettlingen,2010,211
+221,Hettlingen,2011,217
+221,Hettlingen,2012,211
+221,Hettlingen,2013,214
+221,Hettlingen,2014,221
+221,Hettlingen,2015,225
+221,Hettlingen,2016,203
+221,Hettlingen,2017,215
+221,Hettlingen,2018,237
+222,Hofstetten (bis 2017),2006,null
+222,Hofstetten (bis 2017),2007,227
+222,Hofstetten (bis 2017),2008,null
+222,Hofstetten (bis 2017),2009,285
+222,Hofstetten (bis 2017),2010,291
+222,Hofstetten (bis 2017),2011,285
+222,Hofstetten (bis 2017),2012,241
+222,Hofstetten (bis 2017),2013,171
+222,Hofstetten (bis 2017),2014,343
+222,Hofstetten (bis 2017),2015,200
+222,Hofstetten (bis 2017),2016,191
+222,Hofstetten (bis 2017),2017,186
+223,Neftenbach,2006,245
+223,Neftenbach,2007,238
+223,Neftenbach,2008,252
+223,Neftenbach,2009,248
+223,Neftenbach,2010,191
+223,Neftenbach,2011,189
+223,Neftenbach,2012,197
+223,Neftenbach,2013,211
+223,Neftenbach,2014,187
+223,Neftenbach,2015,199
+223,Neftenbach,2016,189
+223,Neftenbach,2017,181
+223,Neftenbach,2018,206
+224,Pfungen,2006,244
+224,Pfungen,2007,217
+224,Pfungen,2008,220
+224,Pfungen,2009,234
+224,Pfungen,2010,209
+224,Pfungen,2011,192
+224,Pfungen,2012,207
+224,Pfungen,2013,203
+224,Pfungen,2014,201
+224,Pfungen,2015,191
+224,Pfungen,2016,188
+224,Pfungen,2017,189
+224,Pfungen,2018,187
+225,Rickenbach,2006,285
+225,Rickenbach,2007,234
+225,Rickenbach,2008,243
+225,Rickenbach,2009,259
+225,Rickenbach,2010,258
+225,Rickenbach,2011,271
+225,Rickenbach,2012,205
+225,Rickenbach,2013,217
+225,Rickenbach,2014,196
+225,Rickenbach,2015,218
+225,Rickenbach,2016,210
+225,Rickenbach,2017,218
+225,Rickenbach,2018,218
+226,Schlatt,2006,116
+226,Schlatt,2007,152
+226,Schlatt,2008,null
+226,Schlatt,2009,null
+226,Schlatt,2010,161
+226,Schlatt,2011,205
+226,Schlatt,2012,201
+226,Schlatt,2013,158
+226,Schlatt,2014,176
+226,Schlatt,2015,168
+226,Schlatt,2016,171
+226,Schlatt,2017,169
+226,Schlatt,2018,194
+227,Seuzach,2006,261
+227,Seuzach,2007,271
+227,Seuzach,2008,240
+227,Seuzach,2009,229
+227,Seuzach,2010,233
+227,Seuzach,2011,226
+227,Seuzach,2012,205
+227,Seuzach,2013,206
+227,Seuzach,2014,211
+227,Seuzach,2015,209
+227,Seuzach,2016,204
+227,Seuzach,2017,221
+227,Seuzach,2018,208
+228,Turbenthal,2006,279
+228,Turbenthal,2007,274
+228,Turbenthal,2008,279
+228,Turbenthal,2009,248
+228,Turbenthal,2010,249
+228,Turbenthal,2011,260
+228,Turbenthal,2012,259
+228,Turbenthal,2013,225
+228,Turbenthal,2014,219
+228,Turbenthal,2015,241
+228,Turbenthal,2016,226
+228,Turbenthal,2017,238
+228,Turbenthal,2018,245
+229,Wiesendangen (bis 2013),2013,211
+230,Winterthur,2006,261
+230,Winterthur,2007,254
+230,Winterthur,2008,249
+230,Winterthur,2009,249
+230,Winterthur,2010,241
+230,Winterthur,2011,241
+230,Winterthur,2012,241
+230,Winterthur,2013,238
+230,Winterthur,2014,228
+230,Winterthur,2015,233
+230,Winterthur,2016,225
+230,Winterthur,2017,227
+230,Winterthur,2018,239
+231,Zell,2006,295
+231,Zell,2007,281
+231,Zell,2008,301
+231,Zell,2009,256
+231,Zell,2010,225
+231,Zell,2011,225
+231,Zell,2012,229
+231,Zell,2013,282
+231,Zell,2014,263
+231,Zell,2015,276
+231,Zell,2016,260
+231,Zell,2017,252
+231,Zell,2018,244
+241,Aesch ZH,2006,347
+241,Aesch ZH,2007,258
+241,Aesch ZH,2008,254
+241,Aesch ZH,2009,276
+241,Aesch ZH,2010,250
+241,Aesch ZH,2011,238
+241,Aesch ZH,2012,246
+241,Aesch ZH,2013,251
+241,Aesch ZH,2014,260
+241,Aesch ZH,2015,277
+241,Aesch ZH,2016,237
+241,Aesch ZH,2017,259
+241,Aesch ZH,2018,238
+242,Birmensdorf,2006,259
+242,Birmensdorf,2007,274
+242,Birmensdorf,2008,237
+242,Birmensdorf,2009,222
+242,Birmensdorf,2010,226
+242,Birmensdorf,2011,202
+242,Birmensdorf,2012,218
+242,Birmensdorf,2013,246
+242,Birmensdorf,2014,213
+242,Birmensdorf,2015,234
+242,Birmensdorf,2016,215
+242,Birmensdorf,2017,213
+242,Birmensdorf,2018,217
+243,Dietikon,2006,320
+243,Dietikon,2007,305
+243,Dietikon,2008,290
+243,Dietikon,2009,295
+243,Dietikon,2010,286
+243,Dietikon,2011,282
+243,Dietikon,2012,271
+243,Dietikon,2013,306
+243,Dietikon,2014,267
+243,Dietikon,2015,268
+243,Dietikon,2016,272
+243,Dietikon,2017,271
+243,Dietikon,2018,279
+244,Geroldswil,2006,314
+244,Geroldswil,2007,null
+244,Geroldswil,2008,251
+244,Geroldswil,2009,252
+244,Geroldswil,2010,249
+244,Geroldswil,2011,249
+244,Geroldswil,2012,245
+244,Geroldswil,2013,239
+244,Geroldswil,2014,226
+244,Geroldswil,2015,270
+244,Geroldswil,2016,229
+244,Geroldswil,2017,236
+244,Geroldswil,2018,244
+245,Oberengstringen,2006,279
+245,Oberengstringen,2007,276
+245,Oberengstringen,2008,282
+245,Oberengstringen,2009,267
+245,Oberengstringen,2010,260
+245,Oberengstringen,2011,279
+245,Oberengstringen,2012,269
+245,Oberengstringen,2013,265
+245,Oberengstringen,2014,232
+245,Oberengstringen,2015,235
+245,Oberengstringen,2016,257
+245,Oberengstringen,2017,251
+245,Oberengstringen,2018,212
+246,Oetwil a.d.L.,2006,240
+246,Oetwil a.d.L.,2007,269
+246,Oetwil a.d.L.,2008,251
+246,Oetwil a.d.L.,2009,265
+246,Oetwil a.d.L.,2010,266
+246,Oetwil a.d.L.,2011,248
+246,Oetwil a.d.L.,2012,249
+246,Oetwil a.d.L.,2013,254
+246,Oetwil a.d.L.,2014,230
+246,Oetwil a.d.L.,2015,261
+246,Oetwil a.d.L.,2016,242
+246,Oetwil a.d.L.,2017,230
+246,Oetwil a.d.L.,2018,231
+247,Schlieren,2006,381
+247,Schlieren,2007,350
+247,Schlieren,2008,353
+247,Schlieren,2009,339
+247,Schlieren,2010,341
+247,Schlieren,2011,329
+247,Schlieren,2012,319
+247,Schlieren,2013,317
+247,Schlieren,2014,317
+247,Schlieren,2015,315
+247,Schlieren,2016,312
+247,Schlieren,2017,324
+247,Schlieren,2018,312
+248,Uitikon,2006,277
+248,Uitikon,2007,252
+248,Uitikon,2008,247
+248,Uitikon,2009,281
+248,Uitikon,2010,280
+248,Uitikon,2011,270
+248,Uitikon,2012,281
+248,Uitikon,2013,295
+248,Uitikon,2014,269
+248,Uitikon,2015,260
+248,Uitikon,2016,254
+248,Uitikon,2017,248
+248,Uitikon,2018,236
+249,Unterengstringen,2006,354
+249,Unterengstringen,2007,338
+249,Unterengstringen,2008,355
+249,Unterengstringen,2009,302
+249,Unterengstringen,2010,277
+249,Unterengstringen,2011,295
+249,Unterengstringen,2012,282
+249,Unterengstringen,2013,304
+249,Unterengstringen,2014,251
+249,Unterengstringen,2015,245
+249,Unterengstringen,2016,254
+249,Unterengstringen,2017,252
+249,Unterengstringen,2018,252
+250,Urdorf,2006,314
+250,Urdorf,2007,298
+250,Urdorf,2008,300
+250,Urdorf,2009,292
+250,Urdorf,2010,299
+250,Urdorf,2011,285
+250,Urdorf,2012,281
+250,Urdorf,2013,276
+250,Urdorf,2014,338
+250,Urdorf,2015,250
+250,Urdorf,2016,243
+250,Urdorf,2017,234
+250,Urdorf,2018,233
+251,Weiningen,2006,321
+251,Weiningen,2007,280
+251,Weiningen,2008,313
+251,Weiningen,2009,299
+251,Weiningen,2010,301
+251,Weiningen,2011,271
+251,Weiningen,2012,294
+251,Weiningen,2013,271
+251,Weiningen,2014,241
+251,Weiningen,2015,320
+251,Weiningen,2016,259
+251,Weiningen,2017,253
+251,Weiningen,2018,267
+261,Zürich,2006,355
+261,Zürich,2007,333
+261,Zürich,2008,332
+261,Zürich,2009,338
+261,Zürich,2010,336
+261,Zürich,2011,317
+261,Zürich,2012,319
+261,Zürich,2013,310
+261,Zürich,2014,294
+261,Zürich,2015,293
+261,Zürich,2016,289
+261,Zürich,2017,288
+261,Zürich,2018,287
+292,Stammheim,2018,null
+293,Wädenswil,2018,238
+294,Elgg,2013,187
+294,Elgg,2014,203
+294,Elgg,2015,196
+294,Elgg,2016,186
+294,Elgg,2017,192
+294,Elgg,2018,204
+295,Horgen,2013,227
+295,Horgen,2014,222
+295,Horgen,2015,225
+295,Horgen,2016,217
+295,Horgen,2017,213
+295,Horgen,2018,204
+296,Illnau-Effretikon,2006,223
+296,Illnau-Effretikon,2007,221
+296,Illnau-Effretikon,2008,218
+296,Illnau-Effretikon,2009,222
+296,Illnau-Effretikon,2010,null
+296,Illnau-Effretikon,2011,217
+296,Illnau-Effretikon,2012,218
+296,Illnau-Effretikon,2013,226
+296,Illnau-Effretikon,2014,242
+296,Illnau-Effretikon,2015,242
+296,Illnau-Effretikon,2016,231
+296,Illnau-Effretikon,2017,238
+296,Illnau-Effretikon,2018,233
+297,Bauma,2006,192
+297,Bauma,2007,214
+297,Bauma,2008,214
+297,Bauma,2009,271
+297,Bauma,2010,201
+297,Bauma,2011,200
+297,Bauma,2012,207
+297,Bauma,2013,222
+297,Bauma,2014,251
+297,Bauma,2015,231
+297,Bauma,2016,250
+297,Bauma,2017,215
+297,Bauma,2018,241
+298,Wiesendangen,2006,239
+298,Wiesendangen,2007,235
+298,Wiesendangen,2008,228
+298,Wiesendangen,2009,217
+298,Wiesendangen,2010,206
+298,Wiesendangen,2011,215
+298,Wiesendangen,2012,218
+298,Wiesendangen,2013,220
+298,Wiesendangen,2014,192
+298,Wiesendangen,2015,230
+298,Wiesendangen,2016,212
+298,Wiesendangen,2017,215
+298,Wiesendangen,2018,226
+0,Bezirk Affoltern,2006,276
+0,Bezirk Affoltern,2007,252
+0,Bezirk Affoltern,2008,244
+0,Bezirk Affoltern,2009,233
+0,Bezirk Affoltern,2010,232
+0,Bezirk Affoltern,2011,233
+0,Bezirk Affoltern,2012,237
+0,Bezirk Affoltern,2013,237
+0,Bezirk Affoltern,2014,228
+0,Bezirk Affoltern,2015,234
+0,Bezirk Affoltern,2016,223
+0,Bezirk Affoltern,2017,226
+0,Bezirk Affoltern,2018,236
+0,Bezirk Andelfingen,2006,334
+0,Bezirk Andelfingen,2007,317
+0,Bezirk Andelfingen,2008,303
+0,Bezirk Andelfingen,2009,282
+0,Bezirk Andelfingen,2010,281
+0,Bezirk Andelfingen,2011,276
+0,Bezirk Andelfingen,2012,248
+0,Bezirk Andelfingen,2013,282
+0,Bezirk Andelfingen,2014,282
+0,Bezirk Andelfingen,2015,300
+0,Bezirk Andelfingen,2016,286
+0,Bezirk Andelfingen,2017,298
+0,Bezirk Andelfingen,2018,297
+0,Bezirk Bülach,2006,288
+0,Bezirk Bülach,2007,277
+0,Bezirk Bülach,2008,268
+0,Bezirk Bülach,2009,260
+0,Bezirk Bülach,2010,254
+0,Bezirk Bülach,2011,247
+0,Bezirk Bülach,2012,249
+0,Bezirk Bülach,2013,250
+0,Bezirk Bülach,2014,237
+0,Bezirk Bülach,2015,257
+0,Bezirk Bülach,2016,245
+0,Bezirk Bülach,2017,259
+0,Bezirk Bülach,2018,256
+0,Bezirk Dielsdorf,2006,311
+0,Bezirk Dielsdorf,2007,282
+0,Bezirk Dielsdorf,2008,278
+0,Bezirk Dielsdorf,2009,283
+0,Bezirk Dielsdorf,2010,262
+0,Bezirk Dielsdorf,2011,266
+0,Bezirk Dielsdorf,2012,256
+0,Bezirk Dielsdorf,2013,262
+0,Bezirk Dielsdorf,2014,249
+0,Bezirk Dielsdorf,2015,265
+0,Bezirk Dielsdorf,2016,245
+0,Bezirk Dielsdorf,2017,247
+0,Bezirk Dielsdorf,2018,261
+0,Bezirk Dietikon,2006,319
+0,Bezirk Dietikon,2007,303
+0,Bezirk Dietikon,2008,296
+0,Bezirk Dietikon,2009,291
+0,Bezirk Dietikon,2010,289
+0,Bezirk Dietikon,2011,281
+0,Bezirk Dietikon,2012,278
+0,Bezirk Dietikon,2013,289
+0,Bezirk Dietikon,2014,273
+0,Bezirk Dietikon,2015,272
+0,Bezirk Dietikon,2016,266
+0,Bezirk Dietikon,2017,266
+0,Bezirk Dietikon,2018,264
+0,Bezirk Hinwil,2006,290
+0,Bezirk Hinwil,2007,273
+0,Bezirk Hinwil,2008,264
+0,Bezirk Hinwil,2009,261
+0,Bezirk Hinwil,2010,241
+0,Bezirk Hinwil,2011,245
+0,Bezirk Hinwil,2012,236
+0,Bezirk Hinwil,2013,233
+0,Bezirk Hinwil,2014,224
+0,Bezirk Hinwil,2015,233
+0,Bezirk Hinwil,2016,227
+0,Bezirk Hinwil,2017,219
+0,Bezirk Hinwil,2018,234
+0,Bezirk Horgen,2006,270
+0,Bezirk Horgen,2007,255
+0,Bezirk Horgen,2008,251
+0,Bezirk Horgen,2009,249
+0,Bezirk Horgen,2010,237
+0,Bezirk Horgen,2011,233
+0,Bezirk Horgen,2012,232
+0,Bezirk Horgen,2013,221
+0,Bezirk Horgen,2014,220
+0,Bezirk Horgen,2015,228
+0,Bezirk Horgen,2016,215
+0,Bezirk Horgen,2017,217
+0,Bezirk Horgen,2018,220
+0,Bezirk Meilen,2006,305
+0,Bezirk Meilen,2007,284
+0,Bezirk Meilen,2008,277
+0,Bezirk Meilen,2009,290
+0,Bezirk Meilen,2010,271
+0,Bezirk Meilen,2011,265
+0,Bezirk Meilen,2012,265
+0,Bezirk Meilen,2013,257
+0,Bezirk Meilen,2014,250
+0,Bezirk Meilen,2015,257
+0,Bezirk Meilen,2016,244
+0,Bezirk Meilen,2017,241
+0,Bezirk Meilen,2018,257
+0,Bezirk Pfäffikon,2006,256
+0,Bezirk Pfäffikon,2007,281
+0,Bezirk Pfäffikon,2008,263
+0,Bezirk Pfäffikon,2009,255
+0,Bezirk Pfäffikon,2010,263
+0,Bezirk Pfäffikon,2011,256
+0,Bezirk Pfäffikon,2012,253
+0,Bezirk Pfäffikon,2013,246
+0,Bezirk Pfäffikon,2014,248
+0,Bezirk Pfäffikon,2015,254
+0,Bezirk Pfäffikon,2016,245
+0,Bezirk Pfäffikon,2017,240
+0,Bezirk Pfäffikon,2018,247
+0,Bezirk Uster,2006,282
+0,Bezirk Uster,2007,267
+0,Bezirk Uster,2008,285
+0,Bezirk Uster,2009,265
+0,Bezirk Uster,2010,253
+0,Bezirk Uster,2011,252
+0,Bezirk Uster,2012,256
+0,Bezirk Uster,2013,255
+0,Bezirk Uster,2014,237
+0,Bezirk Uster,2015,239
+0,Bezirk Uster,2016,235
+0,Bezirk Uster,2017,237
+0,Bezirk Uster,2018,247
+0,Bezirk Winterthur,2006,262
+0,Bezirk Winterthur,2007,254
+0,Bezirk Winterthur,2008,252
+0,Bezirk Winterthur,2009,248
+0,Bezirk Winterthur,2010,236
+0,Bezirk Winterthur,2011,238
+0,Bezirk Winterthur,2012,235
+0,Bezirk Winterthur,2013,237
+0,Bezirk Winterthur,2014,227
+0,Bezirk Winterthur,2015,234
+0,Bezirk Winterthur,2016,223
+0,Bezirk Winterthur,2017,226
+0,Bezirk Winterthur,2018,235
+0,Bezirk Zürich,2006,355
+0,Bezirk Zürich,2007,333
+0,Bezirk Zürich,2008,332
+0,Bezirk Zürich,2009,338
+0,Bezirk Zürich,2010,336
+0,Bezirk Zürich,2011,317
+0,Bezirk Zürich,2012,319
+0,Bezirk Zürich,2013,310
+0,Bezirk Zürich,2014,294
+0,Bezirk Zürich,2015,293
+0,Bezirk Zürich,2016,289
+0,Bezirk Zürich,2017,288
+0,Bezirk Zürich,2018,287
+0,Region Furttal,2006,345
+0,Region Furttal,2007,316
+0,Region Furttal,2008,300
+0,Region Furttal,2009,321
+0,Region Furttal,2010,274
+0,Region Furttal,2011,277
+0,Region Furttal,2012,263
+0,Region Furttal,2013,296
+0,Region Furttal,2014,269
+0,Region Furttal,2015,281
+0,Region Furttal,2016,267
+0,Region Furttal,2017,276
+0,Region Furttal,2018,291
+0,Region Glattal,2006,291
+0,Region Glattal,2007,275
+0,Region Glattal,2008,274
+0,Region Glattal,2009,269
+0,Region Glattal,2010,263
+0,Region Glattal,2011,259
+0,Region Glattal,2012,264
+0,Region Glattal,2013,258
+0,Region Glattal,2014,249
+0,Region Glattal,2015,264
+0,Region Glattal,2016,255
+0,Region Glattal,2017,267
+0,Region Glattal,2018,266
+0,Region Knonaueramt,2006,276
+0,Region Knonaueramt,2007,252
+0,Region Knonaueramt,2008,244
+0,Region Knonaueramt,2009,233
+0,Region Knonaueramt,2010,232
+0,Region Knonaueramt,2011,233
+0,Region Knonaueramt,2012,237
+0,Region Knonaueramt,2013,237
+0,Region Knonaueramt,2014,228
+0,Region Knonaueramt,2015,234
+0,Region Knonaueramt,2016,223
+0,Region Knonaueramt,2017,226
+0,Region Knonaueramt,2018,236
+0,Region Limmattal,2006,319
+0,Region Limmattal,2007,303
+0,Region Limmattal,2008,296
+0,Region Limmattal,2009,291
+0,Region Limmattal,2010,289
+0,Region Limmattal,2011,281
+0,Region Limmattal,2012,278
+0,Region Limmattal,2013,289
+0,Region Limmattal,2014,273
+0,Region Limmattal,2015,272
+0,Region Limmattal,2016,266
+0,Region Limmattal,2017,266
+0,Region Limmattal,2018,264
+0,Region Oberland,2006,285
+0,Region Oberland,2007,277
+0,Region Oberland,2008,281
+0,Region Oberland,2009,263
+0,Region Oberland,2010,244
+0,Region Oberland,2011,246
+0,Region Oberland,2012,242
+0,Region Oberland,2013,246
+0,Region Oberland,2014,231
+0,Region Oberland,2015,235
+0,Region Oberland,2016,232
+0,Region Oberland,2017,227
+0,Region Oberland,2018,239
+0,Region Pfannenstiel,2006,300
+0,Region Pfannenstiel,2007,280
+0,Region Pfannenstiel,2008,274
+0,Region Pfannenstiel,2009,284
+0,Region Pfannenstiel,2010,268
+0,Region Pfannenstiel,2011,262
+0,Region Pfannenstiel,2012,262
+0,Region Pfannenstiel,2013,254
+0,Region Pfannenstiel,2014,248
+0,Region Pfannenstiel,2015,255
+0,Region Pfannenstiel,2016,241
+0,Region Pfannenstiel,2017,240
+0,Region Pfannenstiel,2018,255
+0,Region Unterland,2006,276
+0,Region Unterland,2007,259
+0,Region Unterland,2008,250
+0,Region Unterland,2009,245
+0,Region Unterland,2010,238
+0,Region Unterland,2011,237
+0,Region Unterland,2012,233
+0,Region Unterland,2013,236
+0,Region Unterland,2014,223
+0,Region Unterland,2015,236
+0,Region Unterland,2016,217
+0,Region Unterland,2017,218
+0,Region Unterland,2018,227
+0,Region Weinland,2006,335
+0,Region Weinland,2007,317
+0,Region Weinland,2008,306
+0,Region Weinland,2009,282
+0,Region Weinland,2010,281
+0,Region Weinland,2011,276
+0,Region Weinland,2012,248
+0,Region Weinland,2013,282
+0,Region Weinland,2014,282
+0,Region Weinland,2015,300
+0,Region Weinland,2016,286
+0,Region Weinland,2017,298
+0,Region Weinland,2018,297
+0,Region Winterthur u. Umg.,2006,262
+0,Region Winterthur u. Umg.,2007,258
+0,Region Winterthur u. Umg.,2008,255
+0,Region Winterthur u. Umg.,2009,251
+0,Region Winterthur u. Umg.,2010,245
+0,Region Winterthur u. Umg.,2011,245
+0,Region Winterthur u. Umg.,2012,241
+0,Region Winterthur u. Umg.,2013,239
+0,Region Winterthur u. Umg.,2014,231
+0,Region Winterthur u. Umg.,2015,238
+0,Region Winterthur u. Umg.,2016,227
+0,Region Winterthur u. Umg.,2017,228
+0,Region Winterthur u. Umg.,2018,237
+0,Region Zimmerberg,2006,270
+0,Region Zimmerberg,2007,255
+0,Region Zimmerberg,2008,251
+0,Region Zimmerberg,2009,249
+0,Region Zimmerberg,2010,237
+0,Region Zimmerberg,2011,233
+0,Region Zimmerberg,2012,232
+0,Region Zimmerberg,2013,221
+0,Region Zimmerberg,2014,220
+0,Region Zimmerberg,2015,228
+0,Region Zimmerberg,2016,215
+0,Region Zimmerberg,2017,217
+0,Region Zimmerberg,2018,220
+0,Region Zürich,2006,355
+0,Region Zürich,2007,333
+0,Region Zürich,2008,332
+0,Region Zürich,2009,338
+0,Region Zürich,2010,336
+0,Region Zürich,2011,317
+0,Region Zürich,2012,319
+0,Region Zürich,2013,310
+0,Region Zürich,2014,294
+0,Region Zürich,2015,293
+0,Region Zürich,2016,289
+0,Region Zürich,2017,288
+0,Region Zürich,2018,287
+0,Zürich - ganzer Kanton,2006,305
+0,Zürich - ganzer Kanton,2007,289
+0,Zürich - ganzer Kanton,2008,286
+0,Zürich - ganzer Kanton,2009,284
+0,Zürich - ganzer Kanton,2010,276
+0,Zürich - ganzer Kanton,2011,269
+0,Zürich - ganzer Kanton,2012,269
+0,Zürich - ganzer Kanton,2013,265
+0,Zürich - ganzer Kanton,2014,254
+0,Zürich - ganzer Kanton,2015,260
+0,Zürich - ganzer Kanton,2016,251
+0,Zürich - ganzer Kanton,2017,253
+0,Zürich - ganzer Kanton,2018,257

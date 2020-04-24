@@ -1,0 +1,25 @@
+---
+title: "Leistungsnachweis"
+subtitle: "CAS Datenanalyse 20.11 Modul A2"
+author: "Stefan Schmidt"
+date: "03.05.2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. COVID-19 Pandemie in der Schweiz
+
+Gehen wir davon aus, dass die Anzahl auf COVID-19 positiv getesteter Personen
+Poisson verteilt ist. Verwenden Sie die auf
+[Wikipedia](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_der_Schweiz)
+veröffentlichten Daten und analysieren Sie diese mit mindestens vier der
+besprochenen fünf statistischen Verfahren (siehe Folie 27, HT 7).
+Formulieren Sie die Frage in Worten, die Sie mit dem Analyseverfahren
+beantworten wollen. Beschreiben Sie, mit welchen Teildatensätzen
+Sie arbeiten. Halten Sie gegebenenfalls die einzelnen Schritt in der jeweiligen
+Argumentationskette fest.
+Falls Sie zusätzliche Daten verwenden, dokumentieren Sie, woher Sie diese haben.
+

@@ -1,0 +1,118 @@
+---
+title: "Arbeitsblatt 2"
+subtitle: "Einfache lineare Regression (Interferenz & Vorhersage)"
+author: "Stefan Schmidt"
+date: "22.04.2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Aufgabe 1 (Antike Uhren)
+
+Diese Aufgabe ist eine Fortsetzung vom Arbeitsblatt 1, Aufgabe 2
+
+McClave und Benson haben Daten über das Alter (in Jahren) und den Preis
+(in US$) von antiken Uhren an Auktionen zusammengetragen. Sie stehen Ihnen im
+Ordner `Daten` im File `AntikeUhren.dat` auf Moodle zur Verfügung.
+
+```{r echo=FALSE}
+uhren <- read.table("./Module_B1/data/AntikeUhren.dat", header = TRUE)
+```
+
+### (a)
+
+Passen Sie eine Gerade an die Datenpunkte an. Geben Sie die geschätzten
+Koeffizientenwerte an. Wie lautet die angepasste Geradengleichung?
+
+### (b)
+
+Hat das Alter einen signifikanten Einfluss auf den Preis? Führen Sie hierfür
+einen geeigneten Test auf dem 5% Niveau durch.
+
+### (c)
+
+Ein Händler behauptet, dass er mit seiner antiken Uhr im nächsten Jahr an der
+Auktion 15 US$ mehr erzielen kann. Ist dies plausibel? Führen Sie einen
+passenden Test auf dem 1% Niveau durch.
+
+### (d)
+
+Der Händler beschliesst ein Jahr mit dem Verkauf seiner antiken Uhr zu warten.
+Welche Preiszunahme ist für die ein Jahr ältere antike Uhr plausibel? Geben Sie
+hierfür ein 95% Vertrauensintervall an.
+
+### (e)
+
+Ein etwas unerfahrener Käufer möchte bei der Auktion eine 160-Jahre alte,
+antike Uhr ersteigern. Geben Sie ihm, basierend auf dem Regressionsmodell aus
+Teilaufgabe (a), ein 95%-Vertrauens- und ein 95%-Prognoseintervall für den
+Preis einer solchen Uhr. Welches der beiden Intervalle ist für den unerfahrenen
+Käufer nützlicher?
+
+
+## Aufgabe 2 (Conconi-Test)
+
+Der Conconi-Test dient zur Messung der Ausdauer-Leistungsfähigkeit. Er findet
+auf der 400m-Bahn statt, wo man gemütlich (mit 9km/h) zu laufen beginnt. Alle
+200m wird das Tempo um 0.5km/h erhöht. Am Ende jedes 200m-Abschnitts wird die
+Herzfrequenz gemessen. Der Test geht so lange weiter, bis das Tempo nicht mehr
+erhöht werden kann. Die Daten eines Läufers stehen im File `conconi.rda` zu
+Verfügung.
+
+### (a)
+
+Stellen sie die Daten in einem Scatterplot dar, passen sie mit dem Befehl
+`lm()` die Regressionsgerade an und zeichnen sie diese ein.
+
+### (b)
+
+Zu welchem Prozentanteil lassen sich die Schwankungen in den Pulswerten durch
+die Zunahme der Geschwindigkeit erklären?
+
+### (c)
+
+Mit welcher Pulsfrequenz muss der Läufer rechnen, wenn er mit 10km/h unterwegs
+ist? Geben Sie ein 95% Prognoseintervall an.
+
+### (d)
+
+Geben Sie an, wie hoch der Ruhepuls (d.h. keine Vorwärtsbewegung) geschätzt
+wird. In welchem 95% Intervall würden Sie den entsprechenden Messpunkt erwarten.
+
+### (e)
+
+Um wie viel nimmt der Puls im Schnitt zu, wenn die Geschwindigkeit um 1 km/h
+erhöht wird? Welche anderen Werte sind für die Pulszunahme ebenfalls plausibel?
+
+### (f)
+
+Im File `conconi2.rda` stehen Ihnen die Daten eines zweiten Läufers zur
+Verfügung. Wessen Puls steigt bei Geschwindigkeitserhöhung langsamer an? Können
+sie eine Aussage treffen, ob zwischen den beiden ein auf 5% signifikanter
+Unterschied besteht? Lässt sich ableiten, wer der besser trainierte Läufer ist?
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
