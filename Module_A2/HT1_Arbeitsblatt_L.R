@@ -7,7 +7,8 @@
 
 ## Aufgabe 1 (i)
 ## (a)
-alpha <- read.table("CAS-DA_ModulA2-HT1_Daten/alpha.dat", header=TRUE)
+#alpha <- read.table("CAS-DA_ModulA2-HT1_Daten/alpha.dat", header=TRUE)
+alpha <- read.table("./Module_A2/data/alpha.dat", header=TRUE)
 str(alpha)
 
 plot(alpha$k, alpha$freq, type="h", lwd=6, col="blue", lend=2, xlab="k",
@@ -31,7 +32,8 @@ lines(alpha$k, yModell, type="b", lwd=2, col="red")
 
 ## Aufgabe 1 (ii)
 ## (a)
-vk <- read.table("CAS-DA_ModulA2-HT1_Daten/verkehr.dat", header=TRUE)
+#vk <- read.table("CAS-DA_ModulA2-HT1_Daten/verkehr.dat", header=TRUE)
+vk <- read.table("./Module_A2/data/verkehr.dat", header=TRUE)
 plot(vk$k, vk$freq, type="h", lwd=6, col="blue", lend=2, xlab="k",
             ylab="Häufigkeit", las=1)
 
@@ -129,14 +131,16 @@ sqrt(s2)  ## = 3.741657
 ## *********
 
 ## (a)
-A1 <- read.table("CAS-DA_ModulA2-HT1_Daten/asbest1.dat", header=F)[,1]
+#A1 <- read.table("CAS-DA_ModulA2-HT1_Daten/asbest1.dat", header=F)[,1]
+A1 <- read.table("./Module_A2/data/asbest1.dat", header=F)[,1]
 range(A1)  ## 16 34 (min=16, max=34)
            ## Spannweite = 34 - 16 = 18
 diff(range(A1))
 mean(A1)   ## = 24.91304
 
 ## (b)
-A2 <- read.table("CAS-DA_ModulA2-HT1_Daten/asbest2.dat", header=F)[,1]
+#A2 <- read.table("CAS-DA_ModulA2-HT1_Daten/asbest2.dat", header=F)[,1]
+A2 <- read.table("./Module_A2/data/asbest2.dat", header=F)[,1]
 range(A2)  ## 13 38
            ## Spannweite = 38 - 13 = 25
 mean(A2)   ## = 24.64

@@ -1,0 +1,61 @@
+---
+title: "Arbeitsblatt 2"
+author: "Anna Drewek"
+subtitle: Einfache lineare Regression
+output: word_document
+---
+
+```{r, include = FALSE}
+library("car")
+```
+
+
+
+# Aufgabe 1 (Antike Uhren)
+
+Einlesen der Daten **mit** Anzeige des R-Codes im Dokument:
+
+```{r, echo = TRUE}
+au <- read.table("AntikeUhren.dat", header=TRUE)
+```
+
+Einlesen der Daten **ohne** Anzeige des R-Code:
+
+```{r, echo = FALSE}
+au <- read.table("AntikeUhren.dat", header=TRUE)
+```
+
+Der Datensatz besitzt 2 Variablen:
+
+1. Alter: Alter der antiken Uhr in Jahren
+2. Preis: Preis bei der Auktion in US Dollar
+
+
+## (a)
+
+Passen Sie eine Gerade an die Datenpunkte an. Geben Sie die geschätzten Koeffizientenwerte an. Wie lautet die angepasste Geradengleichung?
+  
+```{r, echo = TRUE}
+au.fit <- lm(Preis ~ Alter, data = au)
+coef(au.fit)
+```
+
+Die geschätzte Gerade lautet Preis = `r round(coef(au.fit)[1],2)` + `r round(coef(au.fit)[2],2)` * Alter
+
+Hier noch eine Grafik:
+
+```{r, echo = TRUE, fig.height=5, fig.width=6}
+plot(au$Alter, au$Preis)
+abline(au.fit)
+```
+
+## (b)
+Hat das Alter einen signifikanten Einfluss auf den Preis? Führen Sie hierfür einen geeigneten Test auf dem 5% Niveau durch.
+
+```{r, echo = TRUE}
+summary(au.fit)
+```
+
+Der t-Test verwirft die Nullhypothese (p-Wert < 0.05). Das Alter der antiken Uhr hat einen auf 5% signifikanten Einfluss auf den Auktionspreis.
+
+

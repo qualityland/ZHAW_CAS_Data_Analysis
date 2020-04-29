@@ -87,7 +87,8 @@ poisson.test(x=50)
 
 ## (i) alpha-Daten
 ##     """""""""""
-alpha <- read.table("Daten4ModulA2/alpha.dat", header=TRUE)
+#alpha <- read.table("Daten4ModulA2/alpha.dat", header=TRUE)
+alpha <- read.table("./Module_A2/data/alpha.dat", header=TRUE)
 h.alpha <- rep(alpha$k, alpha$freq) ## sortierte Beobachtungen
 poisson.test(sum(h.alpha), T=length(h.alpha))
 ## 	Exact Poisson test
@@ -125,7 +126,8 @@ poisson.test(sum(h.vk), T=length(h.vk))
 
 ## (iii) Asbestfasern-Daten
 ##       """"""""""""""""""
-A1 <- read.table("Daten4ModulA2/asbest1.dat", header=F)[,1]
+#A1 <- read.table("Daten4ModulA2/asbest1.dat", header=F)[,1]
+A1 <- read.table("./Module_A2/data/asbest1.dat", header=F)[,1]
 poisson.test(sum(A1), T=length(A1))
 ## 	Exact Poisson test
 ## data:  sum(A1) time base: length(A1)
@@ -142,7 +144,8 @@ poisson.test(sum(A1), T=length(A1))
 
 
 ## Zweiter Datensatz
-A2 <- read.table("Daten4ModulA2/asbest2.dat", header=F)[,1]
+#A2 <- read.table("Daten4ModulA2/asbest2.dat", header=F)[,1]
+A2 <- read.table("./Module_A2/data/asbest2.dat", header=F)[,1]
 poisson.test(sum(A2), T=length(A2))
 ## 	Exact Poisson test
 ## data:  sum(A2) time base: length(A2)
@@ -181,7 +184,8 @@ alpha.tot + 2 + c(-1,1)*2*sqrt(alpha.tot+1) ## 9929.704 10332.296
 
 ## (ii) Verkehrs-Daten
 ##      """"""""""""""
-vk <- read.table("Daten4ModulA2/verkehr.dat", header=TRUE)
+#vk <- read.table("Daten4ModulA2/verkehr.dat", header=TRUE)
+vk <- read.table("./Module_A2/data/verkehr.dat", header=TRUE)
 ## Schätzwert für lambda:
 sum(vk$freq*vk$k)/sum(vk$freq) ## = 3.893333
 
@@ -198,7 +202,8 @@ vk.tot + 2 + c(-1,1)*2*sqrt(vk.tot+1) ## 1101.619 1238.381
 
 ## (iii) Asbestfasern-Daten
 ##       """"""""""""""""""
-A1 <- read.table("Daten4ModulA2/asbest1.dat", header=F)[,1]
+#A1 <- read.table("Daten4ModulA2/asbest1.dat", header=F)[,1]
+A1 <- read.table("./Module_A2/data/asbest1.dat", header=F)[,1]
 ## Schätzwert für lambda:
 mean(A1) ## = 24.91304
 
@@ -214,7 +219,8 @@ A1.tot + 2 + c(-1,1)*2*sqrt(A1.tot+1) ##  527.0834 622.9166
 
 
 ## Zweiter Datensatz
-A2 <- read.table("Daten4ModulA2/asbest2.dat", header=F)[,1]
+#A2 <- read.table("Daten4ModulA2/asbest2.dat", header=F)[,1]
+A2 <- read.table("./Module_A2/data/asbest2.dat", header=F)[,1]
 ## Schätzwert für lambda:
 mean(A2)  ## = 24.64  ## Schätzwert fast gleich wie in (iii)-a)
 
@@ -239,7 +245,8 @@ A2.tot + 2 + c(-1,1)*2*sqrt(A2.tot+1) ## 1764 1936
 
 ## (i) alpha-Daten
 ##     """""""""""
-alpha <- read.table("Daten4ModulA2/alpha.dat", header=TRUE)
+#alpha <- read.table("Daten4ModulA2/alpha.dat", header=TRUE)
+alpha <- read.table("./Module_A2/data/alpha.dat", header=TRUE)
 ## aus der Tabelle (wieder) ein Beobachtungsvektor machen
 h.alpha <- rep(alpha$k,alpha$freq)  ## Beobachtungen sind sortiert
 
@@ -291,7 +298,8 @@ var(h.alpha)   ## = 3.716599
 ##
 ## (ii) Verkehrs-Daten
 ##      """"""""""""""
-vk <- read.table("CAS-DA_ModulB_W6_Daten/verkehr.dat", header=TRUE)
+#vk <- read.table("CAS-DA_ModulB_W6_Daten/verkehr.dat", header=TRUE)
+vk <- read.table("./Module_A2/data/verkehr.dat", header=TRUE)
 h.vk <- rep(vk$k,vk$freq)  ## Beobachtungsvektor
 
 
@@ -338,7 +346,8 @@ var(h.vk)   ## = 5.212664
 ## (iii) Asbestfasern-Daten (nur mit asbest1.dat)
 ##       """"""""""""""""""
 
-A1 <- read.table("Daten4ModulA2/asbest1.dat", header=F)[,1]
+#A1 <- read.table("Daten4ModulA2/asbest1.dat", header=F)[,1]
+A1 <- read.table("./Module_A2/data/asbest1.dat", header=F)[,1]
 
 ## (iii-1)
 ## Bootstrap-Vertrauensintervall für die Dispersion
@@ -381,7 +390,8 @@ var(A1)   ## = 30.083
 
 ##
 ## Zweiter Datensatz
-A2 <- read.table("Daten4ModulA2/asbest2.dat", header=F)[,1]
+#A2 <- read.table("Daten4ModulA2/asbest2.dat", header=F)[,1]
+A2 <- read.table("./Module_A2/data/asbest2.dat", header=F)[,1]
 ## nur mit  Chi-quadrat-Test
 chisq.test(A2)
 ## X-squared = 82.4383, df = 74, p-value = 0.2348
