@@ -1,32 +1,15 @@
-## 2. Internetnutzung in der Schweiz
+library(readxl)
+#library(janitor)
 
-Die folgenden Daten bzgl. der Internetnutzung stammen vom Bundesamt für
-Statistik
+# Data Frame einlesen
+df2 <-
+  read_xlsx(
+    path = "./Leistungsnachweis_A2/data/Internetnutzung_korr.xlsx",
+    range = "E3:F38",
+    na = c("", "()"),
+    col_names = c("Anz_Pers_2019", "Anz_Pers_2017")
+  )
 
-### Datenbasis
-
-Es werden COVID-19 Infektionsdaten von
-[Wikipedia](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_der_Schweiz)
-vom 14.04. und 16.04.2020 verwendet. Ausserdem enthält das verwendete
-Data Frame Angaben zur Einwohnerzahl der Kantone
-(Quelle: A.Ruckstuhl COVID-19 Arbeitsblatt _CAS-DA_ModulA2-HT3_Coronavirus.R_).
-
-Spalten des Data Frames `df`:
-  
-* `kanton`: Kürzel des Kantons
-* `inf_1404`: Anzahl COVID-19 infizierter Personen am 14.04.2020
-* `inf_1604`: Anzahl COVID-19 infizierter Personen am 16.04.2020
-* `einw10k`: Einwohnerzahl (in 10'000)
-
-
-```{r, echo=FALSE}
-
-df<-data.frame(
-  kanton=c("AG","AI","AR","BE","BL","BS","FR","GE","GL","GR","JU","LU","NE","NW","OW","SG","SH","SO","SZ","TG","TI","UR","VD","VS","ZG","ZH"),
-  inf_1404=c(912,24,79,1470,755,899,879,4390,105,753,185,589,606,105,64,664,57,329,258,296,2912,78,4741,1664,171,3067),
-  inf_1604=c(943,24,79,1515,781,917,907,4565,106,764,189,599,616,107,66,694,60,329,265,308,2953,78,4844,1707,171,3151),
-  einw10k=c(67.8207,1.6145,5.5234,103.4977,28.8132,19.4766,31.8714,49.948,4.0403,19.8379,7.3419,40.9557,17.685,4.3223,3.7841,50.7697,8.1991,27.3194,15.9165,27.6472,35.3343,3.6433,79.9145,34.3955,12.6837,152.0968)
-)
-
-```
+# only complete cases (no NAs)
+#df2 <- df2[complete.cases(df2),]
 
