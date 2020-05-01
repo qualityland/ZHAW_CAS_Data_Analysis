@@ -1,0 +1,10 @@
+## 3. Wasserverbrauch Zürich
+
+Auf
+[OpenData}(https://opendata.swiss/de/dataset/wasserverbrauch-pro-tag-und-kopf-liter)
+stehen Daten zum mittleren Tageswasserverbrauch (in l) pro Kopf für Wasserversorgungen aus dem Kanton Zürich für die Jahre 2006 bis 2018 bereit. Beachten Sie, dass diese Werte den Verbrach von Industrie und Gewerbe miteinschliessen und deshalb nicht als haushaltstypisch angesehen werden können. Das heruntergeladene File steht Ihnen auch unter _WasserverbrauchKtZH.csv_ auf Moodle zur Verfügung.
+Analysieren Sie diese Daten mit mindestens vier der besprochenen sechs statistischen Verfahren (siehe Folie 27, HT 7). Formulieren Sie die Frage in Worten, die Sie mit dem Analyseverfahren beantworten wollen. Beschreiben Sie, mit welchen Teildatensätzen Sie arbeiten. Halten Sie gegebenenfalls die einzelnen Schritt in der jeweiligen Argumentationskette fest.
+
+### Datenbasis
+
+Es werden COVID-19 Infektionsdaten von
