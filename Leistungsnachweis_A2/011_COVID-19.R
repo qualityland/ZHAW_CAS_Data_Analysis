@@ -28,23 +28,29 @@
 #   einw10k=c(67.8207, 1.6145, 5.5234, 103.4977, 28.8132, 19.4766, 31.8714, 49.948, 4.0403, 19.8379, 7.3419, 40.9557, 17.685, 4.3223, 3.7841, 50.7697, 8.1991, 27.3194, 15.9165, 27.6472, 35.3343, 3.6433, 79.9145, 34.3955, 12.6837, 152.0968)
 # )
 
-# kanton:   Kantons-Kuerzel
-# inf_1403: COVID-19 Infektionen am 14.03., 
-# inf_1404:                      am 14.04. und
-# inf_1604:                         16.04.2020
-# einw10k:  kantonale Einwohnerzahl (in 10'000)
+# kanton:   Kantons (Abkuerzung)
+# inf_1403: COVID-19 Infektionen am 14.03.2020
+# inf_1404: COVID-19 Infektionen am 14.04.2020
+# inf_1604: COVID-19 Infektionen am 16.04.2020
+# einw10k:  Anzahl Einwohner (in 10'000)
 df <- data.frame(
   kanton=c(    "AG",   "AI",   "AR",     "BE",    "BL",    "BS",    "FR",   "GE",   "GL",    "GR",   "JU",    "LU",   "NE",   "NW",   "OW",    "SG",   "SH",    "SO",    "SZ",    "TG",    "TI",   "UR",    "VD",    "VS",    "ZG",     "ZH"),
-  inf_1403=c(    31,      2,      5,       78,      47,     119,      36,    280,      5,      47,     15,      19,     68,      5,      8,      26,      1,      10,      13,       5,     262,      2,     350,      88,      13,      148),
+#  inf_1403=c(    31,      2,      5,       78,      47,     119,      36,    280,      5,      47,     15,      19,     68,      5,      8,      26,      1,      10,      13,       5,     262,      2,     350,      88,      13,      148),
   inf_1404=c(   912,     24,     79,     1470,     755,     899,     879,   4390,    105,     753,    185,     589,    606,    105,     64,     664,     57,     329,     258,     296,    2912,     78,    4741,    1664,     171,     3067),
   inf_1604=c(   943,     24,     79,     1515,     781,     917,     907,   4565,    106,     764,    189,     599,    616,    107,     66,     694,     60,     329,     265,     308,    2953,     78,    4844,    1707,     171,     3151),
   einw10k=c(67.8207, 1.6145, 5.5234, 103.4977, 28.8132, 19.4766, 31.8714, 49.948, 4.0403, 19.8379, 7.3419, 40.9557, 17.685, 4.3223, 3.7841, 50.7697, 8.1991, 27.3194, 15.9165, 27.6472, 35.3343, 3.6433, 79.9145, 34.3955, 12.6837, 152.0968)
 )
 
+
+## Infektionen per 10'000 Einwohnern
+
+# 14.04.2020: Infektionen per 10'000 Einwohner
+i1404_10k <- df$inf_1404 / df$einw10k
+
 # Ueberblick ueber die absoluten Infektionszahlen per Kanton
 plot(i1404_10k,
      main = "COVID-19 Infektionen am 14.04.2020",
-     xlab = "Kantons-Kürzel",
+     xlab = "Kanton",
      ylab = "Anzahl Infektionen",
      type = "h",
      lwd = 6,
@@ -54,17 +60,14 @@ plot(i1404_10k,
 axis(1, at = 1:length(i1404_10k), labels = df$kanton)
 
 
-## Infektionen per 10'000 Einwohnern
-
-# 14.04.2020: Infektionen per 10'000 Einwohner (gerundet)
-i1404_10k <- round(df$inf_1404 / df$einw10k)
 
 # Anzahl Infektionen pro 10'000 und ihre Haeufigkeit (in den Kantonen)
-plot(table(i1404_10k),
+#plot(table(round(i1404_10k)),
+plot(table(rep(round(i1404_10k), round(df$einw10k))),
      main = "COVID-19 Infektionen in den Kantonen",
      xlab = "Infektionen pro 10'000 Einwohner",
      ylab = "Haeufigkeit",
-     ylim = c(0, 60),
+#     ylim = c(0, 60),
      col = "blue",
      type = "h",
      lwd = 3)
@@ -145,6 +148,24 @@ segments(1:nrow(df), VI[,1], 1:nrow(df), VI[,2], col = "violet", lwd = 2)
 
 
 
+################# Testen bei zwei Poisson Realisationen #####################
+
+## COVID-19 Infektionen am 14.04. und 16.04.2020
+inf_ch_1404 <- sum(df$inf_1404)
+inf_ch_1604 <- sum(df$inf_1604)
+
+
+# Frage: Am 14.04. waren in der Schweiz 26'052 Personen infiziert, am 16.04. bereits 26'738.
+#        Kann die Zunahme rein zufaellig sein oder ist sie signifikant (Niveau: 95%)?
+
+binom.test(x=inf_ch_1604, n=inf_ch_1404 + inf_ch_1604, p=0.5)
+
+# Antwort: Nein, der p-Wert liegt knapp ausserhalb des Annahmebereichs (5%). Die Zunahme der
+#          Infektionen ist signifikant  und kann nicht mehr als zufaellig betrachtet werden.
+
+
+
+
 ######################### Dispersionstest #############################
 
 
@@ -184,92 +205,3 @@ chisq.test(i1404_10k)
 
 
 
-
-##################################### Bullshit ################################
-
-# Daten vom 14.03.2020 und 14.04.2020
-
-# COVID-19 Infektionen am 14.03.2020
-df <- data.frame(
-  kanton=c( "AG", "AI", "AR", "BE", "BL", "BS", "FR", "GE", "GL", "GR","JU", "LU", "NE", "NW", "OW", "SG", "SH", "SO", "SZ", "TG", "TI", "UR", "VD", "VS", "ZG", "ZH"),
-  inf_abs=c( 31,    2,    5,   78,   47,  119,   36,  280,    5,   47,  15,   19,   68,    5,    8,   26,    1,   10,   13,    5,  262,    2,  350,   88,   13,  148),
-  einw10k=c(67.8207, 1.6145, 5.5234, 103.4977, 28.8132, 19.4766, 31.8714, 49.948, 4.0403, 19.8379, 7.3419, 40.9557, 17.685, 4.3223, 3.7841, 50.7697, 8.1991, 27.3194,
-            15.9165, 27.6472, 35.3343, 3.6433, 79.9145, 34.3955, 12.6837, 152.0968)
-)
-
-### Schaetzen des Parameters lambda
-
-# Infektionen auf 10'000 Einwohner
-inf_10k <- df$inf_abs / df$einw10k
-
-# lambda hut
-# Mittelwert schaetzt den Parameter lambda
-lambda_hut <- mean(inf_10k)
-
-
-### Test eines vorgegebenen Parameters lambda
-
-# Frage: Sind die Extremwerte fuer Schaffhausen (SH) und das Tessin (TI) plausibel?
-  
-poisson.test(x = min(inf_10k), r = lambda_hut)
-  
-  
-  
-  
-  
-Inf_1404 <- data.frame(
-  kanton=c( "AG", "AI", "AR", "BE", "BL", "BS", "FR", "GE", "GL", "GR","JU", "LU", "NE", "NW", "OW", "SG", "SH", "SO", "SZ", "TG", "TI", "UR", "VD", "VS", "ZG", "ZH"),
-  inf_1404=c(912,   24,   79, 1470,  755,  119,  899, 4390,  105,  741, 185,  589,  606,  105,   64,  664,   57,  329,  258,  296, 2912,   78, 4741, 1664,  171, 3067),
-  einwohner=c(67.8207, 1.6145, 5.5234, 103.4977, 28.8132, 19.4766, 31.8714, 49.948, 4.0403, 19.8379, 7.3419, 40.9557, 17.685, 4.3223, 3.7841, 50.7697, 8.1991, 27.3194,
-            15.9165, 27.6472, 35.3343, 3.6433, 79.9145, 34.3955, 12.6837, 152.0968)
-)
-
-
-
-
-# Anzahl Infizierer Personen
-# am 14.03.
-n_maerz14 <- sum(c19$maerz14)
-
-# am 14.04.
-n_april14 <- sum(c19$april14)
-
-# lambda schaetzen
-# am 14.03.
-mu_maerz14 <- mean(c19$maerz14)
-# am 14.04.
-mu_april14 <- mean(c19$april14)
-
-# Poisson Modell
-# fuer 14.03.
-mod_maerz14 <- n_maerz14 * dpois(min(c19$maerz14):max(c19$maerz14), lambda = mu_maerz14)
-plot(mod_maerz14, type = "l")
-# fuer 14.04.
-mod_april14 <- n_april14 * dpois(min(c19$april14):max(c19$april14), lambda = mu_april14)
-plot(mod_april14, type = "l")
-
-## Beispiel Hefezellen ########################################################
-
-## Im Dataframe HZ finden sich die Daten
-plot(HZ$k, HZ$freq, type="h", lwd=6, lend=2, col="blue", xlab="k", ylab="Haeufigkeit")
-
-# Totale Anzahl Hefezellen
-n <- sum(HK$freq)
-
-# λ schaetzen
-mu <- sum(HZ$freq * HZ$k) / n 
-
-# Mittlere Anzahl Hefezellen pro Quadraetchen
-mu
-# [1] 4.68 > 
-
-# Modellanpassung n · pk bestimmen
-yModell <- n * dpois(HZ$k, lambda=mu)
-
-# n * pk einzeichnen
-lines(HZ$k, yModell, type="b", lwd=2, col="red")
-
-## Beispiel Hefezellen (Ende) #################################################
-
-  
-  

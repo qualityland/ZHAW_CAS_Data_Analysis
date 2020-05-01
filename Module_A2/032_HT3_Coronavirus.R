@@ -37,6 +37,7 @@ Covid19$rAFälle <- Covid19$Faelle/Covid19$Einwohnerzahl
 
 plot(Covid19$rAFälle, type="h", lwd=6, col="blue", lend=2, xaxt="n",
      ylab="Aanzahl Fälle pro 10'000 Einwohnern",
+     ylim=c(0, 9),
      xlab="Kantone plus Liechtensteig")
 axis(side=1, at=1:nrow(Covid19), labels=paste(Covid19$Kanton))
 

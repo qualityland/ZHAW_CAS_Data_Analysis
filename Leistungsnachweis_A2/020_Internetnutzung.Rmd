@@ -1,0 +1,20 @@
+## 2. Internetnutzung in der Schweiz
+
+Die folgenden Daten bzgl. der Internetnutzung stammen vom [Bundesamt für
+Statistik](https://www.bfs.admin.ch/bfs/de/home/statistiken/kultur-medien-informationsgesellschaft-sport/informationsgesellschaft/gesamtindikatoren/haushalte-bevoelkerung/internetnutzung.assetdetail.12307275.html)
+
+Ein Auszug der Daten steht Ihnen auch im File Internetnutzung_korr.xlsx auf Moodle zur Verfügung.
+Analysieren Sie diese Daten mit den vier besprochenen statistischen Verfahren aus Kapitel 3 des Skripts (siehe auch Folie 27, HT 7). Formulieren Sie die Frage in Worten, die Sie mit dem Analyseverfahren beantworten wollen. Beschreiben Sie, mit welchen Teildatensätzen Sie arbeiten. Halten Sie gegebenenfalls die einzelnen Schritt in der jeweiligen Argumentationskette fest.
+
+
+### Datenbasis
+
+Die Daten wurden in Form der Datei _Internetnutzung_korr.xlsx_ bereitgestellt.
+
+
+```{r}
+
+2 * 3
+
+```
+
