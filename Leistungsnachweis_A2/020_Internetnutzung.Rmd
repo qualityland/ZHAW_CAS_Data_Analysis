@@ -1,20 +1,30 @@
-## 2. Internetnutzung in der Schweiz
+# 2. Internetnutzung in der Schweiz
 
-Die folgenden Daten bzgl. der Internetnutzung stammen vom [Bundesamt für
-Statistik](https://www.bfs.admin.ch/bfs/de/home/statistiken/kultur-medien-informationsgesellschaft-sport/informationsgesellschaft/gesamtindikatoren/haushalte-bevoelkerung/internetnutzung.assetdetail.12307275.html)
+## Datenbasis
 
-Ein Auszug der Daten steht Ihnen auch im File Internetnutzung_korr.xlsx auf Moodle zur Verfügung.
-Analysieren Sie diese Daten mit den vier besprochenen statistischen Verfahren aus Kapitel 3 des Skripts (siehe auch Folie 27, HT 7). Formulieren Sie die Frage in Worten, die Sie mit dem Analyseverfahren beantworten wollen. Beschreiben Sie, mit welchen Teildatensätzen Sie arbeiten. Halten Sie gegebenenfalls die einzelnen Schritt in der jeweiligen Argumentationskette fest.
+Die bereitgestellte Datei _Internetnutzung_korr.xlsx_ wird eingelesen und in den Spalten _nutzung_, _geschlecht_
+und _altersklasse_ fehlende Werte durch den Vorwert ersetzt
 
+```{r, echo=T}
+library(readxl)
+path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Leistungsnachweis_A2/data/"
+nn <- read_xlsx(paste0(path, "Internetnutzung_korr.xlsx"), range = "A3:F38", na = c("", "()"),
+    col_names = c("nutzung", "geschlecht", "altersklasse", "bildungsstand", "x2019", "x2017")
+  )
 
-### Datenbasis
+na_to_prev <- function(x) {
+  if (length(x) > 0L) {
+    non.na.idx <- which(!is.na(x))
+    if (is.na(x[1L])) {
+      non.na.idx <- c(1L, non.na.idx)
+    }
+    rep.int(x[non.na.idx], diff(c(non.na.idx, length(x) + 1L)))
+  }
+}
 
-Die Daten wurden in Form der Datei _Internetnutzung_korr.xlsx_ bereitgestellt.
-
-
-```{r}
-
-2 * 3
-
+nn$nutzung <- na_to_prev(nn$nutzung)
+nn$geschlecht <- na_to_prev(nn$geschlecht)
+nn$altersklasse <- na_to_prev(nn$altersklasse)
+head(nn)
 ```
 

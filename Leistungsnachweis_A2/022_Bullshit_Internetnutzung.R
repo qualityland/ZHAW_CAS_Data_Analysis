@@ -1,26 +1,12 @@
 library(readxl)
-#library(janitor)
 
 # Data Frame einlesen
-# df2 <-
-#   read_xlsx(
-#     path = "./Leistungsnachweis_A2/data/Internetnutzung_korr.xlsx",
-#     range = "E3:F38",
-#     na = c("", "()"),
-#     col_names = c("Anz_Pers_2019", "Anz_Pers_2017")
-#   )
-
-
-
-# Data Frame einlesen
-df2 <-
-  read_xlsx(
-    path = "./Leistungsnachweis_A2/data/Internetnutzung_korr.xlsx",
-    range = "A3:F38",
-    na = c("", "()"),
-    col_names = c("Internetnutzung", "Geschlecht", "Altersklasse", "Bildungsstand", "Anz_Pers_2019", "Anz_Pers_2017")
+path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Leistungsnachweis_A2/data/"
+nn <-
+  read_xlsx(paste0(path, "Internetnutzung_korr.xlsx"),
+            range = "A3:F38", na = c("", "()"),
+            col_names = c("nutzung", "geschlecht", "altersklasse", "bildungsstand", "x2019", "x2017")
   )
-
 
 # NAs mit vorherigem Wert ersetzen
 na_to_prev <- function(x) {
@@ -33,4 +19,21 @@ na_to_prev <- function(x) {
   }
 }
 
-na_to_prev(c(NA, 1, 2, NA, NA, 3, NA, NA, 4, NA))
+# Factor Levels setzen
+nn$nutzung <-
+  factor(na_to_prev(nn$nutzung),
+         levels = c("weniger als fünf Stunden pro Woche", "fünf Stunden oder mehr pro Woche",
+                    "mehr als zwanzig Stunden pro Woche"),
+         labels = c("weniger 5h", "zw 5 und 20h", "ueber 20h"))
+
+nn$geschlecht <- 
+  factor(na_to_prev(nn$geschlecht), levels = c("Frau", "Mann"), labels = c("f", "m"))
+
+nn$altersklasse <- factor(na_to_prev(nn$altersklasse))
+
+nn$bildungsstand <-
+  factor(nn$bildungsstand,
+         levels = c(
+           "Ohne nachobligatorische Ausbildung (25 Jahre und älter)",
+           "Sekundarstufe II (25 Jahre und älter)", "Tertiärstufe (25 Jahre und älter)"),
+         labels = c("Obligatorische", "Sekundarstufe", "Tertiaerstufe"))
