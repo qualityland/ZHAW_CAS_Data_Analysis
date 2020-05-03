@@ -2,29 +2,68 @@
 
 ## Datenbasis
 
-Die bereitgestellte Datei _Internetnutzung_korr.xlsx_ wird eingelesen und in den Spalten _nutzung_, _geschlecht_
-und _altersklasse_ fehlende Werte durch den Vorwert ersetzt
+Der bereitgestellten Datei _Internetnutzung_korr.xlsx_ wurde für das Jahr 2019
+folgende Kontingenztabelle für Ausbildungsstufe und Internetnutzung von
+Männer zwischen 30 und 59 Jahren entnommen:
 
 ```{r, echo=T}
-library(readxl)
-path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Leistungsnachweis_A2/data/"
-nn <- read_xlsx(paste0(path, "Internetnutzung_korr.xlsx"), range = "A3:F38", na = c("", "()"),
-    col_names = c("nutzung", "geschlecht", "altersklasse", "bildungsstand", "x2019", "x2017")
-  )
-
-na_to_prev <- function(x) {
-  if (length(x) > 0L) {
-    non.na.idx <- which(!is.na(x))
-    if (is.na(x[1L])) {
-      non.na.idx <- c(1L, non.na.idx)
-    }
-    rep.int(x[non.na.idx], diff(c(non.na.idx, length(x) + 1L)))
-  }
-}
-
-nn$nutzung <- na_to_prev(nn$nutzung)
-nn$geschlecht <- na_to_prev(nn$geschlecht)
-nn$altersklasse <- na_to_prev(nn$altersklasse)
-head(nn)
+kt <- rbind(c(102, 245, 90), c(57, 351, 150))
+dimnames(kt) <- list(c("Sekundar", "Tertiaer"), c("<5h", "5-20h", ">20h"))
+kt
 ```
 
+Diese lässt sich im Mosaicplot darstellen.
+
+```{r, echo=T}
+mosaicplot(kt, main = "Internetnutzung und Bildungsstand", sub = "2019: nur Männer 30 - 59 J.")
+```
+
+
+# Schätzung von Erfolgswahrscheinlichkeit $\pi$
+
+Die Erfolgswahrscheinlichkeit $\pi$ wird durch pi = X / m geschätzt.
+
+Dafür, dass ein Mann (30 bis 59 J.) mit hohem Bildungsstand (Tertiärstufe) mehr als 20h
+das Internet nutzt ist die Erfolgswahrscheinlichkeit $\pi$ hier:
+
+```{r, echo=T}
+X <- kt[2, 3]
+m <- sum(kt)
+
+X / m
+```
+
+
+# Testen von $\pi$
+
+__Frage:__ Ist $\pi$ = 0.15 plausibel, wenn man von einer Erfolgswahrscheinlichkeit von 11%
+(3 Bildungsstufen und 3 Stufen der Internetnutzung: 1/3 * 1/3) ausgeht?
+
+```{r, echo=T}
+binom.test(x = X, n=m, p=1/3 * 1/3)
+```
+
+__Antwort:__ Nein, aufgrund des P-Wertes von 0.0001484 wird die Nullhypothese
+verworfen.
+
+
+# Vertrauensintervall für $\pi$
+
+Bestimmen wir das Vertrauensintervall für $\pi$:
+
+```{r, echo=T}
+binom.test(x = X, n = m, conf.level = 0.95)
+```
+
+Für $\pi$ sind also Werte zwischen 0.129 und 0.174 plausibel.
+
+
+# Test auf Homogenität
+
+```{r, echo=T}
+chisq.test(kt)
+```
+
+Da der P-Wert von  9.437e-08 kleiner als das Niveau von 5% ist, wird die
+Nullhypothese "die Verteilung der Internetnutzung ist gleich für jeden
+Bildungsstand" auf dem 5% Niveau verworfen.

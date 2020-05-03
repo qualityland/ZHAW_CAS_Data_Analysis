@@ -51,7 +51,7 @@ i1404_10k <- df$inf_1404 / df$einw10k
 plot(i1404_10k,
      main = "COVID-19 Infektionen am 14.04.2020",
      xlab = "Kanton",
-     ylab = "Anzahl Infektionen",
+     ylab = "Infizierte pro 10'000 Einwohner",
      type = "h",
      lwd = 6,
      col = "blue",
@@ -67,7 +67,7 @@ plot(table(rep(round(i1404_10k), round(df$einw10k))),
      main = "COVID-19 Infektionen in den Kantonen",
      xlab = "Infektionen pro 10'000 Einwohner",
      ylab = "Haeufigkeit",
-#     ylim = c(0, 60),
+     ylim = c(0, 90),
      col = "blue",
      type = "h",
      lwd = 3)
@@ -85,10 +85,10 @@ n <- sum(i1404_10k)
 mu <- mean(i1404_10k)
 
 # angepasstes Modell
-yModel <- n * dpois(sort(i1404_10k), lambda = mu)
+yModel <- n * dpois(sort(round(i1404_10k)), lambda = mu)
 lines(sort(i1404_10k), yModel, type="b", lwd=2, col="red")
 # yModel <- n * dpois(min(i1404_10k):max(i1404_10k), lambda = mu)
-# lines(min(i1404_10k):max(i1404_10k), yModel, type="b", lwd=2, col="red")
+# lines(sort(i1404_10k), yModel, type="b", lwd=2, col="red")
 
 
 
@@ -99,11 +99,11 @@ i1604_10k <- round(df$inf_1604 / df$einw10k)
 
 # Infektionen / 10'000 Einwohnern
 # Waadt am 16.04.2020:
-df$kanton[23]
-i1604_10k[23]
+as.character(df$kanton[23])
+i1404_10k[23]
 
 # Frage: Ist diese Infektionsrate bei angenommener Poisson-Verteilung plausibel
-# bei lambda=Signifikanzniveau von 95%?
+# bei lambda= und Signifikanzniveau von 95%?
 poisson.test(x = 61, r = 27.85, conf.level = 0.95)
 
 # Antwort: Nein, aufgrund des niedrigen p-Werts (6.213e-08) muss die Nullhypothese
