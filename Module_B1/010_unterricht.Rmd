@@ -1,0 +1,107 @@
+---
+title: "Unterricht 1"
+subtitle: "Einführung in Regression"
+author: "Stefan Schmidt"
+date: "08.04.2020"
+output: pdf_document
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = TRUE)
+path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B1/"
+```
+
+
+__Frage:__ Lässt sich die Zeit, die ein Serviceangestellter für die Bestückung und den
+Service des Getränkeautomaten braucht, quantitativ beschreiben? Wovon hängt
+die Zeit ab?
+
+_Daten:_ 25 zufällig ausgewählte Getränkeautomaten in 4 US-Grossstädten
+
+```{r}
+ga <- read.table(paste0(path, "data/softdrink.dat"), header = TRUE)
+str(ga)
+```
+
+# Einfache Lineare Regression
+
+```{r}
+plot(Zeit ~ Menge, data = ga)
+```
+
+__Frage:__ Wie gross wäre die Servicezeit beim Nachfüllen von 20 Produkteinheiten?
+
+## Schätzung fuer $\alpha$ und $\beta$
+
+```{r}
+beta_hat <- sum((ga$Zeit - mean(ga$Zeit)) * (ga$Menge - mean(ga$Menge))) /
+  sum((ga$Menge - mean(ga$Menge))^2)
+
+alpha_hat <- mean(ga$Zeit) - beta_hat * mean(ga$Menge)
+
+c(alpha=alpha_hat, beta=beta_hat)
+```
+
+## Berechnung der Koeffizienten mit R:
+
+```{r}
+ga.fit <- lm(Zeit ~ Menge, data = ga)
+coef(ga.fit)
+```
+
+Die geschätzte Gerade lautet somit: Zeit = 3.32078 + 2.17617 · Menge
+
+Einzeichnen der Geraden:
+
+```{r}
+plot(Zeit ~ Menge, data = ga)
+abline(ga.fit, col = 'red')
+```
+
+## Summe der Abweichungen addiert sich zu Null
+
+```{r}
+ga.ri <- ga$Zeit - (alpha_hat + beta_hat * ga$Menge) # Residuen
+sum(ga.ri) # Summe der Residuen: ~ 0
+```
+
+## Die Gerade geht durch den Datenschwerpunkt(x_quer, y_quer)
+
+```{r}
+alpha_hat + beta_hat * mean(ga$Menge)
+
+mean(ga$Zeit)
+```
+
+## Koeffizienten, angepasste Werte, Residuuen
+
+```{r}
+ga.fit <- lm(Zeit ~ Menge, data = ga)
+coef(ga.fit) # Koeffizenten
+
+fitted(ga.fit)
+# Alternative von "Hand"
+coef(ga.fit)[1] + coef(ga.fit)[2] * ga$Menge
+
+resid(ga.fit)
+# Alternative von "Hand"
+y_hat <- coef(ga.fit)[1] + coef(ga.fit)[2] * ga$Menge
+ga$Zeit - y_hat
+```
+
+## Schätzung der Fehlervarianz $var(E_{i}) = \sigma^{2}$
+
+Der Standardfehler der Residuen ($\hat{\sigma}$)gibt an, 
+wie stark die Beobachtungen um die Regressionsgerade streuen.
+
+Falls die Modellannahmen erfüllt sind, so können wir davon ausgehen,
+dass sich rund 95% der Punkte in einem Intervall von $\pm2 * \hat{\sigma}$ 
+um die Regressionsgerade befinden.
+
+```{r}
+ga.fit <- lm(Zeit ~ Menge, data = ga)
+summary(ga.fit)$sigma
+```
+
+Achtung:
+
