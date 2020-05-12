@@ -1,0 +1,12 @@
+---
+title: "Unterricht 2"
+subtitle: "Einfache lineare Regression (Inferenz & Vorhersage)"
+author: "Stefan Schmidt"
+date: "22.04.2020"
+output: pdf_document
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = TRUE)
+path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B1/"
+```

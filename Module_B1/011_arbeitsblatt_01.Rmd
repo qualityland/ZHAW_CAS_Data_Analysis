@@ -1,0 +1,188 @@
+---
+title: "Arbeitsblatt 1"
+subtitle: "Einführung in Regression"
+author: "Stefan Schmidt"
+date: "08.04.2020"
+output: pdf_document
+---
+  
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = TRUE)
+path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B1/"
+```
+
+# Aufgabe 1 (Flughafen Zürich)
+
+## (b)
+
+Als Schätzungen für die Regressionskoeffizienten erhält man für diese Datenpunkte mittels Kleinste-
+Quadrate:
+
+$$ \hat{\alpha} = -1197682.1,  \hat{\beta} = 138.8 $$
+
+Das Ziel ist es nun, die rechnerisch bestimmte Regressionsgerade in das Streudiagramm einzutragen. Lösen Sie dazu die folgenden Teilschritte:
+
+* Bestimmen Sie den angepassten Wert $\hat{y}$ für x = 19923 Flugbewegungen (Januar 2009).
+* Bestimmen Sie den angepassten Wert $\hat{y}$ nun auch für x = 23004 Flugbewegungen (September 2009).
+* Verbinden Sie die beiden Punkte miteinander, um die Regressionsgerade zu erhalten. Vergleichen sie die Gerade mit der "von Auge" eingezeichneten Lösung.
+
+
+## Lösung:
+
+$\hat{y}$ für x = 19923:
+
+```{r}
+-1197682.1 + 138.8 * 19923
+```
+
+$\hat{y}$ für x = 23004:
+
+```{r}
+-1197682.1 + 138.8 * 23004
+```
+
+Gerade einzeichnen:
+
+```{r}
+load(paste0(path, "data/flughafen.rda"))
+plot(Pax ~ ATM, data = zrh, main = "Flughafen ZRH")
+lines(c(19923, 23004), c(-1197682.1 + 138.8 * 19923, -1197682.1 + 138.8 * 23004))
+```
+
+
+## (c)
+
+Die Daten stehen Ihnen im Ordner Daten im File `flughafen.rda` auf Moodle zur Verfügung. Laden Sie die Daten in R, passen Sie die Regressionsgerade an und vergleichen Sie, ob Sie dieselben Koeffizieten wie in (b) erhalten.
+
+## Koeffizienten schätzen
+
+```{r}
+zrh.fit <- lm(Pax ~ ATM, data = zrh)
+coef(zrh.fit)
+```
+
+## Regressionsgerade einzeichnen
+
+```{r}
+plot(Pax ~ ATM, data = zrh, main = "Flughafen ZRH")
+abline(zrh.fit, col = 'red')
+```
+
+
+## (d)
+
+__Frage:__ Welche Anzahl Passagiere gibt es laut Modell, falls keine Flugbewegungen durchgeführt werden (ATM = 0)? Halten Sie diese Anzahl für plausibel? Können Sie sich die Anzahl erklären?
+
+__Antwort:__ Ohne Flugbewegungen gibt es `r coef(zrh.fit)[1]` Passagiere. Das macht natürlich wenig Sinn.
+Vermutlich passt das Model nicht für realitätsfern niedrige Passagierzahlen.
+
+
+# Aufgabe 2 (Antike Uhren)
+
+McClave und Benson haben Daten über das Alter (in Jahre) und den Preis (in US$) von antiken Uh- ren an Auktionen zusammengetragen. Sie stehen Ihnen im Ordner Daten im File AntikeUhren.dat auf Moodle zur Verfügung.
+
+## (a)
+
+Stellen Sie die Daten in einem Streudiagramm Preis (y-Achse) gegen Alter (x-Achse) dar und beschreiben Sie den funktionalen Zusammenhang in Worten.
+
+```{r}
+au <- read.table(paste0(path, "data/AntikeUhren.dat"), header = TRUE)
+plot(Preis ~ Alter, data = au, main = "Antike Uhren")
+```
+
+Mit steigende Alter der Uhren steigt auch der Preis. Positive Korrelation.
+
+## (b)
+
+Passen Sie eine Gerade an die Datenpunkte an. Geben Sie die geschätzten Koeffizientenwerte an. Wie lautet die angepasste Geradengleichung?
+
+```{r}
+au.fit <- lm(Preis ~ Alter, data = au)
+plot(Preis ~ Alter, data = au, main = 'Antike Uhren')
+abline(au.fit, col = 'red')
+coef(au.fit)
+```
+
+Die Geradengleichung lautet: 
+$$ \hat{Preis} = -191.66 + 10.48 \times Alter $$
+
+## (c)
+
+__Frage:__ Welche Auswirkung hat eine um ein Jahr ältere Uhr auf den erwarteten Auktionspreis?
+
+```{r}
+coef(au.fit)[2]
+```
+
+__Antwort:__ Der erwartete Auktionspreis für eine um 1 Jahr ältere Uhr ist $10.48 höher.
+
+## (d)
+
+__Frage:__ Wie gross ist der Standardfehler der Residuen? Was gibt er an?
+
+```{r}
+summary(au.fit)$sigma
+```
+
+Der Standardfehler ist 273.03. Er gibt an wie sehr die Werte um die Regressionsgerade streuen.
+Falls die Modellannahmen erfüllt sind liegen 95% der Werte im Bereich $$ \pm2 \times \$273 $$
+
+## (f)
+
+Zeichnen Sie die Gerade in das Streudiagramm von Teilaufgabe (a) ein. Kommentieren Sie die Lösung.
+
+```{r}
+plot(Preis ~ Alter, data = au, main = "Antike Uhren: Preis vs. Alter")
+abline(au.fit, col = 'red')
+```
+
+
+# Aufgabe 3 (Gotthard Strassentunnel)
+
+Wir betrachten in dieser Aufgabe einen Datensatz, welcher über die Jahre 2004-2016 die Anzahl Tage mit Stau vor dem Gotthard Strassentunnel Nordportal beschreibt. Lesen sie diese Daten in R (gotthard.rda).
+
+```{r}
+load(paste0(path, 'data/gotthard.rda'))
+```
+
+## (a)
+
+Stellen Sie die Daten in einem Streudiagramm dar. Gibt es einen Trend?
+
+```{r}
+plot(stautage ~ jahr, data = gotthard, main = "Stautage vor dem Gotthard Tunnel")
+```
+
+Trend: Ansteigend bis 2014, dann leicht fallend.
+
+## (b)
+
+Passen Sie eine Gerade an die Datenpunkte an. Geben Sie die geschätzten Werte der beiden Koeffizienten an.
+
+```{r}
+plot(stautage ~ jahr, data = gotthard, main = "Stautage vor dem Gotthard Tunnel")
+gt.fit <- lm(stautage ~ jahr, data = gotthard)
+abline(gt.fit, col = 'red')
+coef(gt.fit)
+```
+
+## (c)
+
+Wie viele Stautage werden vom Modell für 2016 geschätzt? Was ist das Residuum für diesen Datenpunkt?
+
+```{r}
+fitted(gt.fit)[gotthard$jahr == 2016]
+resid(gt.fit)[gotthard$jahr == 2016]
+```
+
+## (d)
+
+Zeichnen Sie die Gerade in das Streudiagramm von Teilaufgabe (a) ein. Halten Sie das lineare Regressionsmodell für plausibel?
+
+```{r}
+plot(stautage ~ jahr, data = gotthard, main = "Stautage vor dem Gotthard Tunnel")
+gt.fit <- lm(stautage ~ jahr, data = gotthard)
+abline(gt.fit, col = 'green')
+```
+
+Das Model scheint für den oberen Bereich nicht mehr so gut zu passen.

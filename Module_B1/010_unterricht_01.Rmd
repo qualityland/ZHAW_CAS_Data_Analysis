@@ -1,6 +1,6 @@
 ---
 title: "Unterricht 1"
-subtitle: "Einführung in Regression"
+subtitle: "Einfache lineare Regression (Einführung, Schätzung der Parameter mit KQ, Interpretation)"
 author: "Stefan Schmidt"
 date: "08.04.2020"
 output: pdf_document
