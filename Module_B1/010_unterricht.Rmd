@@ -103,5 +103,33 @@ ga.fit <- lm(Zeit ~ Menge, data = ga)
 summary(ga.fit)$sigma
 ```
 
-Achtung:
+Falls die Annahmen an die Fehler im Beispiel für die Getränkeautomaten erfüllt sind, so befinden sich rund 95% der Punkte in einem Intervall von $\pm{2} * 4.18 = \pm{8.36}$ Minuten um die Regressionsgerade.
+
+Achtung: Standard-Fehler $\sigma$ NICHT Fehlervarianz $\sigma^{2}$!
+
+
+## Übung: Analyse des Effekts von Isolierungssanierung in 56 Häusern
+
+```{r}
+library(MASS)
+data(whiteside)
+str(whiteside)
+```
+
+Daten VOR und NACH der Sanierung
+
+```{r}
+before <- whiteside[whiteside$Insul == "Before",]
+b.fit <- lm(Gas ~ Temp, data = before)
+
+after <- whiteside[whiteside$Insul == "After",]
+a.fit <- lm(Gas ~ Temp, data = after)
+
+plot(Gas ~ Temp, data = whiteside)
+abline(b.fit, col = "red")      # before
+abline(a.fit, col = "green")    # after
+legend("topright", legend=c("before", "after"), 
+       col=c("red", "green"), lty=c(1, 1), cex=0.8)
+```
+
 
