@@ -1,6 +1,22 @@
+################# Einfache Lineare Regression #################################
+###                 Inferenz und Vorhersage
 
+# ---------------------------
+# Beispiel: Getränkeautomaten
+# ---------------------------
+
+
+# Daten laden
 data.path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B1/data/"
+ga <- read.table(paste0(data.path, "Softdrink.dat"), header = TRUE)
 
+# Modell
+fit.ga <- lm(Zeit ~ Menge, data = ga)
+# Koeffizienten
+coef(fit.ga)
+# Plot mit Regressiongeraden
+plot(Zeit ~ Menge, data = ga)
+abline(fit.ga, col = 'red')
 
 # Wir simulieren mehrere Datensets von folgendem Modell:
 #       Yi = 4 − 2xi + Ei mit σ = 0.5
