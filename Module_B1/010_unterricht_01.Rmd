@@ -73,16 +73,28 @@ alpha_hat + beta_hat * mean(ga$Menge)
 mean(ga$Zeit)
 ```
 
-## Koeffizienten, angepasste Werte, Residuuen
+## Koeffizienten
 
 ```{r}
 ga.fit <- lm(Zeit ~ Menge, data = ga)
 coef(ga.fit) # Koeffizenten
+```
 
+## Angepasste Werte 
+
+Die angepassten Werte (aus dem Modell) erhält man mit `fitted()`:
+
+```{r}
 fitted(ga.fit)
 # Alternative von "Hand"
 coef(ga.fit)[1] + coef(ga.fit)[2] * ga$Menge
+```
 
+## Residuen
+
+Die Resiguen mit `resid()`:
+
+```{r}
 resid(ga.fit)
 # Alternative von "Hand"
 y_hat <- coef(ga.fit)[1] + coef(ga.fit)[2] * ga$Menge
@@ -101,6 +113,8 @@ um die Regressionsgerade befinden.
 ```{r}
 ga.fit <- lm(Zeit ~ Menge, data = ga)
 summary(ga.fit)$sigma
+# Alternative von "Hand"
+sqrt(1/(nrow(ga)-2) * sum(resid(ga.fit)^2))
 ```
 
 Falls die Annahmen an die Fehler im Beispiel für die Getränkeautomaten erfüllt sind, so befinden sich rund 95% der Punkte in einem Intervall von $\pm{2} * 4.18 = \pm{8.36}$ Minuten um die Regressionsgerade.

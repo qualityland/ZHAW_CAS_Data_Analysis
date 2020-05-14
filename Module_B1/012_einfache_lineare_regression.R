@@ -1,4 +1,7 @@
 
+################# Einfache Lineare Regression #################################
+
+# ---------------------------
 # Beispiel: Getränkeautomaten
 # ---------------------------
 
@@ -6,7 +9,8 @@
 #        Produkteinheiten (Menge) ab.
 
 # Daten laden
-ga <- read.table("./Module_B1/data/Softdrink.dat", header = TRUE)
+data.path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B1/data/"
+ga <- read.table(paste0(data.path, "Softdrink.dat"), header = TRUE)
 
 # Daten Struktur
 str(ga)
@@ -31,6 +35,7 @@ resid(fit.ga)
 summary(fit.ga)$sigma
 
 
+# -------------------------
 # Beispiel: Haus-Isolierung
 # -------------------------
 
@@ -63,3 +68,11 @@ fit.after <- lm(Gas ~ Temp, data = after)
 
 plot(after$Temp, after$Gas)
 abline(fit.after, col = "red")
+
+# VOR und NACH in einem Plot
+plot(Gas ~ Temp, data = whiteside, col = Insul, pch = 16)
+b.fit <- lm(Gas ~ Temp, data = whiteside[whiteside$Insul == "Before",])
+abline(b.fit, col = 'black')
+a.fit <- lm(Gas ~ Temp, data = whiteside[whiteside$Insul == "After",])
+abline(a.fit, col = 'red')
+legend("topright", legend=c("before", "after"), col=c("black", "red"), lty=c(1, 1), cex=0.8)

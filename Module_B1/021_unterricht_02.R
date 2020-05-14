@@ -1,5 +1,5 @@
 
-path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B1/"
+data.path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B1/data/"
 
 
 # Wir simulieren mehrere Datensets von folgendem Modell:
