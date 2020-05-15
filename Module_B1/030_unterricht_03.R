@@ -1,3 +1,4 @@
+#data.path <- "/Users/sschmidt/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B1/data/"
 data.path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B1/data/"
 ga <- read.table(paste0(data.path, "Softdrink.dat"), header = TRUE)
 fit.ga <- lm(Zeit ~ Menge, data = ga)
