@@ -1,6 +1,6 @@
 ---
-title: "Leistungsnachweis"
-subtitle: "CAS Datenanalyse 20.11 Modul B1"
+title: "Prüfung"
+subtitle: "CAS Datenanalyse Modul B1"
 author: "Stefan Schmidt"
 date: "27.05.2020"
 output: pdf_document
@@ -15,11 +15,19 @@ data.path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Leistungsnachwei
 # Aufgabe 1
 
 ```{r}
-library(readr)
+
+# table
+read.table(paste0(data.path, "softdrink.dat"), header = TRUE)
+
 # xls
+library(readxl)
 df <- read_xls(paste0(data.path, "Alpenquerender_Gueterverkehr_Schiene.xls"))
+
 # dat
-df <- read.table(paste0(data.path, "softdrink.dat"), header = TRUE)
+library(readr)
+df <- read_table(paste0(data.path, "softdrink.dat"), header = TRUE)
 
 ```
+
+# Aufgabe 2
 
