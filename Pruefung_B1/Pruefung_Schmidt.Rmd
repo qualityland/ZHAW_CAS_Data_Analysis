@@ -27,6 +27,7 @@ data.path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Pruefung_B1/data
 #library(readr)
 df <- read.csv(paste0(data.path, "Windmuehle.dat"), header = TRUE)
 
+
 ```
 
 # Aufgabe 2

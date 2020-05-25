@@ -216,4 +216,6 @@ summary(fit.hw)$coefficients
 # (Intercept) -1.1283048 2.36778251 -0.4765238 6.416111e-01
 # rain         0.8269731 0.03652408 22.6418585 7.896130e-12
 
-# Ja, der Zusammenhang ist hochsignifikant
+# Ja, der Zusammenhang ist hochsignifikant.
+# Der Test für die Nullhypothese H0 : β = 0 wird mit einem sehr kleinen p-Wert verworfen (p-Wert < 0.05).
+# Es ist also statistisch gesichert, dass ein linearer Zusammehang zwischen Abflussmenge und Regenfallvolumen existiert.
