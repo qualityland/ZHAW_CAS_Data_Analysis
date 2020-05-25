@@ -117,3 +117,14 @@ x <- seq(min(windmill$Windgeschwindigkeit),
          length = 50)
 # x- und y-Werte aus dem Modell
 lines(x, coef(fit.wm3)[1] + coef(fit.wm3)[2] * (1/x))
+
+
+# (d)
+# Was bedeuten die beiden Parameter α und β im Modell aus der Fachtheorie?
+
+
+
+
+# (e)
+# Prüfen Sie mittels Residuenanalyse, ob die Voraussetzung für das Modell aus
+# der Fachtheorie erfüllt sind.
