@@ -121,10 +121,99 @@ lines(x, coef(fit.wm3)[1] + coef(fit.wm3)[2] * (1/x))
 
 # (d)
 # Was bedeuten die beiden Parameter α und β im Modell aus der Fachtheorie?
-
+# alpha - die max. Stromausbeute
+# - beta / alpha : minimale Windgeschwindigkeit bei der ueberhaupt Strom
+# produziert wird.
+(-coef(fit.wm3)[2]/coef(fit.wm3)[1])
 
 
 
 # (e)
 # Prüfen Sie mittels Residuenanalyse, ob die Voraussetzung für das Modell aus
 # der Fachtheorie erfüllt sind.
+par(mfrow = c(1, 3))
+plot(fit.wm3, 1:3)
+load(paste0(data.path, "resplot.rda"))
+resplot(fit.wm3, plots = 1:3)
+# Tukey-Anscombe-Plot:
+# Die Punkte sind viel gleichmässiger um die horizontale Nulllinie gestreut.
+# Glätter zeigt zwar noch eine ganz leichte Bananenform. Diese ist aber vernachlässigbar.
+# Normalplot:
+# Datenpunkte streuen bis auf das rechte Ende gut um eine Gerade. Das rechte Ende ist ein
+# Hinweis auf Kurzschwänzigkeit, welche aber für die Regressionsergebnisse ungefährlich ist.
+# Scale-Location-Diagramm: Der Glätter zeigt eine kleine Delle. Da die Punkte aber sehr
+# weit verstreut liegen, befindet sich diese Delle innerhalb der stochastischen Fluktuation.
+# Fazit:
+# Die Anpassung ist ok.
+
+# (f)
+# Gibt es einen signifikanten Zusammenhang zwischen Windgeschwindigkeit und der
+# Stromgewinnung aufgrund des Modell aus der Fachtheorie? Führen Sie einen geeigneten
+# Test auf dem 5% Niveau durch.
+
+# t-Test zur Nullhypothese: H0 : β = 0, HA : β ̸= 0
+summary(fit.wm3)$coefficients
+# Der t-Test verwirft die Nullhypothese, da der p-Wert < 0.05. Es gibt somit einen auf 5% 
+# signifikanten Einfluss von Windgeschwindigkeit auf die Stromgewinnung
+
+# (g)
+# Was sind plausible Werte für die maximale Stromgewinnung der Windmühle?
+# Geben Sie ein 95% Vertrauensintervall an.
+confint(fit.wm3, level = 0.95, parm = 1)
+#                  2.5 %   97.5 %
+#   (Intercept) 2.885973 3.071748
+# also mit 95% Wahrscheinlichkeit zwischen 2.89 und 3.07 Ampere
+
+# parm ist hier der 1. parameter α (Achsenabschnitt)
+# (β waere 2)
+
+# (h)
+# Machen Sie eine Vorhersage, wie gross die erwartete Stromproduktion bei einer
+# Windgeschwindigkeit von 15 m/s ist. Geben Sie ein 95%-Prognoseintervall an.
+x0 <- data.frame(x=1/15)
+predict(fit.wm3, newdata = x0, interval = 'prediction')
+#        fit      lwr     upr
+# 1 1.944496 1.744763 2.14423
+# erwartete Stromgewinnung: 1.94 Ampere
+# mit 95% Wahrscheinlichkeit zwischen 1.74 und 2.14 Ampere
+
+
+
+################### Aufgabe 2. ################### 
+
+highway <- read.csv(paste0(data.path, 'highway.csv'))
+str(highway)
+
+# (a)
+# Passen Sie eine Regressionsgerade (runoff als Zielgrösse und rain als
+# erklärende Grösse). Visualisieren Sie die geschätzte Gerade.
+par(mfrow = c(1, 1))
+plot(runoff ~ rain, data = highway,
+     main = "Abflussmenge vs. Regenfallvolumen",
+     xlab = "Regenfallvolumen",
+     ylab = "Abflussmenge")
+fit.hw <- lm(runoff ~ rain, data = highway,)
+abline(fit.hw, col = 'red')
+
+# (b)
+# Welcher Anteil der beobachteten Variation in der Abflussmenge kann mit dem
+# einfachen linearen Regressionsmodell erklärt werden?
+summary(fit.hw)$r.squared
+# [1] 0.9752689
+# 97.53% der Variation der Abflussmenge kann mit dem einfachen linearen
+# Regressionsmodell erklaert werden.
+
+#summary(fit.hw)$adj.r.squared
+
+
+# (c)
+# Besteht ein auf 5% signifikanter linearer Zusammenhang zwischen Abflussmenge
+# und Regenfallvolumen? Geben Sie auch die anschauliche Interpretation des
+# Regressionskoeffizienten an.
+
+summary(fit.hw)$coefficients
+#               Estimate Std. Error    t value     Pr(>|t|)
+# (Intercept) -1.1283048 2.36778251 -0.4765238 6.416111e-01
+# rain         0.8269731 0.03652408 22.6418585 7.896130e-12
+
+# Ja, der Zusammenhang ist hochsignifikant

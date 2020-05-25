@@ -1,0 +1,33 @@
+---
+title: "Prüfung"
+subtitle: "CAS Datenanalyse Modul B1"
+author: "Stefan Schmidt"
+date: "27.05.2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+data.path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Pruefung_B1/data/"
+```
+
+
+# Aufgabe 1
+
+```{r}
+
+# table
+# read.table(paste0(data.path, "softdrink.dat"), header = TRUE)
+
+# xls
+# library(readxl)
+# df <- read_xls(paste0(data.path, "Alpenquerender_Gueterverkehr_Schiene.xls"))
+
+# dat
+#library(readr)
+df <- read.csv(paste0(data.path, "Windmuehle.dat"), header = TRUE)
+
+```
+
+# Aufgabe 2
+
