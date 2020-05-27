@@ -1,0 +1,142 @@
+---
+title: "Probeprüfung"
+author: "Anna Drewek"
+subtitle: CAS Datenanalyse Modul B1
+output: word_document
+---
+
+
+
+```{r, echo = TRUE}
+# Einlesen der Daten
+load("data/un_data.RDA")
+str(un)
+
+# Transformationen
+un$loglife <- log(un$lifeExp)
+un$asinInet <- asin(sqrt(un$Inet/100))
+```
+
+
+## Aufgabe 1 
+
+### (a) 
+
+```{r, echo = TRUE}
+fit1 <- lm(loglife ~ asinInet, data = un)
+coef(fit1)
+```
+
+Der geschätzte Achsenabschnitt ist `r round(coef(fit1)[1],2)` und die geschätzte Steigung ist `r round(coef(fit1)[2],2)`.
+
+
+### (b) 
+
+Es ist hier nach dem Multiple R-Squared gefragt. Diesen kann man aus dem Summary-Output ablesen. Es werden 65.8% der Variablilität durch das Regressionsmodell erklärt.
+
+```{r, echo = TRUE}
+summary(fit1)$r.squared
+```
+
+
+### (c)
+
+Tukeys first aid Transformationen:
+  
+* Logarithmus für *lifeExp}, da es sich hier um eine Zufallsvariable handelt, die nur positive Werte annehmen kann.
+* Arcus-Sinus-Transformation für *Inet}, da es sich hier um Prozentzahlen handelt.
+
+
+### (d) 
+
+```{r, echo = TRUE, fig.width=8, fig.height=7}
+## Residuen-Analyse:
+load("data/resplot.rda")
+resplot(fit1)
+```
+
+
+* **Tukey-Anscombe-Plot**: Glätter hat eine Krümmung, die ausserhalb der stochastischen Fluktuation verläuft. Dies ist ein Hinweis, dass die Linearitätsannahme hier nicht erfüllt zu sein scheint.
+* **Normalplot**:  Es gibt einen Ausreisser, der ausserhalb der stochastischen Fluktuation liegt. Er weist auf eine klare Verletztung der Annahme hin.
+* **Scale-Location-Diagramm**: Die Varianz ist leicht abnehmend. Der Glätter verläuft am Rande der grauen simulierten Glättungskurven.
+* **Leverage-Plot**: Es gibt keine einflussreichen Punkte.
+
+**FAZIT**: Es gibt deutliche Hinweise (Tukey-Anscombe-Plot und Normalplot), dass die Voraussetzungen für die Anpassung nicht erfüllt sind. Das Modell ist so nicht gültig.
+
+
+
+### (e)
+
+Der Achsenabschnitt gibt an, wie hoch die logarithmierte Lebenserwartung ist, falls die Bevölkerung keinen Zugang zum Internet hat. Um die Lebenserwartung zu erhalten müssen wir zurücktransformieren. Während dies für das 95% Vertrauensintervall direkt mit *exp()* passieren kann, ist für das Erzeugen einer erwartungstreuen Punktvorhersage eine Korrektur nötig. Man kann sowohl die parametrische Korrektur (Variante 1) wie auch Duan's Smearing Estimator (Variante 2) einsetzen. Wie man anhand der Zahlenresultate sieht, ist der Unterschied klein.
+
+
+```{r, echo = TRUE}
+# Punktvorhersage mit Korrektur (Variante 1)
+exp(coef(fit1)[1]) * exp(summary(fit1)$sigma^2/2)
+# Punktvorhersage mit Korrektur (Variante 2)
+exp(coef(fit1)[1]) * mean(exp(resid(fit1)))
+```
+
+Das zugehörige Vertrauensintervall erhält man mittels *confint()*:
+
+
+```{r, echo = TRUE}
+h <- confint(fit1, parm = 1, level = 0.95)
+exp(h)
+```
+
+### (f) 
+
+Die Variable Inet ist sicher keine kausale Variable für lifeExp, könnte jedoch ein Proxy (=Indikator) für den Stand der Informationstechnologie im Land sein.
+
+
+
+## Aufgabe 2 
+
+
+```{r, echo = TRUE}
+# Anpassen des multiplen linearen Regressionsmodells:
+fit2 <- lm(loglife ~ asinInet + region + infantMortality, data = un)
+```
+
+
+### (a) 
+
+Es handelt sich um die Angaben zum globalen F-Test (letzte Zeile summary-Output). Er prüft, ob mindestens eine der erklärenden Variablen einen Einfluss auf die Zielgrösse hat. In unserem Fall ist der p-Wert < 0.05, d.h. *Inet*, *region* und/oder *infantMortality* haben einen signifikanten Beitrag zur Erklärung der Variation in der Zielgrösse.
+
+
+### (b) 
+
+```{r, echo = TRUE}
+drop1(fit2, test = "F")
+```
+
+Dies überprüft man mit einem F-Test, da es sich hier um eine kategorielle Variable handelt. Da der p-Wert kleiner als 0.05 ist, hat *region* einen auf 5% signifikanten Einfluss.
+
+
+### (c) 
+
+Aus den geschätzten Koeffizienten der binären Variablen zu *region* entnehmen wir, dass Europa die höchste Lebenserwartung hat und Afrika die kleinste.
+
+```{r, echo = TRUE}
+dummy.coef(fit2)
+```
+
+### (d) 
+
+Wir erzeugen die Vorhersage mit dem *predict()* Befehl, wobei wir beachten müssen, dass die erklärenden Variablen im Modell transformiert sind. Wegen der Log-Transformation der Zielgrösse müssen wir die Ergebnisse zurücktransformieren und korrigieren.
+
+
+```{r, echo = TRUE}
+swiss <- data.frame(Inet = 87, infantMortality = 3.513, region = "Europe")
+swiss$asinInet <- asin(sqrt(swiss$Inet/100))
+h <- predict(fit2, newdata = swiss, interval = "confidence")
+h
+# Rücktransformation ergibt Median + Intervall
+exp(h)
+# Korrektur für Mittelwert
+exp(h[1])*exp(summary(fit2)$sigma^2/2) # Variante 1
+exp(h[1])*mean(exp(resid(fit2))) # Variante 2 (Duan Estimator)
+```
+
+In der Schweiz ist aufgrund dieses Modells und der gegebenen Werte mit einer Lebenserwartung von 79.8 Jahren zu rechnen. Mit 95% liegt diese zwischen 78.54 und 80.94 Jahren.
