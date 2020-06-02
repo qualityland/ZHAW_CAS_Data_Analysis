@@ -1,5 +1,5 @@
 
-# Chapter 1
+# Kapitel 1
 
 ## Flugbuchungen (PanAm), monatlich in 1'000
 data("AirPassengers")
@@ -55,4 +55,21 @@ n <- length(smi)
 tmp <- log(smi[2:(n)]) - log(smi[1:(n-1)])
 lret.smi <- ts(tmp, start = start(esm), frequency = frequency(esm))
 plot(lret.smi, main = 'SMI Log-Returns', ylab = 'SMI Log-Returns')
-  
+
+
+# Kapitel 3
+
+## die Klasse ts (time series)
+
+# Anzahl Stautage pro Jahr (vor Nordportal des Gotthard-Tunnels)
+rawdat <- c(88, 76, 112, 109, 91, 98, 139)
+ts.dat <- ts(rawdat, start = 2004, frequency = 1)
+ts.dat
+str(ts.dat)
+
+# nuetzliche Funktionen im Umgang mit ts Objekten
+start(ts.dat)
+end(ts.dat)
+frequency(ts.dat)
+deltat(ts.dat)
+time(ts.dat)
