@@ -72,4 +72,90 @@ start(ts.dat)
 end(ts.dat)
 frequency(ts.dat)
 deltat(ts.dat)
-time(ts.dat)
+time(ts.dat)                              # returns
+window(ts.dat, start = 2006, end = 2008)  # subsetting returning ts object
+ts.dat[3:5]                               # subsetting returning numeric vector
+
+plot(ts.dat, ylab = 'Anzahl Stautage pro Jahr', main = 'Stautage vor dem Gotthard-Tunnel')
+
+
+## das forecast Package
+library(forecast)
+data(lh)
+# display ts, ACF and PACF
+tsdisplay(lh, main = "Luteinizing Hormone")
+
+## Zeit und Datum
+as.Date('2012-02-14')
+as.Date('2012/02/07')
+# Format
+# %d - Day of the month (decimalnumber)
+# %m - Month (decimal number)
+# %b - Month (character, abbreviated)
+# %B - Month (character, full name)
+# %y - Year (decimal, two digit)
+# %Y - Year (decimal, four digit)
+as.Date('27.01.12', format = '%d.%m.%y')
+as.Date('14. February, 2012', format = '%d. %B, %Y')
+
+# internally stored as no. days since epoch (01.01.1970)
+mydat <-as.Date('2012-02-14')
+as.numeric(mydat)
+# ein Datum vor dem 01.01.1970 ist negativ (intern)
+jesus <- as.Date('0000-01-01')
+as.numeric(jesus)
+
+# Wochentag eines Datums
+weekdays(mydat)
+# [1] "Tuesday"
+
+# Monat eines Datums
+months(mydat)
+# [1] "February"
+
+# Quartal eines Datums
+quarters(mydat)
+# [1] "Q1"
+
+## Rechnen mit Datum
+dat <- as.Date(c('2000-01-01', '2004-04-04', '2007-08-09'))
+dat + 1
+# [1] "2000-01-02" "2004-04-05" "2007-08-10"
+min(dat)
+# [1] "2000-01-01"
+max(dat)
+# [1] "2007-08-09"
+median(dat)
+# [1] "2004-04-04"
+dat[3] - dat[1]
+# Time difference of 2777 days
+
+## Zeitsequenzen
+# Sequenz 12 aufeinander folgender Tage ab dem 3. August 1985
+seq.aug <- seq(as.Date('1985-08-03'), by = 'days', length = 12)
+seq.aug
+# 12 Zeitpunkte im 2-Wochen-Abstand am dem 17. April 1992
+seq.2w <- seq(as.Date('1992-04-17'), by='2 weeks', length=12)
+seq.2w
+
+## chron Package
+library(chron)
+dat <-
+  c(
+    '2007-06-09 16:43:20',
+    '2007-08-29 07:22:40',
+    '2007-10-21 16:48:40',
+    '2007-12-17 11:18:50'
+  )
+dts <- substr(dat, 1, 10)    # dates
+tme <- substr(dat, 12, 19)   # times
+fmt <- c('y-m-d', 'h:m:s')
+cdt <- chron(dates = dts, time = tme, format = fmt)
+cdt
+# nun kann man rechnen
+cdt[2] - cdt[1]
+# Time in days:
+# [1] 80.61065
+difftime(cdt[2], cdt[1], units = "secs")
+# Time difference of 6964760 secs
+
