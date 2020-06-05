@@ -1,3 +1,7 @@
+#data.path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B2/data/"
+data.path <- "C:/Users/SCHMIS1M/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B2/data/"
+
+
 
 # Kapitel 1
 
@@ -10,7 +14,6 @@ AirPassengers
 plot(AirPassengers, main = 'Passenger Bookings', ylab = 'Pax')
 
 
-
 ## Lynx Trappings
 data(lynx)
 class(lynx)
@@ -18,7 +21,6 @@ str(lynx)
 lynx
 
 plot(lynx, main = 'Lynx Trappings', ylab = '# of lynx trapped')
-
 
 
 ## Luteinisierendes Hormon
@@ -32,11 +34,10 @@ plot(lh, main = 'Luteinizing Hormone', ylab = 'LH level')
 n <- length(lh)
 plot(lh[1:(n-1)], lh[2:n], main = 'Scatterplot of LH Data with Lag 1', pch = 16)
 
+
 # Pearson Korrelation
 cor(lh[1:(n-1)], lh[2:n])
 # [1] 0.5807322
-
-
 
 ## Swiss Market Index
 
@@ -57,7 +58,8 @@ lret.smi <- ts(tmp, start = start(esm), frequency = frequency(esm))
 plot(lret.smi, main = 'SMI Log-Returns', ylab = 'SMI Log-Returns')
 
 
-# Kapitel 3
+
+# Kapitel 3 - Zeitreihenanalyse mit R
 
 ## die Klasse ts (time series)
 
@@ -98,7 +100,7 @@ as.Date('2012/02/07')
 as.Date('27.01.12', format = '%d.%m.%y')
 as.Date('14. February, 2012', format = '%d. %B, %Y')
 
-# internally stored as no. days since epoch (01.01.1970)
+# internally stored as number of days since epoch (01.01.1970)
 mydat <-as.Date('2012-02-14')
 as.numeric(mydat)
 # ein Datum vor dem 01.01.1970 ist negativ (intern)
@@ -159,3 +161,11 @@ cdt[2] - cdt[1]
 difftime(cdt[2], cdt[1], units = "secs")
 # Time difference of 6964760 secs
 
+
+
+# Kapitel 4 - Deskriptive Zeitreihenanalyse
+
+# Zeitreihenplot
+dat <- read.table(paste0(data.path, 'Maine.dat'), header = TRUE)
+tsd <- ts(dat, start = c(1996, 1), frequency = 12)                      # start 01/1996
+plot(tsd, ylab = "%", main = "Unemployment in Maine")
