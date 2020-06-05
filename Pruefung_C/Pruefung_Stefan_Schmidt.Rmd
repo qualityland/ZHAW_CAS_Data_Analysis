@@ -1,0 +1,78 @@
+---
+title: "Leistungsnachweis Modul C"
+author: "Stefan Schmidt"
+date: "1. Juli 2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Datensatz
+
+* Anforderungen an Datensatz
+  + mindestens 4 quantitative Variablen
+  + mindestens eine qualitative Variable, welche als Zielvariable für ein Klassifikationsproblem verwendet werden kann (nicht zu viele Stufen)
+  + mindestens 100 Beobachtungen
+  
+
+* Datensatz einlesen
+* Kurze Beschreibung des Datensatz 
+* allenfalls Datenaufbereitung 
+* Kurze summary-Statistik
+
+
+```{r read data, echo=FALSE}
+## Daten einlesen
+
+```
+
+## Visualisierung des Datensatzes
+
+* Visualisieren Sie Ihren Datensatz (oder Teile davon) mittels eines geeigneten Dimensionsreduktionsansatzes Ihrer Wahl.
+* Interpretieren Sie Ihr Ergebnis.
+
+
+```{r Visualisierung, echo=TRUE}
+## Ansatz
+
+## Visualisierung
+
+```
+
+
+## Clustering
+
+* Versuchen Sie Ihren Datensatz (oder Teile davon) mit einer geeigneten Methode zu clustern.
+* Geben Sie an, wie Sie die Anzahl Cluster festlegen.
+* Visualisieren Sie Ihre Cluster.
+* Interpretieren Sie Ihre Ergebnisse. 
+
+```{r Clustering, echo=TRUE}
+## Ansatz zur Bestimmung der Anzahl Cluster
+
+## Clustering
+
+## Visualisierung
+
+```
+
+
+## Klassifikation
+
+* Wählen Sie mindestens zwei verschiedene Klassifizierer aus, um die Zielvariable in Ihrem Datensatz zu klassifizieren.
+* Berechnen Sie die Konfusionsmatrix der Ansätze.
+* Interpretieren Sie die Ergebnisse. Vergleichen Sie dazu Ihre Ansätze anhand verschiedener Evaluationsmasse. Welcher Ansatz performt besser für unabhängige Testdaten? Was sind die Vor- und Nachteile Ihrer Ansätze? Wie würde Ihr finales Modell aussehen? 
+
+
+```{r Klassifikation, echo=TRUE}
+## Aufteilung in Training und Testdaten
+
+## Klassifizierer 1
+
+## Klassifizierer 2
+
+## Konfusionsmatrix
+
+```
