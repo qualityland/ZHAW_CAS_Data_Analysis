@@ -1,5 +1,5 @@
-#data.path <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B2/data/"
-data.path <- "C:/Users/SCHMIS1M/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B2/data/"
+#data.dir <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B2/data/"
+data.dir <- "C:/Users/SCHMIS1M/wrk/studio/ZHAW_CAS_Data_Analysis/Module_B2/data/"
 
 
 
@@ -166,6 +166,11 @@ difftime(cdt[2], cdt[1], units = "secs")
 # Kapitel 4 - Deskriptive Zeitreihenanalyse
 
 # Zeitreihenplot
-dat <- read.table(paste0(data.path, 'Maine.dat'), header = TRUE)
+dat <- read.table(paste0(data.dir, 'Maine.dat'), header = TRUE)
 tsd <- ts(dat, start = c(1996, 1), frequency = 12)                      # start 01/1996
 plot(tsd, ylab = "%", main = "Unemployment in Maine")
+
+load(paste0(data.dir, 'cbe.rda'))
+dat <- cbe
+tsd <- ts(dat, start = 1958, frequency = 12)
+plot(tsd, main = "Chocolate, Beer & Electricity")
