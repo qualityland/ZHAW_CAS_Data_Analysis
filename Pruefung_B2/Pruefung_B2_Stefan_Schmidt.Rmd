@@ -1,0 +1,67 @@
+---
+title: "Prüfung"
+subtitle: "CAS Datenanalyse Modul B2"
+author: "Stefan Schmidt"
+date: "10.06.2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+data.dir <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Pruefung_B2/data/"
+#load(paste0(data.dir, "some_data.rda"))
+```
+
+
+# Aufgabe 1
+
+## (a)
+
+```{r}
+
+```
+
+
+## (b)
+
+```{r}
+```
+
+
+## (c)
+
+```{r}
+```
+
+
+## (d)
+
+```{r}
+```
+
+
+
+# Aufgabe 2
+
+# (a)
+
+```{r}
+```
+
+
+# (b)
+
+```{r}
+```
+
+
+
+# (c)
+
+
+
+# (d)
+
+```{r}
+```
+
