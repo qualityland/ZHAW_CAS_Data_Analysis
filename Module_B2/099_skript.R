@@ -201,3 +201,87 @@ title("Indexed Chocolate, Beer & Electricity")
 lines(cbe.ts[, 2], col = clr[2])
 lines(cbe.ts[, 3], col = clr[3])
 legend('topleft', lty = 1, col = clr, legend = names(cbe.dat))
+
+
+
+### Trend-Schätzung
+
+
+#### mit Running-Mean
+
+# Verkehrszunahme in der Schweiz, 1990 - 2010
+SwissTraffic <- ts(c(100.0, 102.7, 104.2, 104.6, 106.7,
+                     106.9, 107.6, 109.9, 112.0, 114.3,
+                     117.4, 118.3, 120.9, 123.7, 124.1,
+                     124.6, 125.6, 127.9, 127.4, 130.2,
+                     131.3), start=1990, freq=1)
+plot(SwissTraffic)
+SwissTraffic.trend.est <- filter(SwissTraffic, filter = c(1, 1, 1) / 3)
+lines(SwissTraffic.trend.est, type = 'l', col = 'red')
+legend('topleft', legend = c('Messwerte', 'Running Mean'), col = c('black', 'red'), lty = 1, bty = 'n')
+
+
+#### Trend-Schätzung für Saisonale Daten
+
+# CO2-Konzentration am Mauna Loa, Hawaii, 1959 - 1998
+data(co2)
+wghts <- c(0.5, rep(1, 11), 0.5) / 12                      # Gewichtung: 12 Monate, die aeusseren nur * 0.5 gewichtet
+co2.trend.est <- filter(co2, filter = wghts, sides = 2)
+plot(co2, main = 'Mauna Loa CO2 Concentrations')
+lines(co2.trend.est, col = 'red')
+legend('topleft', legend = c('Messwerte', 'Running Mean'), col = c('black', 'red'), lty = 1, bty = 'n')
+
+
+### Entfernen von Trend und Saison-Effekt durch Differenzieren
+
+# Entfernung des Trends (LAG 1)
+plot(diff(co2, lag = 1), main = "Differneced Mauna Loa Data (p=1)")
+
+# Entfernung der Saison (LAG 12)
+plot(diff(co2, lag = 12), main = "Differneced Mauna Loa Data (p=12)")
+
+# Entfernung von Trend und Saison-Effekt
+plot(diff(diff(co2, lag = 12), lag = 1), main = "Twice Differneced Mauna Loa Data (p=12, p=1)")
+
+
+### Saison-Effekt-Schätzung
+
+trend.adj <- co2 - co2.trend.est                           # vom Trend bereinigt (adjusted)
+month <- factor(rep(1:12, 39))                             # Faktor-Variable mit den Monaten für 39 Jahre
+co2.seasn.est <- tapply(trend.adj, month, mean, na.rm = TRUE)
+plot(co2.seasn.est, type = 'h', xlab = 'Month')
+title('Seasonal Effects for Mauna Loa Data')
+abline(h = 0, col = 'grey')
+
+
+### Restterm-Schätzung
+
+# Restterm = CO2 - Trend - Saisoneffekt ( * 39 Jahre)
+co2.remain.est <- co2 - co2.trend.est - rep(co2.seasn.est, 39)
+plot(co2.remain.est, main = 'Estimated Stochastic Remainder Term')
+
+
+
+### Zeitreihen-Zerlegung mit decompose()
+
+co2.dec <- decompose(co2)
+plot(co2.dec)
+
+
+
+### Zeitreihen-Zerlegung mit stl() - Seasonal Decomposition of Time Series by Loess
+
+co2.stl <- stl(co2, s.window = 'periodic')
+plot(co2.stl, main = 'STL-Decomposition of CO2 Data')
+
+
+
+
+
+### Autokorrelationsfunktion ACF (auto correlation function)
+
+load(paste0(data.dir,'wave.rda'))
+plot(window(wave, 1, 60), ylab = 'Height', ylim = c(-800, 800), main = 'Wave Tank Data')
+
+lag.plot(wave, do.lines = FALSE, pch = '.', main = 'Lagged Scatterplot, k=1')
+
