@@ -283,5 +283,71 @@ plot(co2.stl, main = 'STL-Decomposition of CO2 Data')
 load(paste0(data.dir,'wave.rda'))
 plot(window(wave, 1, 60), ylab = 'Height', ylim = c(-800, 800), main = 'Wave Tank Data')
 
+
+# Lag Plots
+# sind suboptimal (besonders bei hoeheren Lags)
 lag.plot(wave, do.lines = FALSE, pch = '.', main = 'Lagged Scatterplot, k=1')
 
+lag.plot(wave, lags = 4, set.lags = 2:5,do.lines=F, pch='.')
+
+# ACF
+# Viel genauer
+acf(wave)
+
+# direkte Ausgabe der Autokorrelations-Werte
+acf(wave, plot = FALSE)
+
+# ACF einer NICHT-stationaeren Zeitreihe mit Trend
+# hier: SMI (Swiss Market Index)
+acf(smi)
+
+# ACF einer NICHT-stationaeren Zeitreihe mit Saison
+# hier: average monthly Temperatures at Nottingham 1920-1939
+data(nottem)
+acf(nottem)
+
+
+# ACF einer NICHT-stationaeren Zeitreihe mit Trend UND Saison
+acf(AirPassengers)
+
+
+
+### ACF und Ausreisser
+
+data(beavers)
+beaver <- ts(beaver1$temp, start = 1, frequency = 1)
+
+plot(beaver, main = 'Beaver Body Temperature Data')
+lag.plot(beaver, do.lines=FALSE, main = 'Lagged Scatterplot, k=1')
+
+
+
+### PACF
+
+pacf(wave, ylim = c(-1, 1), main = 'PACF of Wave Tank Data')
+
+
+
+### Modelle fuer stationaere Zeitreihen
+
+### Gauss'sches Weisses Rauschen
+gwn <- ts(rnorm(200, mean = 0, sd = 1))
+plot(gwn, main = 'Gaussian White Noise')
+library(forecast)
+tsdisplay(gwn)
+
+
+# AR(1)-Modell mit α1 = 0.8
+# xt = 0.8 * x + Et
+set.seed(24)
+E <- rnorm(200, 0, 1)
+x <- numeric()
+x[1] <- E[1]
+for (i in 2:200) x[i] <- 0.8 * x[i - 1] + E[i]
+plot(ts(x),
+     ylab = expression(x[t]),
+     main = expression(paste("AR(1)-Zeitreihe mit ", alpha[1], "= 0.8", sep = ''))
+     )
+
+
+acf(x)
