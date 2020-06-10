@@ -119,8 +119,8 @@ tsdisplay(mlk.ts.resid)
 # Geben Sie die dafür die notwendigen R-Befehle an.
 library(nlme)
 corStruct <- corARMA(form = ~ zeitschritte, p = 1, q = 0)
-r.gls <- gls(milk ~ zeitschritte + monat, data= milk_data, correlation = corStruct)
-summary(r.gls)
+mlk.gls <- gls(milk ~ zeitschritte + monat, data= milk_data, correlation = corStruct)
+summary(mlk.gls)
 
 ## ii)
 # Wie beantworten Sie nun die Frage (h) ii)?

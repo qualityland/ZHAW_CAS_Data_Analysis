@@ -59,3 +59,34 @@ colnames(abst)
 
 pca3 <- prcomp(abst)
 summary(pca3$x)
+
+
+### Aufgabe 4
+load(paste0(data.path, 'mnist20x4and1000x0.RData'))
+
+# a) 
+# Machen Sie sich mit dem Datensatz vertraut. Einzelne Bilder können Sie wie
+# folgt anschauen. Visualisieren Sie einige Elemente.
+image_nummer <- 4
+bild <- matrix( x[image_nummer, ], ncol=28, byrow = TRUE)
+image(t(bild[28:1,1:28]))
+
+# b)
+# Führen Sie mit der Funktion prcomp eine Hauptkomponentenanalyse auf die
+# Matrix x durch. Sollten die Variablen standardisiert werden oder nicht?
+# Warum? Was genau macht der prcomp Befehl?
+
+pca_klassisch <- prcomp(x)
+str(pca_klassisch)
+
+# c)
+# Wieviel Hauptkomponenten braucht es, um 80% der Varianz in den Daten zu
+# erklären? Greifen Sie mit $sdev auf die Standardabweichung der 
+# Hauptkomponenten zu.
+var <- pca_klassisch$sdev^2
+var_cum <- cumsum(var)/sum(var)
+plot(1:length(var), var_cum, ylim=c(0,1))
+(pc_number <- which( round(var_cum, 2) == 0.8))
+abline( h = 0.8, v = pc_number)
+grid()
+axis(1, at = pc_number, labels = pc_number )
