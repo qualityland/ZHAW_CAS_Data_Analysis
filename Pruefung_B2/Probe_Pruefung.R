@@ -8,7 +8,7 @@ str(milk_data)
 # Definieren Sie die Spalte milk gemäss den Angaben von oben in R sinnvoll und
 # korrekt als Zeitreihe. Geben Sie den verwendeten R-Befehl an.
 mlk.dat <- milk_data$milk
-mlk.ts <- ts(mlk.dat, start = c(1994, 1), frequency = 12)
+mlk.ts <- ts(mlk.dat, start = c(1994, 1), frequency = 12)  # Monatsdaten, Start: Jan 1994
 
 
 
@@ -44,7 +44,7 @@ plot(mlk.stl)
 # Ist das Anpassen eines AR(p)-Modells angebracht?
 # Argumentieren Sie mit Hilfe des ACF und PACF-Plot.
 # remainder
-mlk.rmdr <- mlk.stl$time.series[, 3]
+mlk.rmdr <- mlk.stl$time.series[, 3]   # Remainder (Restterm) der STL-Zerlegung
 library(forecast)
 tsdisplay(mlk.rmdr)
 
@@ -54,6 +54,8 @@ tsdisplay(mlk.rmdr)
 # Unabhängig von ihren Argumenten in d) sollen Sie nun aus der PACF die zwei
 # plausibelsten Ordnungen p für ein AR(p)-Modell ablesen und angeben.
 # Erklären Sie ihre Wahl.
+# p=6, p=12
+# drop-off nach Lag 6 bzw. 12
 
 
 
@@ -71,14 +73,17 @@ tsdisplay(mlk.rmdr)
 # in a) generierte Zeitreihe an.
 mlk.hw <- hw(mlk.ts)
 
+
 ## i)
 # Welche Bedeutung und welchen Wert hat der Parameter β?
 # Welchen Schluss ziehen Sie aus diesem Resultat?
+mlk.hw$model$par[2]
+
 
 ## ii)
 # Wie gross ist die mit dem Holt-Winters Modell prognostizierte Milchleistung
 # für den Juni 2006.
-
+mlk.hw$mean[6]
 
 
 # (h)
@@ -87,21 +92,24 @@ mlk.hw <- hw(mlk.ts)
 
 ## i)
 # Geben Sie den dazu verwendeten R-Befehl an.
+mlk.lm <- lm(milk ~ zeitschritte + monat, data = milk_data)
 
 ## ii)
 # Ändert sich die durchschnittliche Milchleistung der Kühe zwischen 1994 und
 # 2005 signifikant (α = 1%) aufgrund der Resultate des Regressionsmodells?
-
+summary(mlk.lm)
+# Ja, Steigungsparameter beta fuer 'zeitschritte' ist hoch signifikant (p-Wert=5.63e-09 ***)
 
 ## iii)
 # Können Sie dem p-Wert von milk vertrauen? Bitte begründen Sie ihre Antwort.
-
+tsdisplay(mlk.lm$resid)
 
 
 # (i)
 # Welches AR(p)-Modell beschreibt die Residuen des Regressionsmodell aus h) gut?
-
-
+mlk.ts.resid <- ts(mlk.lm$residuals)
+ar.burg(mlk.ts.resid)
+tsdisplay(mlk.ts.resid)
 
 # (j)
 # Verwenden sie nun die Funktion gls(), um im Zeitreihen-Regressionsmodell von
@@ -109,7 +117,11 @@ mlk.hw <- hw(mlk.ts)
 
 ## i)
 # Geben Sie die dafür die notwendigen R-Befehle an.
+library(nlme)
+corStruct <- corARMA(form = ~ zeitschritte, p = 1, q = 0)
+r.gls <- gls(milk ~ zeitschritte + monat, data= milk_data, correlation = corStruct)
+summary(r.gls)
 
 ## ii)
 # Wie beantworten Sie nun die Frage (h) ii)?
-
+# p-Wert = 0.0157 > 0.01 knapp nicht signifikant
