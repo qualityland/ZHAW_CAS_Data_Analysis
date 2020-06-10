@@ -43,24 +43,24 @@ data.dir <- "/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Pruefung_B2/data/
 
 # Aufgabe 2
 
-# (a)
+## (a)
 
 ```{r}
 ```
 
 
-# (b)
+## (b)
 
 ```{r}
 ```
 
 
 
-# (c)
+## (c)
 
 
 
-# (d)
+## (d)
 
 ```{r}
 ```
