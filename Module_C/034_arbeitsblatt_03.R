@@ -35,9 +35,11 @@ data.path <- '/Users/schmis12/wrk/studio/ZHAW_CAS_Data_Analysis/Module_C/data/'
 load(paste0(data.path, 'abst.RData'))
 str(abst)
 
-abst.km <- kmeans(abst)
+# a)
 library(factoextra)
 fviz_nbclust(abst, kmeans, method="wss")
 
+abst.km <- kmeans(abst, 7)
 
+abst.pca <- prcomp(abs, scale.=F)
 
