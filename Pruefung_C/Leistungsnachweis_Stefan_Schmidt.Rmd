@@ -2,7 +2,10 @@
 title: "Leistungsnachweis Modul C"
 author: "Stefan Schmidt"
 date: "8. Juli 2020"
-output: pdf_document
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
@@ -23,10 +26,39 @@ knitr::opts_chunk$set(echo = TRUE)
 * Kurze summary-Statistik
 
 
+
+
 ```{r read data, echo=FALSE}
 ## Daten einlesen
-
+df <- read.csv('https://archive.ics.uci.edu/ml/machine-learning-databases/00519/heart_failure_clinical_records_dataset.csv')
 ```
+
+### Beschreibung des Datensatzes
+
+
+
+Auf den Datensatz bin ich auf der [UCI Machine Learning Plattform](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records) gestossen.
+Es handelt sich um die klinischen Daten (13 Variablen) zu 299 Herzinfarkt-Patienten:
+
+* `age`: Alter des Patienten [Jahre]
+* `anaemia`: Anämie? Ja/Nein [boolean]
+* `creatinine_phosphokinase`: Creatin-Kinase im Blut [$\mu$g/l]
+* `diabetes`: Diabetes? Ja/Nein [boolean]
+* `ejection_fraction`: Auswurf-Fraktion des Herzens [%]
+* `high_blood_pressure`: Bluthochdruck? Ja/Nein [boolean]
+* `platelets`: Thrombozyten-Zahl [kiloplatelets/$\mu$l]
+* `serum_creatinine`: Serum Creatinin [mg/dl]
+* `serum_sodium`: Serum Natrium [mEq/l]
+* `sex`: Geschlecht? Frau/Mann [binary]
+* `smoking`: Raucher? Ja/Nein [boolean]
+* `time`: Beobachtungszeitraum [Tage]
+* `DEATH_EVENT`: Im Beobachtungszeitraums verstorben? Ja/Nein [boolean]
+
+(mEq/L: Milliäquivalente pro Liter)
+
+
+
+
 
 ## Visualisierung des Datensatzes
 
