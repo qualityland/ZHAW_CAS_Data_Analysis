@@ -30,3 +30,11 @@ hist(df$platelets, xlab = expression(paste('[kiloplatelets/', mu, 'l]')), main =
 hist(df$creatinine_phosphokinase, xlab = expression(paste('CK im Blut [', mu, 'g/l]')), main = 'Creatin-Kinase')
 
 
+round(cov(df), 2)
+df_sta <- scale(df, center = TRUE, scale = TRUE)
+round(cov(df_sta), 2)
+
+# Dimensionsreduktion mit PCA
+pca <- prcomp(df)
+pca
+summary(pca)
