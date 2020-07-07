@@ -83,7 +83,10 @@ Interessant wäre nun zu sehen ob und anhand welcher klinischen Parameter der Ou
 
 
 ```{r Visualisierung, echo=TRUE}
-## Ansatz
+## Ansatz MDS
+pat.data <- df
+
+
 
 ## Visualisierung
 

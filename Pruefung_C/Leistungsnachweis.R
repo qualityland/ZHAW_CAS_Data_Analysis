@@ -34,7 +34,56 @@ round(cov(df), 2)
 df_sta <- scale(df, center = TRUE, scale = TRUE)
 round(cov(df_sta), 2)
 
-# Dimensionsreduktion mit PCA
-pca <- prcomp(df)
-pca
-summary(pca)
+
+# Dimensionsreduktion mit MDS
+# Trennung des Datensatzes in Patienten.Daten und Patienten.Outcome
+pat.dat <- df[, 1:12]
+outcome <- factor(df[, 13], levels=c(0, 1), labels=c('überlebt', 'verstorben'))
+
+## Distanzmatrix der Patientendaten
+
+################# MDS #########################
+# Dissimilarity Matrix Calculation
+library(cluster)
+pat.dist <- daisy(pat.dat, stand = TRUE)  # standardisiert
+#pat.dist <- daisy(pat.dat)               # NICHT standardisiert
+
+# Multidimensional Scaling
+pat.mds <- cmdscale(pat.dist)
+pat.df <- data.frame(pat.mds)
+
+# plot
+#plot(pat.df$X1, pat.df$X2, col = outcome)
+
+# ggplot2
+library(ggplot2)
+plot_dat <- cbind(pat.df, outcome)
+
+# schwarz: ueberlebt, blau: verstorben
+ggplot(plot_dat, aes(X1, X2, colour = outcome)) +
+  geom_point() +
+  ggtitle('2D MDS Visualisierung')
+
+################### isoMDS ########################
+# dasselbe mit der nicht-metrischen MDS
+library(MASS)
+pat.mds <- isoMDS(pat.dist)
+pat.df <- data.frame(pat.mds)
+plot_dat <- cbind(pat.df, outcome)
+
+# schwarz: ueberlebt, blau: verstorben
+ggplot(plot_dat, aes(points.1, points.2, colour = outcome)) +
+  geom_point() +
+  ggtitle('2D isoMDS Visualisierung')
+
+################### tSNE ########################
+library(Rtsne)
+set.seed(1)
+restSNE <- Rtsne(pat.dat, pca_scale = TRUE, perplexity = 50)
+d_tsne <- as.data.frame(restSNE$Y)
+#names(d_tsne) <- c("tsne1","tsne2")
+d_tsne$outcome <- outcome
+library(ggplot2)
+ggplot(data = d_tsne, aes(x = V1, y = V2, colour = outcome)) +
+  geom_point() +
+  ggtitle("2D t-SNE Visualisierung")
