@@ -12,33 +12,21 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Datensatz
-
-* Anforderungen an Datensatz
-  + mindestens 4 quantitative Variablen
-  + mindestens eine qualitative Variable, welche als Zielvariable für ein Klassifikationsproblem verwendet werden kann (nicht zu viele Stufen)
-  + mindestens 100 Beobachtungen
-  
-
-* Datensatz einlesen
-* Kurze Beschreibung des Datensatz 
-* allenfalls Datenaufbereitung 
-* Kurze summary-Statistik
-
-
-
-
 ```{r read data, echo=FALSE}
 ## Daten einlesen
 df <- read.csv('https://archive.ics.uci.edu/ml/machine-learning-databases/00519/heart_failure_clinical_records_dataset.csv')
+#dim(df)
+#str(df)
 ```
 
-### Beschreibung des Datensatzes
+## Datensatz
 
-
-
-Auf den Datensatz bin ich auf der [UCI Machine Learning Plattform](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records) gestossen.
-Es handelt sich um die klinischen Daten (13 Variablen) zu 299 Herzinfarkt-Patienten:
+Auf den Datensatz bin ich auf der [UCI Machine Learning Plattform](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records)
+gestossen.
+Es handelt sich um die klinischen Daten zu 299 Patienten mit Herzinsuffizienz.
+Neben einigen Risikofaktoren (Alter, Rauchen, Bluthochdruck) sind Laborparameter,
+ein Merkmal für die Herzleistung und der Outcome des Patienten enthalten (also
+die Information ob der Beobachtungszeitraum überlebt wurde oder nicht):
 
 * `age`: Alter des Patienten [Jahre]
 * `anaemia`: Anämie? Ja/Nein [boolean]
@@ -49,13 +37,41 @@ Es handelt sich um die klinischen Daten (13 Variablen) zu 299 Herzinfarkt-Patien
 * `platelets`: Thrombozyten-Zahl [kiloplatelets/$\mu$l]
 * `serum_creatinine`: Serum Creatinin [mg/dl]
 * `serum_sodium`: Serum Natrium [mEq/l]
-* `sex`: Geschlecht? Frau/Mann [binary]
+* `sex`: Geschlecht? Frau=0/Mann=1 [binary]
 * `smoking`: Raucher? Ja/Nein [boolean]
 * `time`: Beobachtungszeitraum [Tage]
 * `DEATH_EVENT`: Im Beobachtungszeitraums verstorben? Ja/Nein [boolean]
 
-(mEq/L: Milliäquivalente pro Liter)
 
+Unter den `r nrow(df)` Patienten sind `r sum(df$sex == 0)` Frauen und
+`r sum(df$sex == 1)` Männer im Alter zwischen `r range(df$age)[1]` und
+`r range(df$age)[2]` Jahren. Einge der klinischen Variablen betreffen
+Risikofaktoren:
+
+* `r round(mean(df$high_blood_pressure), digits = 2) * 100`% der Patienten haben  Bluthochdruck
+* `r round(mean(df$diabetes), digits = 2) * 100`%  Diabetes
+* `r round(mean(df$anaemia), digits = 2) * 100`% eine Anämie
+* `r round(mean(df$smoking), digits = 2) * 100`% sind Raucher
+
+
+Altersverteilung, Herzleistung und Laborparameter stellen sich folgendermassen dar:
+
+```{r histograms, echo=FALSE}
+par(mfrow = c(2, 3))
+hist(df$age, xlab = 'Alter [Jahre]', xlim = c(35, 100), main = 'Altersverteilung')
+hist(df$ejection_fraction, xlab = 'Auswurf-Fraktion [%]', main = 'Herzleistung')
+hist(df$serum_creatinine, xlab = 'Creatinin [mg/dl]', main = 'Serum-Creatinin')
+hist(df$serum_sodium, xlab = 'Na [mEq/l]', main = 'Serum-Natrium')
+hist(df$platelets, xlab = expression(paste('[kiloplatelets/', mu, 'l]')), main = 'Thromozyten')
+hist(df$creatinine_phosphokinase, xlab = expression(paste('CK im Blut [', mu, 'g/l]')), main = 'Creatin-Kinase')
+```
+
+`r round(mean(df$DEATH_EVENT), digits = 2) * 100`% der Patienten haben den Beobachtungszeitraum (zwischen
+`r range(df$time)[1]` und `r range(df$time)[2]` Tagen) nicht überlebt.
+
+
+
+Interessant wäre nun zu sehen ob und anhand welcher klinischen Parameter der Outcome (Tod/Überleben, hier: `DEATH_EVENT`) des Patienten vorhergesagt werden kann.
 
 
 
