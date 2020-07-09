@@ -15,8 +15,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r read data, echo=FALSE}
 ## Daten einlesen
 df <- read.csv('https://archive.ics.uci.edu/ml/machine-learning-databases/00519/heart_failure_clinical_records_dataset.csv')
-#dim(df)
-#str(df)
+#df <- read.csv('./Pruefung_C/data/heart_failure_clinical_records_dataset.csv')
+df[c(2, 4, 6, 11)] <- sapply(df[c(2, 4, 6, 11)], as.logical)
+df$sex <- factor(df$sex+1, labels = c('f', 'm'), levels = c(1, 2))
+df$outcome <- factor(df$DEATH_EVENT+1, levels=c(1, 2), labels=c('survived', 'died'))
 ```
 
 ## Datensatz
@@ -29,22 +31,22 @@ ein Merkmal für die Herzleistung und der Outcome des Patienten enthalten (also
 die Information ob der Beobachtungszeitraum überlebt wurde oder nicht):
 
 * `age`: Alter des Patienten [Jahre]
-* `anaemia`: Anämie? Ja/Nein [boolean]
+* `anaemia`: Anämie? TRUE/FALSE
 * `creatinine_phosphokinase`: Creatin-Kinase im Blut [$\mu$g/l]
-* `diabetes`: Diabetes? Ja/Nein [boolean]
+* `diabetes`: Diabetes? TRUE/FALSE
 * `ejection_fraction`: Auswurf-Fraktion des Herzens [%]
-* `high_blood_pressure`: Bluthochdruck? Ja/Nein [boolean]
+* `high_blood_pressure`: Bluthochdruck? TRUE/FALSE
 * `platelets`: Thrombozyten-Zahl [kiloplatelets/$\mu$l]
 * `serum_creatinine`: Serum Creatinin [mg/dl]
 * `serum_sodium`: Serum Natrium [mEq/l]
-* `sex`: Geschlecht? Frau=0/Mann=1 [binary]
-* `smoking`: Raucher? Ja/Nein [boolean]
+* `sex`: Geschlecht? Frau=1/Mann=2
+* `smoking`: Raucher? TRUE/FALSE
 * `time`: Beobachtungszeitraum [Tage]
-* `DEATH_EVENT`: Im Beobachtungszeitraums verstorben? Ja/Nein [boolean]
+* `outcome`: Im Beobachtungszeitraums verstorben? survived=1/died=2
 
 
-Unter den `r nrow(df)` Patienten sind `r sum(df$sex == 0)` Frauen und
-`r sum(df$sex == 1)` Männer im Alter zwischen `r range(df$age)[1]` und
+Unter den `r nrow(df)` Patienten sind `r sum(df$sex == 'f')` Frauen und
+`r sum(df$sex == 'm')` Männer im Alter zwischen `r range(df$age)[1]` und
 `r range(df$age)[2]` Jahren. Einge der klinischen Variablen betreffen
 Risikofaktoren:
 

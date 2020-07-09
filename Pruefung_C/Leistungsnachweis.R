@@ -2,7 +2,12 @@
 # URL: https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records
 # Dataset URL: https://archive.ics.uci.edu/ml/machine-learning-databases/00519/heart_failure_clinical_records_dataset.csv
 
-df <- read.csv('https://archive.ics.uci.edu/ml/machine-learning-databases/00519/heart_failure_clinical_records_dataset.csv')
+#df <- read.csv('https://archive.ics.uci.edu/ml/machine-learning-databases/00519/heart_failure_clinical_records_dataset.csv')
+df <- read.csv('./Pruefung_C/data/heart_failure_clinical_records_dataset.csv')
+df[c(2, 4, 6, 11)] <- sapply(df[c(2, 4, 6, 11)], as.logical)
+df$sex <- factor(df$sex, labels = c('f', 'm'), levels = c(0, 1))
+df$outcome <- factor((df$DEATH_EVENT + 1), levels=c(1, 2), labels=c('survived', 'died'))
+
 
 pairs(df)
 summary(df)
