@@ -172,8 +172,6 @@ ggplot(plot.pca, aes(PC2, PC1, colour = cluster)) +
   geom_point() +
   ggtitle('Cluster Visualisierung (PCA)')
 
-
-
 ### MDS
 pat.mds <- cmdscale(pat.dist)
 pat.df <- data.frame(pat.mds)
@@ -182,13 +180,10 @@ ggplot(plot.dat, aes(X1, X2, colour = cluster)) +
   geom_point() +
   ggtitle('Cluster Visualisierung (MDS)')
 
+### Dendrogramm
+plot(hclust(pat.dist, method = 'ward.D2'))
 
-
-
-
-
-
-############ Heatmaps
+### Heatmaps
 pat.mat <- t(as.matrix(pat.num))
 heatmap(pat.mat)
 
@@ -196,53 +191,87 @@ heatmap(pat.mat)
 library(pheatmap)
 pheatmap(pat.mat, scale = 'row', kmeans_k = 5)
 
-
-
-
-# Bestimmen der optimalen Cluster-Anzahl
-# ueber Min. der within-cluster-variation
-wcv <- rep(0, 15) # init
-for (i in 1:15)
-  wcv[i] <- sum(kmeans(pat.num, centers = i)$withinss)
-plot(1:15, wcv, type = 'b', xlab = 'Clusteranzahl')
-# opt. Clusteranzahl = 5
-
-# Alternative mit fviz_nbclust()
-library(factoextra)
-fviz_nbclust(pat.num, kmeans, method = 'wss')
-# auch 5
-
-library(Rtsne)
-set.seed(1)
-# tSNE mit Colorierung aus dem K-Means Cluster
-pat.tSNE <- Rtsne(pat.dat, pca_scale = TRUE, perplexity = 20)
-tsne.df <- as.data.frame(pat.tSNE$Y)
-tsne.df$cluster <- pat.cl$cluster
-library(ggplot2)
-ggplot(data = tsne.df, aes(x = V1, y = V2, colour = as.factor(df$anaemia))) +
-  geom_point() +
-  ggtitle('2D t-SNE Visualisierung')
-
-
-
-# Geben Sie an, wie Sie die Anzahl Cluster festlegen.
-# Visualisieren Sie Ihre Cluster.
-# Interpretieren Sie Ihre Ergebnisse. 
-
-################### K-Means ########################
-
-library(factoextra)
-fviz_nbclust(pat.dist, kmeans, method = 'wss')
-
-
-library(cluster)
-pat.pam <- pam(pat.dist, k=2)
-plot(pat.dist, col = pat.pam$clustering)
-points(pat.pam$medoids, col = 1:2, pch = 8, cex = 2)
-
-
-heatmap(as.matrix(pat.dat))
 ###############################################################################
 ###                             Klassifikation                              ###
 ###############################################################################
+library(caret)
+pat.dat <- df[, -13]
+## Aufteilung in Training und Testdaten
+ind_train <- createDataPartition(y=pat.dat$outcome, p=0.8, list = FALSE)
+pat.train <- pat.dat[ind_train,]
+pat.test <- pat.dat[-ind_train,]
+
+## Klassifizierer 1 (KNN)
+###############################################################################
+###                             KNN                                         ###
+###############################################################################
+knn <-
+  train(
+    outcome ~ .,
+    data = pat.train,
+    method = 'knn',
+    tuneGrid = data.frame(k = 12),
+    preProcess = c('center', 'scale')
+  )
+# pred_train <- predict(knn, newdata = pat.train)
+# mean(pred_train != pat.train$outcome) # naja, damit haben wir ja auch trainiert!
+
+pred_test <- predict(knn, newdata = pat.test)
+mean(pred_test != pat.test$outcome)
+
+
+# bei wievielen Nachbarn haben wir die geringste Fehlerrate?
+error_test <- error_training <- rep(NA, 20)
+set.seed(1)
+for (i in 1:20) {
+  knn <- train(
+    outcome ~ .,
+    data = pat.train,
+    method = "knn",
+    tuneGrid = data.frame(k = i),
+    preProcess = c("center", "scale")
+  )
+  pred_train <- predict(knn, newdata = pat.train)
+  error_training[i] <- mean(pred_train != pat.train$outcome)
+  pred_test <- predict(knn, newdata = pat.test)
+  error_test[i] <- mean(pred_test != pat.test$outcome)
+}
+# Fehlerrate Trainings- vs. Test-Daten
+plot(
+  x = 1 / (1:20),
+  y = error_test,
+  ylim = c(0, 0.3),
+  type = 'b',
+  col = 'green',
+  xlab = "1/k",
+  ylab = "Fehlerrate",
+  las = 1
+)
+
+lines(
+  x = 1 / (1:20),
+  y = error_training,
+  col = 'red',
+  type = "b"
+)
+
+legend(
+  "topright",
+  legend = c("Testdaten", "Trainingsdaten"),
+  col = c("green", "red"),
+  lty = 1
+)
+
+which.min(error_test)
+# k = 12
+
+
+###############################################################################
+###                             Klassifizierer 2                            ###
+###############################################################################
+
+
+## Klassifizierer 2
+
+## Konfusionsmatrix
 

@@ -41,7 +41,7 @@ die Information ob der Beobachtungszeitraum überlebt wurde oder nicht):
 * `sex`: Geschlecht? Frau=1/Mann=2
 * `smoking`: Raucher? TRUE/FALSE
 * `time`: Beobachtungszeitraum [Tage]
-* `outcome`: Im Beobachtungszeitraums verstorben? survived=1/died=2
+* `outcome`: Im Beobachtungszeitraums verstorben? survived=1/deceased=2
 
 
 Unter den `r nrow(df)` Patienten sind `r sum(df$sex == 'f')` Frauen und
