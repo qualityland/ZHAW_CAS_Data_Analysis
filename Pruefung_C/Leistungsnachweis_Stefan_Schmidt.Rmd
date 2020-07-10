@@ -73,7 +73,7 @@ hist(df$creatinine_phosphokinase, xlab = expression(paste('CK im Blut [', mu, 'g
 
 
 
-Interessant wäre nun zu sehen ob und anhand welcher klinischen Parameter der Outcome (Tod/Überleben, hier: `DEATH_EVENT`) des Patienten vorhergesagt werden kann.
+Interessant wäre nun zu sehen ob und anhand welcher klinischen Parameter der Outcome (Tod/Überleben) des Patienten vorhergesagt werden kann.
 
 
 
@@ -85,8 +85,8 @@ Interessant wäre nun zu sehen ob und anhand welcher klinischen Parameter der Ou
 
 
 ```{r Visualisierung, echo=TRUE}
-## Ansatz MDS
-pat.data <- df
+## Ansatz t-SNE
+pat.dat <- df[, 1:12]
 
 
 
